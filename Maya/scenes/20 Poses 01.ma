@@ -1,24 +1,26 @@
-//Maya ASCII 2026 scene
+//Maya ASCII 2027 scene
 //Name: 20 Poses 01.ma
-//Last modified: Thu, Oct 08, 2026 08:02:15 PM
+//Last modified: Fri, Oct 09, 2026 12:14:30 AM
 //Codeset: 1252
 file -rdi 1 -ns "Amanda" -rfn "AmandaRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/UVU-AGD-Portfolio/Maya//scenes/Amanda.ma";
 file -r -ns "Amanda" -dr 1 -rfn "AmandaRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/UVU-AGD-Portfolio/Maya//scenes/Amanda.ma";
-requires maya "2026";
+requires maya "2027";
 requires "stereoCamera" "10.0";
-requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.5.3";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.6.2";
+requires -nodeType "UsdDefaultSettings" -dataType "pxrUsdStageData" "mayaUsdPlugin" "0.37.0";
+requires "stereoCamera" "10.0";
 currentUnit -l foot -a degree -t film;
 fileInfo "application" "maya";
-fileInfo "product" "Maya 2026";
-fileInfo "version" "2026";
-fileInfo "cutIdentifier" "202507081222-4d6919b75c";
+fileInfo "product" "Maya 2027";
+fileInfo "version" "2027";
+fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "EE874AB0-4984-C1F0-6812-97A6432242C3";
+fileInfo "UUID" "F79E58DD-4086-D350-540C-F9BB9D4ED04E";
 createNode transform -s -n "persp";
 	rename -uid "CCFE6F33-4A4C-A4C1-063F-35B4BE0E535D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.5572270535076509 4.978046058266461 -2.2621948386203345 ;
-	setAttr ".r" -type "double3" -6.6000000000341936 -1334.99999999942 0 ;
+	setAttr ".t" -type "double3" 5.2314487494824204 6.448007254860106 7.3536659069452091 ;
+	setAttr ".r" -type "double3" -11.400000000035828 -1406.5999999999733 9.5243541410999055e-16 ;
 	setAttr ".rpt" -type "double3" -6.5126100507517027e-19 -2.2114854053357372e-18 -5.2880665029340108e-18 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C52B0BCA-443C-CBB1-B75D-9A93C880F102";
@@ -27,7 +29,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.0032808398950131233;
 	setAttr ".fcp" 328.08398950131232;
 	setAttr ".fd" 0.16404199475065617;
-	setAttr ".coi" 7.6641029792390718;
+	setAttr ".coi" 10.416978614781911;
 	setAttr ".ow" 0.32808398950131235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -485,7 +487,7 @@ createNode mesh -n "pPlaneShape2" -p "pPlane2";
 createNode transform -n "pCylinder1";
 	rename -uid "3493236E-4512-8009-58C0-AA8C3F4733E7";
 	setAttr ".rp" -type "double3" 0 4.8100270224593817 0.44038194984601675 ;
-	setAttr ".rpt" -type "double3" 0 -1.8503717077085944e-15 -2.3311769545935045e-16 ;
+	setAttr ".rpt" -type "double3" -2.4914453702218079e-15 -2.4477358023231798e-14 -6.5272954728618124e-15 ;
 	setAttr ".sp" -type "double3" 0 4.8100270224593817 0.44038194984601675 ;
 createNode mesh -n "pCylinderShape1" -p "pCylinder1";
 	rename -uid "CB6AC47F-40B0-7FE6-094E-64B50D0C803B";
@@ -903,7 +905,7 @@ createNode mesh -n "pSphereShape1" -p "pSphere1";
 		 -0.2753363 -0.45399052 -0.84739786 -0.52372068 -0.45399052 -0.72083968 -0.72083962 -0.45399052 -0.52372062
 		 -0.84739774 -0.45399052 -0.27533624 -0.89100671 -0.45399052 0 -0.84739774 -0.45399052 0.27533624
 		 -0.72083962 -0.45399052 0.52372062 -0.52372062 -0.45399052 0.72083956 -0.27533624 -0.45399052 0.84739769
-		 -2.6554064e-08 -0.45399052 0.89100665 0.27533621 -0.45399052 0.84739763 0.5237205 -0.45399052 0.7208395
+		 -2.6554064e-08 -0.45399052 0.89100665 0.27533624 -0.45399052 0.84739763 0.5237205 -0.45399052 0.7208395
 		 0.72083944 -0.45399052 0.52372056 0.84739757 -0.45399052 0.27533624 0.89100653 -0.45399052 0
 		 0.90450907 -0.30901697 -0.2938928 0.76942146 -0.30901697 -0.55901736 0.55901736 -0.30901697 -0.7694214
 		 0.2938928 -0.30901697 -0.90450895 0 -0.30901697 -0.95105696 -0.2938928 -0.30901697 -0.90450889
@@ -942,7 +944,7 @@ createNode mesh -n "pSphereShape1" -p "pSphere1";
 		 -0.2753363 0.45399052 -0.84739786 -0.52372068 0.45399052 -0.72083968 -0.72083962 0.45399052 -0.52372062
 		 -0.84739774 0.45399052 -0.27533624 -0.89100671 0.45399052 0 -0.84739774 0.45399052 0.27533624
 		 -0.72083962 0.45399052 0.52372062 -0.52372062 0.45399052 0.72083956 -0.27533624 0.45399052 0.84739769
-		 -2.6554064e-08 0.45399052 0.89100665 0.27533621 0.45399052 0.84739763 0.5237205 0.45399052 0.7208395
+		 -2.6554064e-08 0.45399052 0.89100665 0.27533624 0.45399052 0.84739763 0.5237205 0.45399052 0.7208395
 		 0.72083944 0.45399052 0.52372056 0.84739757 0.45399052 0.27533624 0.89100653 0.45399052 0
 		 0.7694214 0.58778512 -0.25000015 0.65450895 0.58778512 -0.47552854 0.47552854 0.58778512 -0.65450889
 		 0.25000015 0.58778512 -0.76942134 0 0.58778512 -0.80901736 -0.25000015 0.58778512 -0.76942122
@@ -1896,7 +1898,7 @@ createNode camera -n "leftShape" -p "left";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "5C1DB769-4B65-87A9-621C-87B18CCA7D0C";
+	rename -uid "483D685B-409C-322D-8673-00A57F9542AA";
 	setAttr -s 98 ".lnk";
 	setAttr -s 98 ".slnk";
 createNode UsdDefaultSettings -n "UsdDefaultRenderSettings";
@@ -1906,12 +1908,12 @@ createNode UsdDefaultSettings -n "UsdDefaultRenderSettings";
 	setAttr ".asp" -type "string" "UsdDefaultRenderSettings,/Render/SceneRenderSettings";
 lockNode -l 1 ;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "503FD806-472F-3C4E-63D9-16A1E5930D5B";
+	rename -uid "75C731B8-4001-500E-039D-079D7DF28AFF";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4898D8B1-4AE8-2C5C-7287-CA9073C12B47";
+	rename -uid "523770DB-4765-2E81-C709-D0B36781E5A8";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "4BBCFBAB-4E74-35C0-F027-A39EEE2AE347";
+	rename -uid "74199428-424E-AAA4-D204-AC85083124A8";
 	setAttr ".cdl" 1;
 	setAttr -s 2 ".dli[1]"  1;
 	setAttr -s 2 ".dli";
@@ -1919,13 +1921,13 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "54AFA13C-4BCD-C047-9F6A-789177B39C86";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "CE235AD3-4494-E90D-3437-729CE4E5B69F";
+	rename -uid "98347FDE-4568-36F6-BD83-B19FFA0D7D1C";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "B8AC1742-4E62-ABC3-95CB-009A992222CA";
 	setAttr ".g" yes;
 createNode reference -n "AmandaRN";
 	rename -uid "0281F819-430E-8EAD-3690-9A98A1B1E5D4";
-	setAttr -s 874 ".phl";
+	setAttr -s 946 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -2800,10 +2802,82 @@ createNode reference -n "AmandaRN";
 	setAttr ".phl[872]" 0;
 	setAttr ".phl[873]" 0;
 	setAttr ".phl[874]" 0;
+	setAttr ".phl[875]" 0;
+	setAttr ".phl[876]" 0;
+	setAttr ".phl[877]" 0;
+	setAttr ".phl[878]" 0;
+	setAttr ".phl[879]" 0;
+	setAttr ".phl[880]" 0;
+	setAttr ".phl[881]" 0;
+	setAttr ".phl[882]" 0;
+	setAttr ".phl[883]" 0;
+	setAttr ".phl[884]" 0;
+	setAttr ".phl[885]" 0;
+	setAttr ".phl[886]" 0;
+	setAttr ".phl[887]" 0;
+	setAttr ".phl[888]" 0;
+	setAttr ".phl[889]" 0;
+	setAttr ".phl[890]" 0;
+	setAttr ".phl[891]" 0;
+	setAttr ".phl[892]" 0;
+	setAttr ".phl[893]" 0;
+	setAttr ".phl[894]" 0;
+	setAttr ".phl[895]" 0;
+	setAttr ".phl[896]" 0;
+	setAttr ".phl[897]" 0;
+	setAttr ".phl[898]" 0;
+	setAttr ".phl[899]" 0;
+	setAttr ".phl[900]" 0;
+	setAttr ".phl[901]" 0;
+	setAttr ".phl[902]" 0;
+	setAttr ".phl[903]" 0;
+	setAttr ".phl[904]" 0;
+	setAttr ".phl[905]" 0;
+	setAttr ".phl[906]" 0;
+	setAttr ".phl[907]" 0;
+	setAttr ".phl[908]" 0;
+	setAttr ".phl[909]" 0;
+	setAttr ".phl[910]" 0;
+	setAttr ".phl[911]" 0;
+	setAttr ".phl[912]" 0;
+	setAttr ".phl[913]" 0;
+	setAttr ".phl[914]" 0;
+	setAttr ".phl[915]" 0;
+	setAttr ".phl[916]" 0;
+	setAttr ".phl[917]" 0;
+	setAttr ".phl[918]" 0;
+	setAttr ".phl[919]" 0;
+	setAttr ".phl[920]" 0;
+	setAttr ".phl[921]" 0;
+	setAttr ".phl[922]" 0;
+	setAttr ".phl[923]" 0;
+	setAttr ".phl[924]" 0;
+	setAttr ".phl[925]" 0;
+	setAttr ".phl[926]" 0;
+	setAttr ".phl[927]" 0;
+	setAttr ".phl[928]" 0;
+	setAttr ".phl[929]" 0;
+	setAttr ".phl[930]" 0;
+	setAttr ".phl[931]" 0;
+	setAttr ".phl[932]" 0;
+	setAttr ".phl[933]" 0;
+	setAttr ".phl[934]" 0;
+	setAttr ".phl[935]" 0;
+	setAttr ".phl[936]" 0;
+	setAttr ".phl[937]" 0;
+	setAttr ".phl[938]" 0;
+	setAttr ".phl[939]" 0;
+	setAttr ".phl[940]" 0;
+	setAttr ".phl[941]" 0;
+	setAttr ".phl[942]" 0;
+	setAttr ".phl[943]" 0;
+	setAttr ".phl[944]" 0;
+	setAttr ".phl[945]" 0;
+	setAttr ".phl[946]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"AmandaRN"
 		"AmandaRN" 0
-		"AmandaRN" 958
+		"AmandaRN" 1015
 		2 "|Amanda:character|Amanda:main_control" "dressBendControls" " -cb 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:base|Amanda:R_arm_1_joint|Amanda:R_arm_2_joint|Amanda:R_arm_3_joint|Amanda:R_fingers_group|Amanda:R_ring_1_control_group|Amanda:R_ring_1_control_transform|Amanda:R_ring_1_cb_control|Amanda:R_ring_1_control" 
 		"translate" " -type \"double3\" 0 0 0"
@@ -2828,9 +2902,9 @@ createNode reference -n "AmandaRN";
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_up_psd_control_group|Amanda:head_up_psd_control_transform|Amanda:head_up_psd_f_control" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_up_psd_control_group|Amanda:head_up_psd_control_transform|Amanda:head_up_psd_f_control|Amanda:R_eye_loc_group|Amanda:R_eye_loc_transform|Amanda:R_eye_base_f_control" 
-		"LIDS" " -av -k 1 0"
+		"LIDS" " -k 1"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_up_psd_control_group|Amanda:head_up_psd_control_transform|Amanda:head_up_psd_f_control|Amanda:L_eye_loc_group|Amanda:L_eye_loc_transform|Amanda:L_eye_base_f_control" 
-		"LIDS" " -av -k 1 0"
+		"LIDS" " -k 1"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_up_psd_control_group|Amanda:head_up_psd_control_transform|Amanda:head_up_psd_f_control|Amanda:L_eye_loc_group|Amanda:L_eye_loc_transform|Amanda:L_eye_base_f_control|Amanda:L_eye_fk_joint_group|Amanda:L_eye_fk_joint_transform|Amanda:L_eye_fk_f_control" 
 		"rotateX" " 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_up_psd_control_group|Amanda:head_up_psd_control_transform|Amanda:head_up_psd_f_control|Amanda:L_eye_loc_group|Amanda:L_eye_loc_transform|Amanda:L_eye_base_f_control|Amanda:L_lids_controls_group|Amanda:L_lid_up_3_control_group|Amanda:L_lid_up_3_control_transform|Amanda:L_lid_up_base_f_control" 
@@ -2851,6 +2925,8 @@ createNode reference -n "AmandaRN";
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:M_mouth_base_control_group|Amanda:M_mouth_base_control_transform|Amanda:M_mouth_base_f_control|Amanda:M_mouth_group|Amanda:M_mouth_transform|Amanda:M_mouth_f_control" 
 		"rotate" " -type \"double3\" 0 0 0"
+		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:M_mouth_base_control_group|Amanda:M_mouth_base_control_transform|Amanda:M_mouth_base_f_control|Amanda:M_mouth_group|Amanda:M_mouth_transform|Amanda:M_mouth_f_control" 
+		"U" " -k 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:M_mouth_base_control_group|Amanda:M_mouth_base_control_transform|Amanda:M_mouth_base_f_control|Amanda:M_tooth_up_control_group|Amanda:M_tooth_up_control_transform|Amanda:M_tooth_up_f_control" 
 		"translate" " -type \"double3\" 0.021796353972572749 0.013321540871650774 8.7306535843096735e-05"
 		
@@ -2858,16 +2934,10 @@ createNode reference -n "AmandaRN";
 		"rotate" " -type \"double3\" 0 0 20.28090938239962071"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:M_mouth_base_control_group|Amanda:M_mouth_base_control_transform|Amanda:M_mouth_base_f_control|Amanda:jaw_control_group|Amanda:jaw_control_transform|Amanda:jaw_f_control|Amanda:M_tooth_low_control_group|Amanda:M_tooth_low_control_transform|Amanda:M_tooth_low_f_control" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control" 
-		"translate" " -type \"double3\" 0 0 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_low_mid_control_group|Amanda:M_lips_low_mid_control_transform|Amanda:M_lips_low_mid_control_offset_transform|Amanda:M_lips_low_mid_f_control" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_low_mid_control_group|Amanda:M_lips_low_mid_control_transform|Amanda:M_lips_low_mid_control_offset_transform|Amanda:M_lips_low_mid_f_control" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control" 
-		"translate" " -type \"double3\" 0 0 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_low_sneer_control_group|Amanda:R_lips_low_sneer_control_transform|Amanda:R_lips_low_sneer_control_offset_transform|Amanda:R_lips_low_sneer_f_control" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_base_control_group|Amanda:M_lips_up_base_control_transform|Amanda:M_lips_up_base_control_offset_transform|Amanda:M_lips_up_base_f_control" 
@@ -2909,55 +2979,29 @@ createNode reference -n "AmandaRN";
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control" 
 		"bendControls" " -cb 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control" 
-		"fingerAttribute" " -k 1"
+		"fingerAttribute" " -av -k 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control" 
-		"fingerAttribute" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control" 
-		"ikfk" " -k 1"
+		"bendControls" " -cb 1 1"
+		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control" 
+		"fingerAttribute" " -av -k 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control" 
 		"bendControls" " -cb 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control" 
 		"fingers" " -cb 1 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control" 
-		"spread" " -k 1"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control" 
 		"bendControls" " -cb 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control" 
 		"fingers" " -cb 1 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control" 
-		"curl" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control" 
-		"spread" " -k 1"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control" 
-		"____" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control" 
-		"stretch" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control" 
-		"squash" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control" 
-		"saveVolume" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control" 
-		"parent" " -k 1"
+		"____" " -av -k 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control" 
-		"____" " -k 1"
+		"____" " -av -k 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control" 
-		"____" " -k 1"
+		"____" " -av -k 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control|Amanda:L_leg_foot_aux_1_joint|Amanda:L_leg_foot_aux_2_joint|Amanda:L_leg_foot_aux_3_joint|Amanda:L_leg_foot_aux_4_joint|Amanda:L_leg_foot_aux_5_joint|Amanda:L_leg_foot_aux_6_joint|Amanda:L_leg_foot_aux_7_joint|Amanda:L_leg_foot_toes_control_group|Amanda:L_leg_foot_toes_control_transform|Amanda:L_leg_foot_toes_control" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control" 
-		"____" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control" 
-		"footRollWeight" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control" 
-		"footRoll" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control" 
-		"side" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control" 
-		"heelPivot" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control" 
-		"tipPivot" " -k 1"
-		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control" 
-		"toesPivot" " -k 1"
+		"____" " -av -k 1 0"
 		2 "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_fk_controls|Amanda:R_leg_fk_1_control_group|Amanda:R_leg_fk_1_control_transform|Amanda:R_leg_fk_1_control" 
 		"rotate" " -type \"double3\" 16.43438121423652376 -0.54663078015328559 30.75827377243826888"
 		
@@ -3967,759 +4011,903 @@ createNode reference -n "AmandaRN";
 		"AmandaRN.placeHolderList[496]" ""
 		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:M_mouth_base_control_group|Amanda:M_mouth_base_control_transform|Amanda:M_mouth_base_f_control|Amanda:jaw_control_group|Amanda:jaw_control_transform|Amanda:jaw_f_control.scaleZ" 
 		"AmandaRN.placeHolderList[497]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control.translateX" 
 		"AmandaRN.placeHolderList[498]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control.translateY" 
 		"AmandaRN.placeHolderList[499]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control.translateZ" 
 		"AmandaRN.placeHolderList[500]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control.rotateX" 
 		"AmandaRN.placeHolderList[501]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control.rotateY" 
 		"AmandaRN.placeHolderList[502]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control.rotateZ" 
 		"AmandaRN.placeHolderList[503]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.scaleX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control.scaleX" 
 		"AmandaRN.placeHolderList[504]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.scaleY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control.scaleY" 
 		"AmandaRN.placeHolderList[505]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.scaleZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:M_lips_up_mid_control_group|Amanda:M_lips_up_mid_control_transform|Amanda:M_lips_up_mid_control_offset_transform|Amanda:M_lips_up_mid_f_control.scaleZ" 
 		"AmandaRN.placeHolderList[506]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.rotateY" 
 		"AmandaRN.placeHolderList[507]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.rotateZ" 
 		"AmandaRN.placeHolderList[508]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.zip" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.rotateX" 
 		"AmandaRN.placeHolderList[509]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.depth" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.translateY" 
 		"AmandaRN.placeHolderList[510]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.translateX" 
 		"AmandaRN.placeHolderList[511]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.translateZ" 
 		"AmandaRN.placeHolderList[512]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.scaleX" 
 		"AmandaRN.placeHolderList[513]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.scaleY" 
 		"AmandaRN.placeHolderList[514]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_up_sneer_control_group|Amanda:L_lips_up_sneer_control_transform|Amanda:L_lips_up_sneer_control_offset_transform|Amanda:L_lips_up_sneer_f_control.scaleZ" 
 		"AmandaRN.placeHolderList[515]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.zip" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control.rotateY" 
 		"AmandaRN.placeHolderList[516]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.depth" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control.rotateZ" 
 		"AmandaRN.placeHolderList[517]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control.rotateX" 
 		"AmandaRN.placeHolderList[518]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control.translateY" 
 		"AmandaRN.placeHolderList[519]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control.translateX" 
 		"AmandaRN.placeHolderList[520]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control.translateZ" 
 		"AmandaRN.placeHolderList[521]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control.scaleX" 
 		"AmandaRN.placeHolderList[522]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control.scaleY" 
 		"AmandaRN.placeHolderList[523]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_lips_up_sneer_control_group|Amanda:R_lips_up_sneer_control_transform|Amanda:R_lips_up_sneer_control_offset_transform|Amanda:R_lips_up_sneer_f_control.scaleZ" 
 		"AmandaRN.placeHolderList[524]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control.rotateX" 
 		"AmandaRN.placeHolderList[525]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control.rotateY" 
 		"AmandaRN.placeHolderList[526]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control.rotateZ" 
 		"AmandaRN.placeHolderList[527]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control.translateY" 
 		"AmandaRN.placeHolderList[528]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control.translateX" 
 		"AmandaRN.placeHolderList[529]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control.translateZ" 
 		"AmandaRN.placeHolderList[530]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control.scaleX" 
 		"AmandaRN.placeHolderList[531]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control.scaleY" 
 		"AmandaRN.placeHolderList[532]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.scaleX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_lips_low_sneer_control_group|Amanda:L_lips_low_sneer_control_transform|Amanda:L_lips_low_sneer_control_offset_transform|Amanda:L_lips_low_sneer_f_control.scaleZ" 
 		"AmandaRN.placeHolderList[533]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.scaleZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.translateY" 
 		"AmandaRN.placeHolderList[534]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.translateX" 
 		"AmandaRN.placeHolderList[535]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.zip" 
 		"AmandaRN.placeHolderList[536]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.depth" 
 		"AmandaRN.placeHolderList[537]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.rotateX" 
 		"AmandaRN.placeHolderList[538]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.rotateY" 
 		"AmandaRN.placeHolderList[539]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:L_emotion_rivet_control_group|Amanda:L_emotion_rivet_control_transform|Amanda:L_emotion_rivet_control_offset_transform|Amanda:L_emotion_f_control.rotateZ" 
 		"AmandaRN.placeHolderList[540]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.translateY" 
 		"AmandaRN.placeHolderList[541]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.translateX" 
 		"AmandaRN.placeHolderList[542]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.zip" 
 		"AmandaRN.placeHolderList[543]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.depth" 
 		"AmandaRN.placeHolderList[544]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.rotateX" 
 		"AmandaRN.placeHolderList[545]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.rotateY" 
 		"AmandaRN.placeHolderList[546]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.saveVolume" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:M_neck_control_group|Amanda:M_neck_control_transform|Amanda:M_neck_control|Amanda:M_neck_joint|Amanda:M_neck_inverse_joint|Amanda:M_head_control_group|Amanda:M_head_control_transform|Amanda:M_head_control|Amanda:M_head_joint|Amanda:head_low_psd_control_group|Amanda:head_low_psd_control_transform|Amanda:head_low_psd_f_control|Amanda:lips_controls|Amanda:R_emotion_rivet_control_group|Amanda:R_emotion_rivet_control_transform|Amanda:R_emotion_rivet_control_offset_transform|Amanda:R_emotion_f_control.rotateZ" 
 		"AmandaRN.placeHolderList[547]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.rotateY" 
 		"AmandaRN.placeHolderList[548]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.rotateX" 
 		"AmandaRN.placeHolderList[549]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.rotateZ" 
 		"AmandaRN.placeHolderList[550]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.translateX" 
 		"AmandaRN.placeHolderList[551]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.translateY" 
 		"AmandaRN.placeHolderList[552]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:L_shoulder_control_group|Amanda:L_shoulder_control_transform|Amanda:L_shoulder_control.translateZ" 
 		"AmandaRN.placeHolderList[553]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.rotateY" 
 		"AmandaRN.placeHolderList[554]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.rotateX" 
 		"AmandaRN.placeHolderList[555]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.rotateZ" 
 		"AmandaRN.placeHolderList[556]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.translateX" 
 		"AmandaRN.placeHolderList[557]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.translateY" 
 		"AmandaRN.placeHolderList[558]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_3_pos_loc|Amanda:M_spine_ik_3_control_group|Amanda:M_spine_ik_3_control_transform|Amanda:M_spine_ik_3_control|Amanda:chest_inverseScale_joint|Amanda:R_shoulder_control_group|Amanda:R_shoulder_control_transform|Amanda:R_shoulder_control.translateZ" 
 		"AmandaRN.placeHolderList[559]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.scaleX" 
 		"AmandaRN.placeHolderList[560]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.scaleZ" 
 		"AmandaRN.placeHolderList[561]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.translateX" 
 		"AmandaRN.placeHolderList[562]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.translateY" 
 		"AmandaRN.placeHolderList[563]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.translateZ" 
 		"AmandaRN.placeHolderList[564]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.rotateX" 
 		"AmandaRN.placeHolderList[565]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.rotateZ" 
 		"AmandaRN.placeHolderList[566]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_ik_1_pos_loc|Amanda:M_spine_ik_1_control_group|Amanda:M_spine_ik_1_control_transform|Amanda:M_spine_ik_1_control.rotateY" 
 		"AmandaRN.placeHolderList[567]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.translateZ" 
 		"AmandaRN.placeHolderList[568]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.translateY" 
 		"AmandaRN.placeHolderList[569]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.translateX" 
 		"AmandaRN.placeHolderList[570]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.rotateZ" 
 		"AmandaRN.placeHolderList[571]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.fingerAttribute" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.rotateX" 
 		"AmandaRN.placeHolderList[572]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.scale1X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.rotateY" 
 		"AmandaRN.placeHolderList[573]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.scale1YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control.saveVolume" 
 		"AmandaRN.placeHolderList[574]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.scale2X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.rotateZ" 
 		"AmandaRN.placeHolderList[575]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.scale2YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.rotateX" 
 		"AmandaRN.placeHolderList[576]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ikfk" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.rotateY" 
 		"AmandaRN.placeHolderList[577]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.thumb_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.translateX" 
 		"AmandaRN.placeHolderList[578]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.thumb_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.translateY" 
 		"AmandaRN.placeHolderList[579]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.thumb_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control.translateZ" 
 		"AmandaRN.placeHolderList[580]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.thumb_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.rotateX" 
 		"AmandaRN.placeHolderList[581]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.index_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.rotateY" 
 		"AmandaRN.placeHolderList[582]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.index_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.rotateZ" 
 		"AmandaRN.placeHolderList[583]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.index_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.translateX" 
 		"AmandaRN.placeHolderList[584]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.index_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.translateY" 
 		"AmandaRN.placeHolderList[585]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.mid_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control.translateZ" 
 		"AmandaRN.placeHolderList[586]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.mid_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.rotateX" 
 		"AmandaRN.placeHolderList[587]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.mid_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.rotateY" 
 		"AmandaRN.placeHolderList[588]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.mid_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.rotateZ" 
 		"AmandaRN.placeHolderList[589]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ring_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.translateX" 
 		"AmandaRN.placeHolderList[590]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ring_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.translateY" 
 		"AmandaRN.placeHolderList[591]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ring_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_spine_fk_2_control_group|Amanda:M_spine_fk_2_control_transform|Amanda:M_spine_fk_1_control|Amanda:M_spine_fk_2_joint|Amanda:M_spine_fk_2_inverse_joint|Amanda:M_spine_fk_3_control_group|Amanda:M_spine_fk_3_control_transform|Amanda:M_spine_fk_2_control|Amanda:M_spine_fk_3_joint|Amanda:M_spine_fk_3_inverse_joint|Amanda:M_spine_fk_4_control_group|Amanda:M_spine_fk_4_control_transform|Amanda:M_spine_fk_3_control.translateZ" 
 		"AmandaRN.placeHolderList[592]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ring_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.rotateX" 
 		"AmandaRN.placeHolderList[593]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.pinky_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.rotateY" 
 		"AmandaRN.placeHolderList[594]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.pinky_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.rotateZ" 
 		"AmandaRN.placeHolderList[595]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.pinky_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.translateX" 
 		"AmandaRN.placeHolderList[596]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.pinky_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.translateY" 
 		"AmandaRN.placeHolderList[597]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.fingerAttribute" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:M_hip_control_group|Amanda:M_hip_control_transform|Amanda:M_hip_control.translateZ" 
 		"AmandaRN.placeHolderList[598]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.scale1X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.fingerAttribute" 
 		"AmandaRN.placeHolderList[599]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.scale1YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.scale1X" 
 		"AmandaRN.placeHolderList[600]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.scale2X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.scale1YZ" 
 		"AmandaRN.placeHolderList[601]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.scale2YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.scale2X" 
 		"AmandaRN.placeHolderList[602]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ikfk" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.scale2YZ" 
 		"AmandaRN.placeHolderList[603]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.thumb_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ikfk" 
 		"AmandaRN.placeHolderList[604]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.thumb_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.thumb_1" 
 		"AmandaRN.placeHolderList[605]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.thumb_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.thumb_2" 
 		"AmandaRN.placeHolderList[606]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.thumb_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.thumb_spread" 
 		"AmandaRN.placeHolderList[607]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.index_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.thumb_twist" 
 		"AmandaRN.placeHolderList[608]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.index_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.index_1" 
 		"AmandaRN.placeHolderList[609]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.index_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.index_2" 
 		"AmandaRN.placeHolderList[610]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.index_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.index_spread" 
 		"AmandaRN.placeHolderList[611]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.mid_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.index_twist" 
 		"AmandaRN.placeHolderList[612]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.mid_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.mid_1" 
 		"AmandaRN.placeHolderList[613]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.mid_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.mid_2" 
 		"AmandaRN.placeHolderList[614]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.mid_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.mid_spread" 
 		"AmandaRN.placeHolderList[615]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ring_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.mid_twist" 
 		"AmandaRN.placeHolderList[616]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ring_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ring_1" 
 		"AmandaRN.placeHolderList[617]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ring_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ring_2" 
 		"AmandaRN.placeHolderList[618]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ring_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ring_spread" 
 		"AmandaRN.placeHolderList[619]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.pinky_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.ring_twist" 
 		"AmandaRN.placeHolderList[620]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.pinky_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.pinky_1" 
 		"AmandaRN.placeHolderList[621]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.pinky_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.pinky_2" 
 		"AmandaRN.placeHolderList[622]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.pinky_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.pinky_spread" 
 		"AmandaRN.placeHolderList[623]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.curl" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_leg_option_control_group|Amanda:R_leg_option_control_transform|Amanda:R_leg_option_control.pinky_twist" 
 		"AmandaRN.placeHolderList[624]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.fingerAttribute" 
 		"AmandaRN.placeHolderList[625]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale3X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.scale1X" 
 		"AmandaRN.placeHolderList[626]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale3YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.scale1YZ" 
 		"AmandaRN.placeHolderList[627]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale1X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.scale2X" 
 		"AmandaRN.placeHolderList[628]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale1YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.scale2YZ" 
 		"AmandaRN.placeHolderList[629]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale2X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ikfk" 
 		"AmandaRN.placeHolderList[630]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale2YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.thumb_1" 
 		"AmandaRN.placeHolderList[631]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ikfk" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.thumb_2" 
 		"AmandaRN.placeHolderList[632]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.thumb_spread" 
 		"AmandaRN.placeHolderList[633]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.thumb_twist" 
 		"AmandaRN.placeHolderList[634]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.index_1" 
 		"AmandaRN.placeHolderList[635]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_4" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.index_2" 
 		"AmandaRN.placeHolderList[636]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.index_spread" 
 		"AmandaRN.placeHolderList[637]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.index_twist" 
 		"AmandaRN.placeHolderList[638]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.mid_1" 
 		"AmandaRN.placeHolderList[639]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.mid_2" 
 		"AmandaRN.placeHolderList[640]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.mid_spread" 
 		"AmandaRN.placeHolderList[641]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_4" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.mid_twist" 
 		"AmandaRN.placeHolderList[642]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ring_1" 
 		"AmandaRN.placeHolderList[643]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ring_2" 
 		"AmandaRN.placeHolderList[644]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ring_spread" 
 		"AmandaRN.placeHolderList[645]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.ring_twist" 
 		"AmandaRN.placeHolderList[646]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.pinky_1" 
 		"AmandaRN.placeHolderList[647]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_4" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.pinky_2" 
 		"AmandaRN.placeHolderList[648]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.pinky_spread" 
 		"AmandaRN.placeHolderList[649]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_leg_option_control_group|Amanda:L_leg_option_control_transform|Amanda:L_leg_option_control.pinky_twist" 
 		"AmandaRN.placeHolderList[650]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.curl" 
 		"AmandaRN.placeHolderList[651]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.spread" 
 		"AmandaRN.placeHolderList[652]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale3X" 
 		"AmandaRN.placeHolderList[653]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_4" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale3YZ" 
 		"AmandaRN.placeHolderList[654]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale1X" 
 		"AmandaRN.placeHolderList[655]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale1YZ" 
 		"AmandaRN.placeHolderList[656]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale2X" 
 		"AmandaRN.placeHolderList[657]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.scale2YZ" 
 		"AmandaRN.placeHolderList[658]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ikfk" 
 		"AmandaRN.placeHolderList[659]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_1" 
 		"AmandaRN.placeHolderList[660]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_2" 
 		"AmandaRN.placeHolderList[661]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.curl" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_3" 
 		"AmandaRN.placeHolderList[662]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_4" 
 		"AmandaRN.placeHolderList[663]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale3X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_spread" 
 		"AmandaRN.placeHolderList[664]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale3YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.index_twist" 
 		"AmandaRN.placeHolderList[665]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale1X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_1" 
 		"AmandaRN.placeHolderList[666]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale1YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_2" 
 		"AmandaRN.placeHolderList[667]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale2X" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_3" 
 		"AmandaRN.placeHolderList[668]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale2YZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_4" 
 		"AmandaRN.placeHolderList[669]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ikfk" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_spread" 
 		"AmandaRN.placeHolderList[670]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.mid_twist" 
 		"AmandaRN.placeHolderList[671]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_1" 
 		"AmandaRN.placeHolderList[672]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_2" 
 		"AmandaRN.placeHolderList[673]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_3" 
 		"AmandaRN.placeHolderList[674]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_4" 
 		"AmandaRN.placeHolderList[675]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_spread" 
 		"AmandaRN.placeHolderList[676]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.ring_twist" 
 		"AmandaRN.placeHolderList[677]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_1" 
 		"AmandaRN.placeHolderList[678]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_2" 
 		"AmandaRN.placeHolderList[679]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_3" 
 		"AmandaRN.placeHolderList[680]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_4" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_4" 
 		"AmandaRN.placeHolderList[681]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_spread" 
 		"AmandaRN.placeHolderList[682]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.pinky_twist" 
 		"AmandaRN.placeHolderList[683]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_1" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_1" 
 		"AmandaRN.placeHolderList[684]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_spread" 
 		"AmandaRN.placeHolderList[685]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_twist" 
 		"AmandaRN.placeHolderList[686]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_4" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_2" 
 		"AmandaRN.placeHolderList[687]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:R_arm_option_control_group|Amanda:R_arm_option_control_transform|Amanda:R_arm_option_control.thumb_3" 
 		"AmandaRN.placeHolderList[688]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.curl" 
 		"AmandaRN.placeHolderList[689]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.spread" 
 		"AmandaRN.placeHolderList[690]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale3X" 
 		"AmandaRN.placeHolderList[691]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_4" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale3YZ" 
 		"AmandaRN.placeHolderList[692]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale1X" 
 		"AmandaRN.placeHolderList[693]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale1YZ" 
 		"AmandaRN.placeHolderList[694]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_2" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale2X" 
 		"AmandaRN.placeHolderList[695]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_3" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.scale2YZ" 
 		"AmandaRN.placeHolderList[696]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_4" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ikfk" 
 		"AmandaRN.placeHolderList[697]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_spread" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_twist" 
 		"AmandaRN.placeHolderList[698]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_twist" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_spread" 
 		"AmandaRN.placeHolderList[699]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.____" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_1" 
 		"AmandaRN.placeHolderList[700]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_1" 
 		"AmandaRN.placeHolderList[701]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.stretch" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_2" 
 		"AmandaRN.placeHolderList[702]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.squash" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_2" 
 		"AmandaRN.placeHolderList[703]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.saveVolume" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.thumb_3" 
 		"AmandaRN.placeHolderList[704]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_spread" 
 		"AmandaRN.placeHolderList[705]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_twist" 
 		"AmandaRN.placeHolderList[706]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_3" 
 		"AmandaRN.placeHolderList[707]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.index_4" 
 		"AmandaRN.placeHolderList[708]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_1" 
 		"AmandaRN.placeHolderList[709]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_1" 
 		"AmandaRN.placeHolderList[710]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_1" 
 		"AmandaRN.placeHolderList[711]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.snap" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_2" 
 		"AmandaRN.placeHolderList[712]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.squash" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_3" 
 		"AmandaRN.placeHolderList[713]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.stretch" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_4" 
 		"AmandaRN.placeHolderList[714]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.saveVolume" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_spread" 
 		"AmandaRN.placeHolderList[715]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.mid_twist" 
 		"AmandaRN.placeHolderList[716]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_2" 
 		"AmandaRN.placeHolderList[717]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_3" 
 		"AmandaRN.placeHolderList[718]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_4" 
 		"AmandaRN.placeHolderList[719]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.rotate_order" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_spread" 
 		"AmandaRN.placeHolderList[720]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.ring_twist" 
 		"AmandaRN.placeHolderList[721]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_2" 
 		"AmandaRN.placeHolderList[722]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_3" 
 		"AmandaRN.placeHolderList[723]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_4" 
 		"AmandaRN.placeHolderList[724]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control|Amanda:R_arm_fk_2_joint|Amanda:R_arm_fk_3_inverseScale_joint|Amanda:R_arm_fk_3_control_group|Amanda:R_arm_fk_3_control_transform|Amanda:R_arm_fk_3_control.rotate_order" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_spread" 
 		"AmandaRN.placeHolderList[725]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control|Amanda:R_arm_fk_2_joint|Amanda:R_arm_fk_3_inverseScale_joint|Amanda:R_arm_fk_3_control_group|Amanda:R_arm_fk_3_control_transform|Amanda:R_arm_fk_3_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:M_spine_rigs|Amanda:M_spine_fk_1_control_group|Amanda:M_spine_fk_1_control_transform|Amanda:M_SOG_control|Amanda:L_arm_option_control_group|Amanda:L_arm_option_control_transform|Amanda:L_arm_option_control.pinky_twist" 
 		"AmandaRN.placeHolderList[726]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control|Amanda:R_arm_fk_2_joint|Amanda:R_arm_fk_3_inverseScale_joint|Amanda:R_arm_fk_3_control_group|Amanda:R_arm_fk_3_control_transform|Amanda:R_arm_fk_3_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.____" 
 		"AmandaRN.placeHolderList[727]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control|Amanda:R_arm_fk_2_joint|Amanda:R_arm_fk_3_inverseScale_joint|Amanda:R_arm_fk_3_control_group|Amanda:R_arm_fk_3_control_transform|Amanda:R_arm_fk_3_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.parent" 
 		"AmandaRN.placeHolderList[728]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.____" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.stretch" 
 		"AmandaRN.placeHolderList[729]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.squash" 
 		"AmandaRN.placeHolderList[730]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.stretch" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.saveVolume" 
 		"AmandaRN.placeHolderList[731]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.squash" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.translateX" 
 		"AmandaRN.placeHolderList[732]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.saveVolume" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.translateY" 
 		"AmandaRN.placeHolderList[733]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.translateZ" 
 		"AmandaRN.placeHolderList[734]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.rotateX" 
 		"AmandaRN.placeHolderList[735]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.rotateY" 
 		"AmandaRN.placeHolderList[736]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_control_group|Amanda:R_arm_ik_control_transform|Amanda:R_arm_ik_control.rotateZ" 
 		"AmandaRN.placeHolderList[737]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.parent" 
 		"AmandaRN.placeHolderList[738]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.snap" 
 		"AmandaRN.placeHolderList[739]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.squash" 
 		"AmandaRN.placeHolderList[740]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.snap" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.stretch" 
 		"AmandaRN.placeHolderList[741]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.squash" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.saveVolume" 
 		"AmandaRN.placeHolderList[742]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.stretch" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.translateX" 
 		"AmandaRN.placeHolderList[743]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.saveVolume" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.translateY" 
 		"AmandaRN.placeHolderList[744]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_ik_controls|Amanda:R_arm_ik_polevector_control_group|Amanda:R_arm_ik_polevector_control_transform|Amanda:R_arm_ik_polevector_control.translateZ" 
 		"AmandaRN.placeHolderList[745]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.parent" 
 		"AmandaRN.placeHolderList[746]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.rotate_order" 
 		"AmandaRN.placeHolderList[747]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.rotateY" 
 		"AmandaRN.placeHolderList[748]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.rotate_order" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.rotateX" 
 		"AmandaRN.placeHolderList[749]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control.rotateZ" 
 		"AmandaRN.placeHolderList[750]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control.rotateZ" 
 		"AmandaRN.placeHolderList[751]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control|Amanda:R_arm_fk_2_joint|Amanda:R_arm_fk_3_inverseScale_joint|Amanda:R_arm_fk_3_control_group|Amanda:R_arm_fk_3_control_transform|Amanda:R_arm_fk_3_control.rotate_order" 
 		"AmandaRN.placeHolderList[752]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control|Amanda:R_arm_fk_2_joint|Amanda:R_arm_fk_3_inverseScale_joint|Amanda:R_arm_fk_3_control_group|Amanda:R_arm_fk_3_control_transform|Amanda:R_arm_fk_3_control.rotateY" 
 		"AmandaRN.placeHolderList[753]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control|Amanda:L_arm_fk_2_joint|Amanda:L_arm_fk_3_inverseScale_joint|Amanda:L_arm_fk_3_control_group|Amanda:L_arm_fk_3_control_transform|Amanda:L_arm_fk_3_control.rotate_order" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control|Amanda:R_arm_fk_2_joint|Amanda:R_arm_fk_3_inverseScale_joint|Amanda:R_arm_fk_3_control_group|Amanda:R_arm_fk_3_control_transform|Amanda:R_arm_fk_3_control.rotateX" 
 		"AmandaRN.placeHolderList[754]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control|Amanda:L_arm_fk_2_joint|Amanda:L_arm_fk_3_inverseScale_joint|Amanda:L_arm_fk_3_control_group|Amanda:L_arm_fk_3_control_transform|Amanda:L_arm_fk_3_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_arm_rigs|Amanda:R_arm_controls|Amanda:R_arm_fk_controls|Amanda:R_arm_fk_1_control_group|Amanda:R_arm_fk_1_control_transform|Amanda:R_arm_fk_1_control|Amanda:R_arm_fk_1_joint|Amanda:R_arm_fk_2_inverseScale_joint|Amanda:R_arm_fk_2_control_group|Amanda:R_arm_fk_2_control_transform|Amanda:R_arm_fk_2_control|Amanda:R_arm_fk_2_joint|Amanda:R_arm_fk_3_inverseScale_joint|Amanda:R_arm_fk_3_control_group|Amanda:R_arm_fk_3_control_transform|Amanda:R_arm_fk_3_control.rotateZ" 
 		"AmandaRN.placeHolderList[755]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control|Amanda:L_arm_fk_2_joint|Amanda:L_arm_fk_3_inverseScale_joint|Amanda:L_arm_fk_3_control_group|Amanda:L_arm_fk_3_control_transform|Amanda:L_arm_fk_3_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.____" 
 		"AmandaRN.placeHolderList[756]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control|Amanda:L_arm_fk_2_joint|Amanda:L_arm_fk_3_inverseScale_joint|Amanda:L_arm_fk_3_control_group|Amanda:L_arm_fk_3_control_transform|Amanda:L_arm_fk_3_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.parent" 
 		"AmandaRN.placeHolderList[757]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.____" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.stretch" 
 		"AmandaRN.placeHolderList[758]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.squash" 
 		"AmandaRN.placeHolderList[759]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.stretch" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.saveVolume" 
 		"AmandaRN.placeHolderList[760]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.squash" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.translateX" 
 		"AmandaRN.placeHolderList[761]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.saveVolume" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.translateY" 
 		"AmandaRN.placeHolderList[762]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.footRoll" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.translateZ" 
 		"AmandaRN.placeHolderList[763]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.side" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.rotateY" 
 		"AmandaRN.placeHolderList[764]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.footRollWeight" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.rotateX" 
 		"AmandaRN.placeHolderList[765]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.heelPivot" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_control_group|Amanda:L_arm_ik_control_transform|Amanda:L_arm_ik_control.rotateZ" 
 		"AmandaRN.placeHolderList[766]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.tipPivot" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.parent" 
 		"AmandaRN.placeHolderList[767]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.toesPivot" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.snap" 
 		"AmandaRN.placeHolderList[768]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.squash" 
 		"AmandaRN.placeHolderList[769]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.stretch" 
 		"AmandaRN.placeHolderList[770]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.saveVolume" 
 		"AmandaRN.placeHolderList[771]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.translateX" 
 		"AmandaRN.placeHolderList[772]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.translateY" 
 		"AmandaRN.placeHolderList[773]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_ik_controls|Amanda:L_arm_ik_polevector_control_group|Amanda:L_arm_ik_polevector_control_transform|Amanda:L_arm_ik_polevector_control.translateZ" 
 		"AmandaRN.placeHolderList[774]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.parent" 
 		"AmandaRN.placeHolderList[775]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.snap" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.rotate_order" 
 		"AmandaRN.placeHolderList[776]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.squash" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.rotateY" 
 		"AmandaRN.placeHolderList[777]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.stretch" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.rotateX" 
 		"AmandaRN.placeHolderList[778]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.saveVolume" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control.rotateZ" 
 		"AmandaRN.placeHolderList[779]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control.rotateZ" 
 		"AmandaRN.placeHolderList[780]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control|Amanda:L_arm_fk_2_joint|Amanda:L_arm_fk_3_inverseScale_joint|Amanda:L_arm_fk_3_control_group|Amanda:L_arm_fk_3_control_transform|Amanda:L_arm_fk_3_control.rotate_order" 
 		"AmandaRN.placeHolderList[781]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control|Amanda:L_arm_fk_2_joint|Amanda:L_arm_fk_3_inverseScale_joint|Amanda:L_arm_fk_3_control_group|Amanda:L_arm_fk_3_control_transform|Amanda:L_arm_fk_3_control.rotateZ" 
 		"AmandaRN.placeHolderList[782]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control|Amanda:L_arm_fk_2_joint|Amanda:L_arm_fk_3_inverseScale_joint|Amanda:L_arm_fk_3_control_group|Amanda:L_arm_fk_3_control_transform|Amanda:L_arm_fk_3_control.rotateX" 
 		"AmandaRN.placeHolderList[783]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.rotate_order" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_arm_rigs|Amanda:L_arm_controls|Amanda:L_arm_fk_controls|Amanda:L_arm_fk_1_control_group|Amanda:L_arm_fk_1_control_transform|Amanda:L_arm_fk_1_control|Amanda:L_arm_fk_1_joint|Amanda:L_arm_fk_2_inverseScale_joint|Amanda:L_arm_fk_2_control_group|Amanda:L_arm_fk_2_control_transform|Amanda:L_arm_fk_2_control|Amanda:L_arm_fk_2_joint|Amanda:L_arm_fk_3_inverseScale_joint|Amanda:L_arm_fk_3_control_group|Amanda:L_arm_fk_3_control_transform|Amanda:L_arm_fk_3_control.rotateY" 
 		"AmandaRN.placeHolderList[784]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.____" 
 		"AmandaRN.placeHolderList[785]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.parent" 
 		"AmandaRN.placeHolderList[786]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.stretch" 
 		"AmandaRN.placeHolderList[787]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.squash" 
 		"AmandaRN.placeHolderList[788]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control.rotate_order" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.saveVolume" 
 		"AmandaRN.placeHolderList[789]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.footRoll" 
 		"AmandaRN.placeHolderList[790]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.side" 
 		"AmandaRN.placeHolderList[791]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.footRollWeight" 
 		"AmandaRN.placeHolderList[792]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.heelPivot" 
 		"AmandaRN.placeHolderList[793]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.tipPivot" 
 		"AmandaRN.placeHolderList[794]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.toesPivot" 
 		"AmandaRN.placeHolderList[795]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.translateY" 
 		"AmandaRN.placeHolderList[796]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.translateX" 
 		"AmandaRN.placeHolderList[797]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.translateZ" 
 		"AmandaRN.placeHolderList[798]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.____" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.rotateX" 
 		"AmandaRN.placeHolderList[799]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.rotateY" 
 		"AmandaRN.placeHolderList[800]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.stretch" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_control_group|Amanda:L_leg_ik_control_transform|Amanda:L_leg_ik_control.rotateZ" 
 		"AmandaRN.placeHolderList[801]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.squash" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.parent" 
 		"AmandaRN.placeHolderList[802]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.saveVolume" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.snap" 
 		"AmandaRN.placeHolderList[803]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.footRoll" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.squash" 
 		"AmandaRN.placeHolderList[804]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.side" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.stretch" 
 		"AmandaRN.placeHolderList[805]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.footRollWeight" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.saveVolume" 
 		"AmandaRN.placeHolderList[806]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.heelPivot" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.translateX" 
 		"AmandaRN.placeHolderList[807]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.tipPivot" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.translateY" 
 		"AmandaRN.placeHolderList[808]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.toesPivot" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_ik_controls|Amanda:L_leg_ik_polevector_control_group|Amanda:L_leg_ik_polevector_control_transform|Amanda:L_leg_ik_polevector_control.translateZ" 
 		"AmandaRN.placeHolderList[809]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.parent" 
 		"AmandaRN.placeHolderList[810]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.rotate_order" 
 		"AmandaRN.placeHolderList[811]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.rotateZ" 
 		"AmandaRN.placeHolderList[812]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.rotateX" 
 		"AmandaRN.placeHolderList[813]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control.rotateY" 
 		"AmandaRN.placeHolderList[814]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control.rotateZ" 
 		"AmandaRN.placeHolderList[815]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control.rotate_order" 
 		"AmandaRN.placeHolderList[816]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control.rotateZ" 
 		"AmandaRN.placeHolderList[817]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control.rotateX" 
 		"AmandaRN.placeHolderList[818]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control.rotateY" 
 		"AmandaRN.placeHolderList[819]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.translateX" 
 		"AmandaRN.placeHolderList[820]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.translateY" 
 		"AmandaRN.placeHolderList[821]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.scaleX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.translateZ" 
 		"AmandaRN.placeHolderList[822]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.scaleY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.rotateZ" 
 		"AmandaRN.placeHolderList[823]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.scaleZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.rotateX" 
 		"AmandaRN.placeHolderList[824]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.parent" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:L_leg_rigs|Amanda:L_leg_controls|Amanda:L_leg_fk_controls|Amanda:L_leg_fk_1_control_group|Amanda:L_leg_fk_1_control_transform|Amanda:L_leg_fk_1_control|Amanda:L_leg_fk_1_joint|Amanda:L_leg_fk_2_inverseScale_joint|Amanda:L_leg_fk_2_control_group|Amanda:L_leg_fk_2_control_transform|Amanda:L_leg_fk_2_control|Amanda:L_leg_fk_2_joint|Amanda:L_leg_fk_3_inverseScale_joint|Amanda:L_leg_fk_3_control_group|Amanda:L_leg_fk_3_control_transform|Amanda:L_leg_fk_3_control|Amanda:L_leg_fk_3_joint|Amanda:L_leg_fk_4_control_group|Amanda:L_leg_fk_4_control_transform|Amanda:L_leg_fk_4_control.rotateY" 
 		"AmandaRN.placeHolderList[825]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.snap" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.____" 
 		"AmandaRN.placeHolderList[826]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.squash" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.parent" 
 		"AmandaRN.placeHolderList[827]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.stretch" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.stretch" 
 		"AmandaRN.placeHolderList[828]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.saveVolume" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.squash" 
 		"AmandaRN.placeHolderList[829]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.saveVolume" 
 		"AmandaRN.placeHolderList[830]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.footRoll" 
 		"AmandaRN.placeHolderList[831]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.side" 
 		"AmandaRN.placeHolderList[832]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.scaleX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.footRollWeight" 
 		"AmandaRN.placeHolderList[833]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.scaleY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.heelPivot" 
 		"AmandaRN.placeHolderList[834]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.scaleZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.tipPivot" 
 		"AmandaRN.placeHolderList[835]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.toesPivot" 
 		"AmandaRN.placeHolderList[836]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.translateX" 
 		"AmandaRN.placeHolderList[837]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.translateY" 
 		"AmandaRN.placeHolderList[838]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.translateZ" 
 		"AmandaRN.placeHolderList[839]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.rotateX" 
 		"AmandaRN.placeHolderList[840]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.rotateY" 
 		"AmandaRN.placeHolderList[841]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.scaleX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control.rotateZ" 
 		"AmandaRN.placeHolderList[842]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.scaleY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.translateX" 
 		"AmandaRN.placeHolderList[843]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.scaleZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.translateY" 
 		"AmandaRN.placeHolderList[844]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.translateZ" 
 		"AmandaRN.placeHolderList[845]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.rotateX" 
 		"AmandaRN.placeHolderList[846]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.rotateY" 
 		"AmandaRN.placeHolderList[847]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.rotateZ" 
 		"AmandaRN.placeHolderList[848]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.scaleX" 
 		"AmandaRN.placeHolderList[849]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.scaleY" 
 		"AmandaRN.placeHolderList[850]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.scaleX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_control_group|Amanda:R_leg_ik_control_transform|Amanda:R_leg_ik_control|Amanda:R_leg_foot_aux_1_joint|Amanda:R_leg_foot_aux_2_joint|Amanda:R_leg_foot_aux_3_joint|Amanda:R_leg_foot_aux_4_joint|Amanda:R_leg_foot_aux_5_joint|Amanda:R_leg_foot_aux_6_joint|Amanda:R_leg_foot_aux_7_joint|Amanda:R_leg_foot_toes_control_group|Amanda:R_leg_foot_toes_control_transform|Amanda:R_leg_foot_toes_control.scaleZ" 
 		"AmandaRN.placeHolderList[851]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.scaleY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.parent" 
 		"AmandaRN.placeHolderList[852]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.scaleZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.snap" 
 		"AmandaRN.placeHolderList[853]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.squash" 
 		"AmandaRN.placeHolderList[854]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.stretch" 
 		"AmandaRN.placeHolderList[855]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.saveVolume" 
 		"AmandaRN.placeHolderList[856]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.translateX" 
 		"AmandaRN.placeHolderList[857]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.translateY" 
 		"AmandaRN.placeHolderList[858]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:rigs|Amanda:R_leg_rigs|Amanda:R_leg_controls|Amanda:R_leg_ik_controls|Amanda:R_leg_ik_polevector_control_group|Amanda:R_leg_ik_polevector_control_transform|Amanda:R_leg_ik_polevector_control.translateZ" 
 		"AmandaRN.placeHolderList[859]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.translateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.scaleX" 
 		"AmandaRN.placeHolderList[860]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.translateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.scaleY" 
 		"AmandaRN.placeHolderList[861]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.translateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.scaleZ" 
 		"AmandaRN.placeHolderList[862]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.rotateX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.translateX" 
 		"AmandaRN.placeHolderList[863]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.rotateY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.translateY" 
 		"AmandaRN.placeHolderList[864]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.rotateZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.translateZ" 
 		"AmandaRN.placeHolderList[865]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.scaleX" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.rotateX" 
 		"AmandaRN.placeHolderList[866]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.scaleY" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.rotateY" 
 		"AmandaRN.placeHolderList[867]" ""
-		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.scaleZ" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_1_stretchRig|Amanda:R_arm_1_stretchRigs_controls|Amanda:R_arm_1_stretchRig_2_control_group|Amanda:R_arm_1_stretchRig_2_control_transform|Amanda:R_arm_1_stretchRig_2_control.rotateZ" 
 		"AmandaRN.placeHolderList[868]" ""
-		5 3 "AmandaRN" "Amanda:body.message" "AmandaRN.placeHolderList[869]" 
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.scaleX" 
+		"AmandaRN.placeHolderList[869]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.scaleY" 
+		"AmandaRN.placeHolderList[870]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.scaleZ" 
+		"AmandaRN.placeHolderList[871]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.translateX" 
+		"AmandaRN.placeHolderList[872]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.translateY" 
+		"AmandaRN.placeHolderList[873]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.translateZ" 
+		"AmandaRN.placeHolderList[874]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.rotateX" 
+		"AmandaRN.placeHolderList[875]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.rotateY" 
+		"AmandaRN.placeHolderList[876]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_1_control_group|Amanda:R_arm_2_stretchRig_1_control_transform|Amanda:R_arm_2_stretchRig_1_control.rotateZ" 
+		"AmandaRN.placeHolderList[877]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.scaleX" 
+		"AmandaRN.placeHolderList[878]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.scaleY" 
+		"AmandaRN.placeHolderList[879]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.scaleZ" 
+		"AmandaRN.placeHolderList[880]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.translateX" 
+		"AmandaRN.placeHolderList[881]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.translateY" 
+		"AmandaRN.placeHolderList[882]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.translateZ" 
+		"AmandaRN.placeHolderList[883]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.rotateX" 
+		"AmandaRN.placeHolderList[884]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.rotateY" 
+		"AmandaRN.placeHolderList[885]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_2_control_group|Amanda:R_arm_2_stretchRig_2_control_transform|Amanda:R_arm_2_stretchRig_2_control.rotateZ" 
+		"AmandaRN.placeHolderList[886]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.translateX" 
+		"AmandaRN.placeHolderList[887]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.translateY" 
+		"AmandaRN.placeHolderList[888]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.translateZ" 
+		"AmandaRN.placeHolderList[889]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.rotateX" 
+		"AmandaRN.placeHolderList[890]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.rotateY" 
+		"AmandaRN.placeHolderList[891]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.rotateZ" 
+		"AmandaRN.placeHolderList[892]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.scaleX" 
+		"AmandaRN.placeHolderList[893]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.scaleY" 
+		"AmandaRN.placeHolderList[894]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:R_arm_2_stretchRig|Amanda:R_arm_2_stretchRigs_controls|Amanda:R_arm_2_stretchRig_3_control_group|Amanda:R_arm_2_stretchRig_3_control_transform|Amanda:R_arm_2_stretchRig_3_control.scaleZ" 
+		"AmandaRN.placeHolderList[895]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_1_control_group|Amanda:L_leg_1_stretchRig_1_control_transform|Amanda:L_leg_1_stretchRig_1_control.scaleX" 
+		"AmandaRN.placeHolderList[896]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_1_control_group|Amanda:L_leg_1_stretchRig_1_control_transform|Amanda:L_leg_1_stretchRig_1_control.scaleY" 
+		"AmandaRN.placeHolderList[897]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_1_control_group|Amanda:L_leg_1_stretchRig_1_control_transform|Amanda:L_leg_1_stretchRig_1_control.scaleZ" 
+		"AmandaRN.placeHolderList[898]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_1_control_group|Amanda:L_leg_1_stretchRig_1_control_transform|Amanda:L_leg_1_stretchRig_1_control.rotateX" 
+		"AmandaRN.placeHolderList[899]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_1_control_group|Amanda:L_leg_1_stretchRig_1_control_transform|Amanda:L_leg_1_stretchRig_1_control.rotateY" 
+		"AmandaRN.placeHolderList[900]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_1_control_group|Amanda:L_leg_1_stretchRig_1_control_transform|Amanda:L_leg_1_stretchRig_1_control.rotateZ" 
+		"AmandaRN.placeHolderList[901]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_1_control_group|Amanda:L_leg_1_stretchRig_1_control_transform|Amanda:L_leg_1_stretchRig_1_control.translateX" 
+		"AmandaRN.placeHolderList[902]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_1_control_group|Amanda:L_leg_1_stretchRig_1_control_transform|Amanda:L_leg_1_stretchRig_1_control.translateY" 
+		"AmandaRN.placeHolderList[903]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_1_control_group|Amanda:L_leg_1_stretchRig_1_control_transform|Amanda:L_leg_1_stretchRig_1_control.translateZ" 
+		"AmandaRN.placeHolderList[904]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_2_control_group|Amanda:L_leg_1_stretchRig_2_control_transform|Amanda:L_leg_1_stretchRig_2_control.scaleX" 
+		"AmandaRN.placeHolderList[905]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_2_control_group|Amanda:L_leg_1_stretchRig_2_control_transform|Amanda:L_leg_1_stretchRig_2_control.scaleY" 
+		"AmandaRN.placeHolderList[906]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_2_control_group|Amanda:L_leg_1_stretchRig_2_control_transform|Amanda:L_leg_1_stretchRig_2_control.scaleZ" 
+		"AmandaRN.placeHolderList[907]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_2_control_group|Amanda:L_leg_1_stretchRig_2_control_transform|Amanda:L_leg_1_stretchRig_2_control.rotateX" 
+		"AmandaRN.placeHolderList[908]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_2_control_group|Amanda:L_leg_1_stretchRig_2_control_transform|Amanda:L_leg_1_stretchRig_2_control.rotateY" 
+		"AmandaRN.placeHolderList[909]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_2_control_group|Amanda:L_leg_1_stretchRig_2_control_transform|Amanda:L_leg_1_stretchRig_2_control.rotateZ" 
+		"AmandaRN.placeHolderList[910]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_2_control_group|Amanda:L_leg_1_stretchRig_2_control_transform|Amanda:L_leg_1_stretchRig_2_control.translateX" 
+		"AmandaRN.placeHolderList[911]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_2_control_group|Amanda:L_leg_1_stretchRig_2_control_transform|Amanda:L_leg_1_stretchRig_2_control.translateY" 
+		"AmandaRN.placeHolderList[912]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_1_stretchRig|Amanda:L_leg_1_stretchRigs_controls|Amanda:L_leg_1_stretchRig_2_control_group|Amanda:L_leg_1_stretchRig_2_control_transform|Amanda:L_leg_1_stretchRig_2_control.translateZ" 
+		"AmandaRN.placeHolderList[913]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_1_control_group|Amanda:L_leg_2_stretchRig_1_control_transform|Amanda:L_leg_2_stretchRig_1_control.scaleX" 
+		"AmandaRN.placeHolderList[914]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_1_control_group|Amanda:L_leg_2_stretchRig_1_control_transform|Amanda:L_leg_2_stretchRig_1_control.scaleY" 
+		"AmandaRN.placeHolderList[915]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_1_control_group|Amanda:L_leg_2_stretchRig_1_control_transform|Amanda:L_leg_2_stretchRig_1_control.scaleZ" 
+		"AmandaRN.placeHolderList[916]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_1_control_group|Amanda:L_leg_2_stretchRig_1_control_transform|Amanda:L_leg_2_stretchRig_1_control.rotateX" 
+		"AmandaRN.placeHolderList[917]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_1_control_group|Amanda:L_leg_2_stretchRig_1_control_transform|Amanda:L_leg_2_stretchRig_1_control.rotateY" 
+		"AmandaRN.placeHolderList[918]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_1_control_group|Amanda:L_leg_2_stretchRig_1_control_transform|Amanda:L_leg_2_stretchRig_1_control.rotateZ" 
+		"AmandaRN.placeHolderList[919]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_1_control_group|Amanda:L_leg_2_stretchRig_1_control_transform|Amanda:L_leg_2_stretchRig_1_control.translateX" 
+		"AmandaRN.placeHolderList[920]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_1_control_group|Amanda:L_leg_2_stretchRig_1_control_transform|Amanda:L_leg_2_stretchRig_1_control.translateY" 
+		"AmandaRN.placeHolderList[921]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_1_control_group|Amanda:L_leg_2_stretchRig_1_control_transform|Amanda:L_leg_2_stretchRig_1_control.translateZ" 
+		"AmandaRN.placeHolderList[922]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_2_control_group|Amanda:L_leg_2_stretchRig_2_control_transform|Amanda:L_leg_2_stretchRig_2_control.scaleX" 
+		"AmandaRN.placeHolderList[923]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_2_control_group|Amanda:L_leg_2_stretchRig_2_control_transform|Amanda:L_leg_2_stretchRig_2_control.scaleY" 
+		"AmandaRN.placeHolderList[924]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_2_control_group|Amanda:L_leg_2_stretchRig_2_control_transform|Amanda:L_leg_2_stretchRig_2_control.scaleZ" 
+		"AmandaRN.placeHolderList[925]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_2_control_group|Amanda:L_leg_2_stretchRig_2_control_transform|Amanda:L_leg_2_stretchRig_2_control.rotateX" 
+		"AmandaRN.placeHolderList[926]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_2_control_group|Amanda:L_leg_2_stretchRig_2_control_transform|Amanda:L_leg_2_stretchRig_2_control.rotateY" 
+		"AmandaRN.placeHolderList[927]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_2_control_group|Amanda:L_leg_2_stretchRig_2_control_transform|Amanda:L_leg_2_stretchRig_2_control.rotateZ" 
+		"AmandaRN.placeHolderList[928]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_2_control_group|Amanda:L_leg_2_stretchRig_2_control_transform|Amanda:L_leg_2_stretchRig_2_control.translateX" 
+		"AmandaRN.placeHolderList[929]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_2_control_group|Amanda:L_leg_2_stretchRig_2_control_transform|Amanda:L_leg_2_stretchRig_2_control.translateY" 
+		"AmandaRN.placeHolderList[930]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_2_control_group|Amanda:L_leg_2_stretchRig_2_control_transform|Amanda:L_leg_2_stretchRig_2_control.translateZ" 
+		"AmandaRN.placeHolderList[931]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_3_control_group|Amanda:L_leg_2_stretchRig_3_control_transform|Amanda:L_leg_2_stretchRig_3_control.rotateX" 
+		"AmandaRN.placeHolderList[932]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_3_control_group|Amanda:L_leg_2_stretchRig_3_control_transform|Amanda:L_leg_2_stretchRig_3_control.rotateY" 
+		"AmandaRN.placeHolderList[933]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_3_control_group|Amanda:L_leg_2_stretchRig_3_control_transform|Amanda:L_leg_2_stretchRig_3_control.rotateZ" 
+		"AmandaRN.placeHolderList[934]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_3_control_group|Amanda:L_leg_2_stretchRig_3_control_transform|Amanda:L_leg_2_stretchRig_3_control.translateX" 
+		"AmandaRN.placeHolderList[935]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_3_control_group|Amanda:L_leg_2_stretchRig_3_control_transform|Amanda:L_leg_2_stretchRig_3_control.translateY" 
+		"AmandaRN.placeHolderList[936]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_3_control_group|Amanda:L_leg_2_stretchRig_3_control_transform|Amanda:L_leg_2_stretchRig_3_control.translateZ" 
+		"AmandaRN.placeHolderList[937]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_3_control_group|Amanda:L_leg_2_stretchRig_3_control_transform|Amanda:L_leg_2_stretchRig_3_control.scaleX" 
+		"AmandaRN.placeHolderList[938]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_3_control_group|Amanda:L_leg_2_stretchRig_3_control_transform|Amanda:L_leg_2_stretchRig_3_control.scaleY" 
+		"AmandaRN.placeHolderList[939]" ""
+		5 4 "AmandaRN" "|Amanda:character|Amanda:transform|Amanda:stretchRigs|Amanda:L_leg_2_stretchRig|Amanda:L_leg_2_stretchRigs_controls|Amanda:L_leg_2_stretchRig_3_control_group|Amanda:L_leg_2_stretchRig_3_control_transform|Amanda:L_leg_2_stretchRig_3_control.scaleZ" 
+		"AmandaRN.placeHolderList[940]" ""
+		5 3 "AmandaRN" "Amanda:body.message" "AmandaRN.placeHolderList[941]" 
 		""
-		5 3 "AmandaRN" "Amanda:aiStandardSurface21SG.message" "AmandaRN.placeHolderList[870]" 
+		5 3 "AmandaRN" "Amanda:aiStandardSurface21SG.message" "AmandaRN.placeHolderList[942]" 
 		""
-		5 3 "AmandaRN" "Amanda:file11.message" "AmandaRN.placeHolderList[871]" 
+		5 3 "AmandaRN" "Amanda:file11.message" "AmandaRN.placeHolderList[943]" 
 		""
-		5 3 "AmandaRN" "Amanda:place2dTexture13.message" "AmandaRN.placeHolderList[872]" 
+		5 3 "AmandaRN" "Amanda:place2dTexture13.message" "AmandaRN.placeHolderList[944]" 
 		""
-		5 3 "AmandaRN" "Amanda:file14.message" "AmandaRN.placeHolderList[873]" 
+		5 3 "AmandaRN" "Amanda:file14.message" "AmandaRN.placeHolderList[945]" 
 		""
-		5 3 "AmandaRN" "Amanda:place2dTexture16.message" "AmandaRN.placeHolderList[874]" 
+		5 3 "AmandaRN" "Amanda:place2dTexture16.message" "AmandaRN.placeHolderList[946]" 
 		"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -4757,48 +4945,46 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|ShotCam\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 634\n            -height 665\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
-		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
-		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n"
-		+ "            -shadows 0\n            -captureSequenceNumber -1\n            -width 634\n            -height 309\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n"
-		+ "            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n"
-		+ "            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n"
-		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 634\n            -height 309\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n"
-		+ "        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
-		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 634\n            -height 665\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
-		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n"
-		+ "            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n"
-		+ "            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n"
-		+ "            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n"
-		+ "            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n"
-		+ "            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n"
-		+ "                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n"
-		+ "                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -selectionOrder \"display\" \n                -expandAttribute 1\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -tangentScale 1\n                -tangentLineThickness 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -limitToSelectedCurves 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n"
-		+ "                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n"
-		+ "                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n"
-		+ "                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -hierarchyBelow 0\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n"
-		+ "                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n"
-		+ "                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n"
-		+ "                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n"
-		+ "                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|ShotCam\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n"
-		+ "                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n"
-		+ "                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n"
-		+ "                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n"
-		+ "                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"vertical2\\\" -ps 1 50 100 -ps 2 50 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 634\\n    -height 665\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 634\\n    -height 665\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Top View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|ShotCam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 634\\n    -height 665\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Top View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|ShotCam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 634\\n    -height 665\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 652\n            -height 672\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            -pluginObjects \"mayaUsdProxyShapeBaseDisplayFilter\" 1 \n"
+		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n"
+		+ "            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n"
+		+ "            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n"
+		+ "            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            -pluginObjects \"mayaUsdProxyShapeBaseDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n"
+		+ "            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n"
+		+ "            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n"
+		+ "            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            -pluginObjects \"mayaUsdProxyShapeBaseDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n"
+		+ "            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n"
+		+ "            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1311\n            -height 672\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n"
+		+ "        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            -pluginObjects \"mayaUsdProxyShapeBaseDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n"
+		+ "            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n"
+		+ "            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n"
+		+ "            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n"
+		+ "            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n"
+		+ "                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n"
+		+ "                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showRowButtons 1\n                -tangentScale 1\n                -tangentLineThickness 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n"
+		+ "                -limitToSelectedCurves 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n"
+		+ "                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n"
+		+ "                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -hierarchyBelow 0\n                -selectionWindow 0 0 0 0 \n                $editorName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            cameraSequencer -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -showThumbnail 1\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n"
+		+ "                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -showNamespace 1\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n"
+		+ "                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n"
+		+ "                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n"
+		+ "                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"motionMakerEditorPanel\" (localizedPanelLabel(\"MotionMaker Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"MotionMaker Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"|ShotCam\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n"
+		+ "                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n"
+		+ "                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n"
+		+ "                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                -pluginObjects \"mayaUsdProxyShapeBaseDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n"
+		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.png\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1311\\n    -height 672\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    -pluginObjects \\\"mayaUsdProxyShapeBaseDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1311\\n    -height 672\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    -pluginObjects \\\"mayaUsdProxyShapeBaseDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 0.16404199475065617 -size 0.39370078740157477 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -4863,6 +5049,10 @@ createNode animCurveTU -n "R_leg_ik_polevector_control_parent";
 		 16 0 17 0 18 0 19 0 20 0;
 	setAttr -s 15 ".kot[0:14]"  5 5 5 5 5 5 5 5 
 		5 5 5 5 5 5 5;
+	setAttr -s 15 ".kox[0:14]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 15 ".koy[0:14]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 15 ".ots[0:14]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9;
 createNode animCurveTL -n "R_leg_ik_control_translateX";
 	rename -uid "834C11F7-4106-94EE-74C6-E5BDCE9486BB";
 	setAttr ".tan" 1;
@@ -4916,7 +5106,7 @@ createNode animCurveTA -n "R_leg_ik_control_rotateX";
 	rename -uid "7911D50D-4BD7-4A07-4063-2789185D310E";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 49.085210635776157 2 0 3 20.143150255409289
+	setAttr -s 20 ".ktv[0:19]"  1 49.085210635776164 2 0 3 20.143150255409289
 		 4 0 5 128.07870969292159 6 0 7 0 8 0 9 14.109430888302331 10 0 11 107.22227779564943
 		 12 0 13 0 14 0 15 0 16 -30.29321229228589 17 0 18 0 19 0 20 0;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
@@ -4969,6 +5159,8 @@ createNode animCurveTU -n "R_leg_ik_control_____";
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kix[2:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[2:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".kox[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "R_leg_ik_control_stretch";
 	rename -uid "B8252AC1-4CCE-E14B-D686-7898B0FFC140";
 	setAttr ".tan" 1;
@@ -5105,6 +5297,8 @@ createNode animCurveTU -n "R_leg_ik_control_parent";
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kix[2:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[2:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".kox[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "L_leg_ik_control_translateX";
 	rename -uid "7ABC58C0-4818-20CB-83C5-6281058670BC";
 	setAttr ".tan" 1;
@@ -5189,9 +5383,9 @@ createNode animCurveTA -n "L_leg_ik_control_rotateY";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0 2 71.117215044938661 3 0 4 0 5 0 6 0
-		 7 -7.6269879730286974 8 0 9 21.295937943017528 10 40.507209474508038 11 0 12 0 13 0
-		 14 0 15 16.103774321608693 16 28.209536100223112 17 -15.761474220693232 18 0 19 0
-		 20 0;
+		 7 37.255671424925815 8 0 9 21.295937943017528 10 40.507209474508038 11 0 12 40.668119176567259
+		 13 0 14 0 15 16.103774321608693 16 28.209536100223112 17 -15.761474220693232 18 0
+		 19 0 20 0;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kot[0:19]"  18 18 1 1 1 1 1 1 
@@ -5224,6 +5418,8 @@ createNode animCurveTU -n "L_leg_ik_control_____";
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kix[2:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[2:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".kox[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "L_leg_ik_control_stretch";
 	rename -uid "E1F65CD2-45D4-706B-5423-9B82EA747CE9";
 	setAttr ".tan" 1;
@@ -5360,14 +5556,16 @@ createNode animCurveTU -n "L_leg_ik_control_parent";
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kix[2:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[2:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".kox[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "L_leg_ik_polevector_control_translateX";
 	rename -uid "840AA142-4776-6537-08DB-ACBAFEABCF5D";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0 2 0.62188865474026089 3 -0.06227701714132429
-		 4 0 5 0.23245531666451782 6 0.074419625448380322 7 0 8 0 9 0.30758217387743436 10 0.62889240176923544
-		 11 -0.015785893822364779 12 0.2124576153791124 13 0 14 0 15 -0.29899155367783686
-		 16 0 17 0 18 0 19 0 20 0;
+		 4 0 5 0.23245531666451782 6 0.074419625448380322 7 0.33170072552825308 8 0 9 0.30758217387743436
+		 10 0.62889240176923544 11 -0.015785893822364779 12 0.36851246982346941 13 0 14 0
+		 15 -0.29899155367783686 16 0 17 0 18 0 19 0 20 0;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kot[0:19]"  18 18 1 1 1 1 1 1 
@@ -5403,10 +5601,10 @@ createNode animCurveTL -n "L_leg_ik_polevector_control_translateZ";
 	rename -uid "7EA5016B-4F21-EB21-6C0C-0B93B534647E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1 0 2 -0.41519383399021886 3 0.17540190909374903
-		 4 0 5 0.11847627246092667 6 -0.027228437760137308 8 0 9 -0.093678722538154929 10 -0.18635196944020149
-		 11 0.25062734343949211 12 -0.037329387510374887 14 0 15 -0.83599034492427204 16 0
-		 17 0;
+	setAttr -s 16 ".ktv[0:15]"  1 0 2 -0.41519383399021886 3 0.17540190909374903
+		 4 0 5 0.11847627246092667 6 -0.027228437760137308 7 -0.2455613735322352 8 0 9 -0.093678722538154929
+		 10 -0.18635196944020149 11 0.25062734343949211 12 -0.21629968528592927 14 0 15 -0.83599034492427204
+		 16 0 17 0;
 createNode animCurveTU -n "L_leg_ik_polevector_control_snap";
 	rename -uid "1A933268-4AF2-CC7D-86A1-3EB327A8D040";
 	setAttr ".tan" 18;
@@ -5434,12 +5632,16 @@ createNode animCurveTU -n "L_leg_ik_polevector_control_parent";
 	setAttr -s 9 ".ktv[0:8]"  1 0 2 0 4 0 5 0 6 0 8 0 9 0 16 0 17 0;
 	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
 		5;
+	setAttr -s 9 ".kox[0:8]"  1 1 1 1 1 1 1 1 1;
+	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 9 ".ots[0:8]"  9 9 9 9 9 9 9 9 
+		9;
 createNode animCurveTL -n "M_SOG_control_translateX";
 	rename -uid "5A7C3509-42A7-1C32-9E39-7FB9118520CA";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 -0.044143676725258645 2 -0.2037117150937432
-		 3 0 4 -0.040338941985600625 5 0.077019025438299221 6 -0.025648963416626862 7 0.040584122249593596
+		 3 0 4 -0.040338941985600625 5 0.077019025438299221 6 -0.025648963416626862 7 0.0052290924719465715
 		 8 0.00029921452505055882 9 0.20256119243646892 10 -0.088756988921177671 11 0 12 -0.0039463864700748398
 		 13 -0.3122881854014391 14 0.11464433667919381 15 -0.2988214183923808 16 0 17 0 18 0.11494910171862439
 		 19 0 20 0;
@@ -5456,7 +5658,7 @@ createNode animCurveTL -n "M_SOG_control_translateY";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 -0.023267264982788704 2 -0.090626642691542594
-		 3 -1.0453370458384124 4 -0.76982165866412944 5 0 6 0 7 0 8 -0.066226604629973235
+		 3 -1.0453370458384124 4 -0.76982165866412944 5 0 6 0 7 -0.020769069282173799 8 -0.066226604629973235
 		 9 0 10 0 11 0.16354027363719784 12 -0.028298269542730885 13 -0.034866540960885338
 		 14 -0.35516323848433451 15 -1.036893389441909 16 0 17 -0.072516961254376081 18 0
 		 19 -0.31092023132289798 20 0.12753148606747661;
@@ -5489,7 +5691,7 @@ createNode animCurveTL -n "M_SOG_control_translateZ";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0.024690062216833852 2 0.028699686503088236
-		 3 0 4 -0.31399130386903729 5 0.35480075386905791 6 0.055462565699786096 7 0.089397453246504305
+		 3 0 4 -0.31399130386903729 5 0.35480075386905791 6 0.055462565699786096 7 0.080556424562051962
 		 8 -0.50308064222025906 9 -0.030804938357904276 10 -0.083379446785568009 11 0 12 -0.00097212385149578445
 		 13 -0.27601456417915504 14 -0.023223630383396685 15 -0.8079849128251797 16 0 17 -0.20252983125651242
 		 18 0.018369285110036205 19 0 20 0;
@@ -5506,7 +5708,7 @@ createNode animCurveTA -n "M_SOG_control_rotateX";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 -24.821765211897763 5 0 6 0
-		 7 0 8 61.156051499822524 9 0 10 0 11 -18.454967617145286 12 10.606860276475565 13 77.960462975835256
+		 7 0 8 61.156051499822524 9 0 10 0 11 -18.454967617145286 12 11.338626715105375 13 77.960462975835256
 		 14 28.647173473394894 15 0 16 -10.564531242616738 17 10.166757224143735 18 0 19 0
 		 20 0;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
@@ -5522,7 +5724,7 @@ createNode animCurveTA -n "M_SOG_control_rotateY";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 0 5 7.1335377848197128 6 0
-		 7 0 8 0 9 0 10 0 11 0 12 -11.098807487850719 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 12.842062234252737;
+		 7 0 8 0 9 0 10 0 11 0 12 -23.260794799736775 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 12.842062234252737;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kot[0:19]"  18 18 1 1 1 1 1 1 
@@ -5536,7 +5738,7 @@ createNode animCurveTA -n "M_SOG_control_rotateZ";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0
-		 11 0 12 -11.337607959166961 13 0 14 0 15 0 16 0 17 0 18 0 19 88.190632655098483 20 0;
+		 11 0 12 -13.800768074099553 13 0 14 0 15 0 16 0 17 0 18 0 19 88.190632655098483 20 0;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kot[0:19]"  18 18 1 1 1 1 1 1 
@@ -5605,7 +5807,7 @@ createNode animCurveTA -n "M_spine_fk_1_control_rotateX";
 	rename -uid "810A68C1-4950-9EFC-0B1E-0A9BDB108946";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 -3.4972366763751777 2 -2.9874492494551692
+	setAttr -s 20 ".ktv[0:19]"  1 -3.4972366763751781 2 -2.9874492494551692
 		 3 -22.583142267693827 4 44.39569078612832 5 -8.9952140803793892 6 0 7 15.879297442470961
 		 8 3.6386646937437011 9 -6.9916298049509917 10 4.6537122880124198 11 18.163184964525382
 		 12 0 13 0 14 23.105551781770501 15 -19.958269536344016 16 -9.24215201138969 17 0
@@ -5904,8 +6106,8 @@ createNode animCurveTA -n "M_neck_control_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0 2 -13.217335906871323 3 -30.801187067041077
 		 4 0 5 0 6 -8.3611471334467513 7 -16.14825212911224 8 -59.881968213878615 9 0 10 0
-		 11 -49.869688290048629 12 0 13 0 14 -10.162258305544301 15 -4.3218556485219528 16 26.060836594100504
-		 17 0 18 0 19 -4.7190267692048522 20 -11.938534330894742;
+		 11 -49.869688290048629 12 -18.584791333450784 13 0 14 -10.162258305544301 15 -4.3218556485219528
+		 16 26.060836594100504 17 0 18 0 19 -4.7190267692048522 20 -11.938534330894742;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kot[0:19]"  18 18 1 1 1 1 1 1 
@@ -6052,7 +6254,7 @@ createNode animCurveTA -n "M_head_control_rotateY";
 	rename -uid "11CB5C07-43CD-10A7-F823-43BA37090B07";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 30.911501055218373 2 10.951830785484448
+	setAttr -s 20 ".ktv[0:19]"  1 30.911501055218373 2 10.95183078548445
 		 3 6.6272484451585028 4 -3.3565665476763957 5 -31.958012255907207 6 14.947962201438891
 		 7 -20.455379863191297 8 49.748039435977255 9 55.795199466227814 10 40.344476785074747
 		 11 11.222427290525482 12 14.690864483486092 13 0 14 -2.132904574788054 15 -24.045271020954079
@@ -6069,7 +6271,7 @@ createNode animCurveTA -n "M_head_control_rotateZ";
 	rename -uid "5325D09A-444B-06EF-8CDD-4397B4263993";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 -28.176996194766332 2 3.9314027814244934
+	setAttr -s 20 ".ktv[0:19]"  1 -28.176996194766335 2 3.9314027814244934
 		 3 20.105960852352773 4 -9.0976954280694873 5 8.6799069828235442 6 -8.2521848391444976
 		 7 1.6444816836605411 8 16.911250795327863 9 0 10 6.1104809879337489 11 -4.4841925736410815
 		 12 0 13 6.083091213943006 14 3.024946329061021 15 -22.902751524081793 16 -9.0523902215227583
@@ -6235,7 +6437,7 @@ createNode animCurveTA -n "R_arm_fk_1_control_rotateX";
 	setAttr -s 20 ".ktv[0:19]"  1 3.0643118351293896 2 6.2828618309865218
 		 3 57.526870698830294 4 33.227779253140163 5 23.593982977536488 6 0 7 -8.1888911520598917
 		 8 129.90228509176379 9 -113.53843371996652 10 20.891865780460115 11 27.710864782487285
-		 12 26.449288060607454 13 -27.316551883731673 14 -20.70612900197175 15 -18.496911800840827
+		 12 -4.956954587236055 13 -27.316551883731673 14 -20.70612900197175 15 -18.496911800840827
 		 16 -20.16908316876869 17 0 18 1.1292870041841774 19 0 20 -100.67624600137404;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
@@ -6252,7 +6454,7 @@ createNode animCurveTA -n "R_arm_fk_1_control_rotateY";
 	setAttr -s 20 ".ktv[0:19]"  1 -28.943078743717784 2 -21.52234485229426
 		 3 7.738244977250802 4 -10.519818110061236 5 0.070972558194060023 6 0 7 52.888306864216062
 		 8 11.444888213506621 9 58.133746621183306 10 -52.000997866369495 11 35.015437550589063
-		 12 -11.889752691836723 13 61.12530336261451 14 -31.467993729254282 15 -32.575698390934882
+		 12 -0.42802891101446178 13 61.12530336261451 14 -31.467993729254282 15 -32.575698390934882
 		 16 21.71982566753632 17 -50.34948219575903 18 10.426064736767238 19 0 20 73.769893613336038;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
@@ -6266,10 +6468,10 @@ createNode animCurveTA -n "R_arm_fk_1_control_rotateZ";
 	rename -uid "DA85BFB5-4E51-E9E7-93C2-12AA07E1E960";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 -4.766091171455237 2 101.08213075530122
+	setAttr -s 20 ".ktv[0:19]"  1 -4.7660911714552379 2 101.08213075530122
 		 3 21.385919166521141 4 10.598740168110995 5 -18.545623085808419 6 0 7 31.134786905290028
 		 8 -100.12245648107263 9 -35.843389290253612 10 0.11840650930479367 11 108.29670876878419
-		 12 62.488656072802257 13 -30.533539613650891 14 53.521628924653733 15 77.40023932680036
+		 12 40.769762587640685 13 -30.533539613650891 14 53.521628924653733 15 77.40023932680036
 		 16 89.763772654621874 17 0 18 62.041689671847493 19 0 20 2.2589741351376551;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
@@ -6285,12 +6487,18 @@ createNode animCurveTU -n "R_arm_fk_1_control_parent";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  2 0;
 	setAttr ".kot[0]"  5;
+	setAttr ".kox[0]"  0;
+	setAttr ".koy[0]"  0;
+	setAttr ".ots[0]"  9;
 createNode animCurveTU -n "R_arm_fk_1_control_rotate_order";
 	rename -uid "D33AAB83-40A1-7EDB-651C-A78E4197FDA2";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  2 0;
 	setAttr ".kot[0]"  5;
+	setAttr ".kox[0]"  0;
+	setAttr ".koy[0]"  0;
+	setAttr ".ots[0]"  9;
 createNode animCurveTA -n "R_arm_fk_2_control_rotateZ";
 	rename -uid "0F834001-4411-E128-F8B3-40B4BA5BAD10";
 	setAttr ".tan" 1;
@@ -6368,6 +6576,8 @@ createNode animCurveTU -n "R_arm_fk_3_control_rotate_order";
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kix[2:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[2:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".kox[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "L_shoulder_control_translateX";
 	rename -uid "57442DC5-4977-352B-51C4-4FB45CDC6C78";
 	setAttr ".tan" 1;
@@ -6464,7 +6674,7 @@ createNode animCurveTA -n "L_arm_fk_1_control_rotateX";
 	setAttr -s 20 ".ktv[0:19]"  1 56.658398041675774 2 18.265517080709841
 		 3 -15.711443293871035 4 46.847873269343346 5 1.0951778088527999 6 0 7 96.010606935722933
 		 8 156.53710281258563 9 -44.446048110684607 10 -83.634829554690512 11 12.631505387254389
-		 12 25.20411248159499 13 1.4976038493794934 14 60.60902055800365 15 22.233550613578107
+		 12 22.240256545042026 13 1.4976038493794934 14 60.60902055800365 15 22.233550613578107
 		 16 -19.267234325187665 17 0 18 29.771833128116466 19 29.365796934245697 20 -60.582098244654475;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
@@ -6481,7 +6691,7 @@ createNode animCurveTA -n "L_arm_fk_1_control_rotateY";
 	setAttr -s 20 ".ktv[0:19]"  1 10.495753214575158 2 18.970290648234123
 		 3 -38.620033356829559 4 2.3614523418805691 5 11.604077834324535 6 0 7 -15.294724749557282
 		 8 8.4296489461893493 9 -52.652963937167634 10 -25.906951443236292 11 -33.195150561864239
-		 12 2.8252328832517741 13 21.127982336119164 14 16.15121590423427 15 2.2149034814781006
+		 12 1.7059468300357969 13 21.127982336119164 14 16.15121590423427 15 2.2149034814781006
 		 16 48.758275401207122 17 -41.096248387252125 18 -6.1956614521599072 19 133.47207750262936
 		 20 76.054847508330752;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
@@ -6497,9 +6707,9 @@ createNode animCurveTA -n "L_arm_fk_1_control_rotateZ";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 -11.551342759221747 2 30.4198120477892
-		 3 -24.697856997455158 4 13.486644123280568 5 57.778843624723834 6 0 7 -44.676592724319512
-		 8 -90.538037038516421 9 -10.733243447907913 10 2.3529566657717367 11 -22.260653409009535
-		 12 -1.8615883422948927 13 4.1484713358996812 14 -104.95275890891607 15 30.993317016956624
+		 3 -24.697856997455158 4 13.48664412328057 5 57.778843624723834 6 0 7 -44.676592724319512
+		 8 -90.538037038516421 9 -10.733243447907913 10 2.3529566657717371 11 -22.260653409009535
+		 12 -16.745810896661649 13 4.1484713358996812 14 -104.95275890891607 15 30.993317016956624
 		 16 88.368879995405379 17 0 18 33.235594825279271 19 30.567718427669561 20 13.164006941652081;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
@@ -6519,6 +6729,8 @@ createNode animCurveTU -n "L_arm_fk_1_control_parent";
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kix[2:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[2:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".kox[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "L_arm_fk_1_control_rotate_order";
 	rename -uid "C18F1765-454F-5005-3F95-3DBFF0A4190C";
 	setAttr ".tan" 5;
@@ -6529,13 +6741,15 @@ createNode animCurveTU -n "L_arm_fk_1_control_rotate_order";
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kix[2:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[2:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".kox[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "L_arm_fk_2_control_rotateZ";
 	rename -uid "9BFEDDD3-446F-D933-158E-00B30B2879A4";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 107.56219144996737 2 110.27358713451873
 		 3 0 4 94.317541357557261 5 114.13902020101206 6 0 7 76.431180342947854 8 19.938544104191141
-		 9 9.9582776474041275 10 94.690879200420312 11 104.73762583352109 12 22.035454579481097
+		 9 9.9582776474041275 10 94.690879200420312 11 104.73762583352109 12 30.322575326611211
 		 13 0 14 48.236891467301255 15 62.23725807637701 16 16.90309967605528 17 19.493957303750612
 		 18 81.180405346720235 19 0 20 0;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
@@ -6552,7 +6766,7 @@ createNode animCurveTA -n "L_arm_fk_3_control_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 5.2827539803401971 2 1.4810535780995255
 		 3 0 4 52.198259541283235 5 -40.704954662204372 6 0 7 21.137008823440848 8 0 9 -12.289776922853838
-		 10 82.490588480391423 11 -16.927154539591381 12 49.395636058304596 13 0 14 -9.0398959431594026
+		 10 82.490588480391423 11 -16.927154539591381 12 54.265174264439366 13 0 14 -9.0398959431594026
 		 15 -53.080117702613634 16 14.766041273266307 17 11.664094510323594 18 33.550670003257913
 		 19 0 20 -9.0020911482320365;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
@@ -6569,7 +6783,7 @@ createNode animCurveTA -n "L_arm_fk_3_control_rotateY";
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 11.455938397615917 2 -9.7193520872475609
 		 3 42.392694731957967 4 -1.8487999504641497 5 -22.67432613067475 6 0 7 -69.511067540738807
-		 8 29.167167492918235 9 0 10 50.867256641195425 11 -2.3262109619645148 12 -21.758016095371765
+		 8 29.167167492918235 9 0 10 50.867256641195425 11 -2.3262109619645148 12 -29.694312698131384
 		 13 8.0970506490182377 14 -19.026181147521573 15 -12.529732871309175 16 -12.784628251378747
 		 17 -2.7873494985118827 18 32.718100377661699 19 80.674828714482771 20 21.960185453538845;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
@@ -6584,9 +6798,9 @@ createNode animCurveTA -n "L_arm_fk_3_control_rotateZ";
 	rename -uid "9EAA097B-4174-56B0-C976-879BB800C7C0";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 18.204963175545405 2 25.155280212177349
+	setAttr -s 20 ".ktv[0:19]"  1 18.204963175545405 2 25.155280212177352
 		 3 0 4 6.4616356881027706 5 67.076547735269969 6 0 7 -9.6401101401622071 8 0 9 0 10 -25.223019831373037
-		 11 18.502762805297891 12 43.082397072202177 13 -14.97894194696493 14 6.825715436548915
+		 11 18.502762805297891 12 31.919681735618422 13 -14.97894194696493 14 6.825715436548915
 		 15 44.578534767846612 16 0.043920950514452252 17 -50.204481650985485 18 28.257035433945688
 		 19 0 20 -2.1887443802308684;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
@@ -6607,6 +6821,8 @@ createNode animCurveTU -n "L_arm_fk_3_control_rotate_order";
 		1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kix[2:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 20 ".kiy[2:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".kox[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "R_index_1_control_translateX";
 	rename -uid "3A595476-437C-2F60-701A-1D8513481815";
 	setAttr ".tan" 1;
@@ -7957,7 +8173,7 @@ createNode animCurveTA -n "R_ring_2_control_rotateZ";
 	rename -uid "7A9305FB-4F01-8D03-73B2-92B761750866";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 0 2 26.271873747903506 3 6.3606012391574591
+	setAttr -s 20 ".ktv[0:19]"  1 0 2 26.271873747903509 3 6.3606012391574591
 		 4 0 5 -19.085106838822735 6 19.883401590751237 7 60.082357684114243 8 0 9 62.33270272074202
 		 10 0 11 0 12 0 13 -19.868058330855433 14 0 15 -19.987619069543104 16 0 17 0 18 0
 		 19 0 20 -18.334361391933211;
@@ -9585,7 +9801,7 @@ createNode animCurveTA -n "L_ring_2_control_rotateX";
 	rename -uid "89953C06-433E-3C06-3331-83AACC47A5DA";
 	setAttr ".tan" 1;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 8.8979511462584284 5 0 6 -0.95780199543654376
+	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 8.8979511462584302 5 0 6 -0.95780199543654376
 		 7 0 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
 	setAttr -s 20 ".kit[0:19]"  18 18 1 1 1 1 1 1 
 		1 1 1 1 1 1 1 1 1 1 1 1;
@@ -10429,8 +10645,8 @@ createNode animCurveTA -n "M_hip_control_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 8.341976808319302 2 -9.8514016694506736
-		 3 0 4 0 5 -13.792932596957423 6 0 7 0 8 0 9 -9.8596481101619968 10 0 11 0 12 0 13 0
-		 14 0 15 0 16 1.084047107616267 17 0 18 0 19 0 20 8.8448907447602583;
+		 3 0 4 0 5 -13.792932596957423 6 0 7 -2.1325687155737021 8 0 9 -9.8596481101619968
+		 10 0 11 0 12 0 13 0 14 0 15 0 16 1.084047107616267 17 0 18 0 19 0 20 8.8448907447602583;
 createNode animCurveTL -n "main_control_translateX";
 	rename -uid "60DC7688-4789-792F-2CF5-0993D2874C56";
 	setAttr ".tan" 1;
@@ -10853,6 +11069,9 @@ createNode animCurveTU -n "L_arm_ik_control_____";
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  3 0 4 0 7 0 15 0;
 	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 4 ".kox[0:3]"  1 1 1 1;
+	setAttr -s 4 ".koy[0:3]"  0 0 0 0;
+	setAttr -s 4 ".ots[0:3]"  9 9 9 9;
 createNode animCurveTU -n "L_arm_ik_control_stretch";
 	rename -uid "1E64028B-4243-AEF6-D19C-DA8CF38E42FF";
 	setAttr ".tan" 18;
@@ -10874,6 +11093,9 @@ createNode animCurveTU -n "L_arm_ik_control_parent";
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  3 0 4 0 7 0 15 0;
 	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 4 ".kox[0:3]"  1 1 1 1;
+	setAttr -s 4 ".koy[0:3]"  0 0 0 0;
+	setAttr -s 4 ".ots[0:3]"  9 9 9 9;
 createNode animCurveTU -n "R_arm_option_control_ikfk";
 	rename -uid "0927769A-469E-D512-BEAF-8D8AE687909A";
 	setAttr ".tan" 18;
@@ -11108,6 +11330,9 @@ createNode animCurveTU -n "pPlane2_visibility";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  3 0 4 1 5 0;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".kox[0:2]"  0.041630544712181319 1 0.041630544712181347;
+	setAttr -s 3 ".koy[0:2]"  0.999133073092352 0 -0.999133073092352;
+	setAttr -s 3 ".ots[0:2]"  9 9 9;
 createNode animCurveTL -n "L_arm_ik_polevector_control_translateX";
 	rename -uid "A0197BD7-420A-C610-4CEA-C5A0859B6E89";
 	setAttr ".tan" 18;
@@ -11196,6 +11421,8 @@ createNode animCurveTU -n "L_arm_ik_polevector_control_parent";
 	setAttr -s 7 ".kit[0:6]"  9 9 1 9 9 9 9;
 	setAttr -s 7 ".kix[2:6]"  1 1 1 1 1;
 	setAttr -s 7 ".kiy[2:6]"  0 0 0 0 0;
+	setAttr -s 7 ".kox[0:6]"  0 0 0 0 0 0 0;
+	setAttr -s 7 ".koy[0:6]"  0 0 0 0 0 0 0;
 createNode trackInfoManager -n "trackInfoManager1";
 	rename -uid "DFAA66BC-4E97-E26E-7DD6-50BA9F9983A3";
 createNode animCurveTA -n "L_pinky_1_control_rotateX";
@@ -11350,6 +11577,9 @@ createNode animCurveTU -n "R_arm_ik_polevector_control_parent";
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  5 0 6 0 7 0 17 0;
 	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 4 ".kox[0:3]"  1 1 1 1;
+	setAttr -s 4 ".koy[0:3]"  0 0 0 0;
+	setAttr -s 4 ".ots[0:3]"  9 9 9 9;
 createNode animCurveTA -n "R_thumb_2_control_rotateX";
 	rename -uid "16B1B165-4497-D577-6DA3-778FF7FADF96";
 	setAttr ".tan" 18;
@@ -11416,7 +11646,7 @@ createNode animCurveTA -n "R_thumb_3_control_rotateZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 14 ".ktv[0:13]"  1 17.617978931646075 2 35.535801828093213
-		 3 0 4 45.580595591436122 5 0 6 0 7 73.767868021033365 8 0 9 27.939663287228836 15 30.853879585054138
+		 3 0 4 45.580595591436122 5 0 6 0 7 73.767868021033365 8 0 9 27.939663287228839 15 30.853879585054138
 		 17 46.285415975882977 18 34.285493315468891 19 0 20 0;
 createNode animCurveTL -n "R_thumb_3_control_translateX";
 	rename -uid "9E117B13-466D-8790-32B7-0781198F4561";
@@ -11452,53 +11682,61 @@ createNode animCurveTA -n "pCylinder1_rotateX";
 	rename -uid "4A1C0FF1-4A63-250E-4225-2ABE92366FA8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  7 8.7435980424288413;
+	setAttr -s 3 ".ktv[0:2]"  6 -54.127935648758346 7 -54.127935648758346
+		 8 -54.127935648758346;
 createNode animCurveTA -n "pCylinder1_rotateY";
 	rename -uid "91F5A9AD-4D84-00AD-33A6-7CB5672CF839";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  7 0;
+	setAttr -s 3 ".ktv[0:2]"  6 9.3062373763931987 7 9.3062373763931987
+		 8 9.3062373763931987;
 createNode animCurveTA -n "pCylinder1_rotateZ";
 	rename -uid "1DCDFF63-454F-11AC-54A0-6BB4F60B32CE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  7 0;
+	setAttr -s 3 ".ktv[0:2]"  6 -9.6395262315097874 7 -9.6395262315097874
+		 8 -9.6395262315097874;
 createNode animCurveTU -n "pCylinder1_visibility";
 	rename -uid "5F2DEF7F-4AD7-F3C8-988D-70BD1882EC1D";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  6 0 7 1 8 0;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".kox[0:2]"  0.041630544712181347 1 0.041630544712181292;
+	setAttr -s 3 ".koy[0:2]"  0.999133073092352 0 -0.999133073092352;
 createNode animCurveTL -n "pCylinder1_translateX";
 	rename -uid "3CCC8C2E-4355-8201-2DA9-189261EC7A75";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  7 -0.16454337595589502;
+	setAttr -s 3 ".ktv[0:2]"  6 -0.11499271053828113 7 -0.11499271053828113
+		 8 -0.11499271053828113;
 createNode animCurveTL -n "pCylinder1_translateY";
 	rename -uid "454FED03-413F-7980-5383-B1BC930ECFBF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  7 -0.053443343005909881;
+	setAttr -s 3 ".ktv[0:2]"  6 0.31594332420862808 7 0.31594332420862808
+		 8 0.31594332420862808;
 createNode animCurveTL -n "pCylinder1_translateZ";
 	rename -uid "9A494F71-4A40-8B44-EA12-EEB36AEB03BA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  7 0.066223157766562124;
+	setAttr -s 3 ".ktv[0:2]"  6 0.29459283650329671 7 0.29459283650329671
+		 8 0.29459283650329671;
 createNode animCurveTU -n "pCylinder1_scaleX";
 	rename -uid "2E7B4D99-439B-FEBF-8F40-6197C505F1FA";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  7 1;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
 createNode animCurveTU -n "pCylinder1_scaleY";
 	rename -uid "AABC4277-4EE3-D840-BBF2-A3BCD5CE7849";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  7 1;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
 createNode animCurveTU -n "pCylinder1_scaleZ";
 	rename -uid "11044B6D-4E06-A675-EB30-40A03BAD51CB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  7 1;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
 createNode animCurveTL -n "pSphere1_translateX";
 	rename -uid "7CBAEC59-49C5-E6B1-88EE-80ADFB07EC26";
 	setAttr ".tan" 18;
@@ -11520,6 +11758,9 @@ createNode animCurveTU -n "pSphere1_visibility";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  10 0 11 1 12 0;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".kox[0:2]"  0.041630544712181292 1 0.041630544712181347;
+	setAttr -s 3 ".koy[0:2]"  0.999133073092352 0 -0.999133073092352;
+	setAttr -s 3 ".ots[0:2]"  9 9 9;
 createNode animCurveTA -n "pSphere1_rotateX";
 	rename -uid "D68D00D8-413E-1386-D8E5-F6986A8124EB";
 	setAttr ".tan" 18;
@@ -11581,6 +11822,9 @@ createNode animCurveTU -n "L_leg_option_control_fingerAttribute";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  12 0 14 0 18 0;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
+	setAttr -s 3 ".ots[0:2]"  9 9 9;
 createNode animCurveTU -n "L_leg_option_control_thumb_1";
 	rename -uid "F3783082-42C7-19CA-646C-97BDA40682B9";
 	setAttr ".tan" 18;
@@ -11723,6 +11967,9 @@ createNode animCurveTU -n "R_arm_ik_control_____";
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  6 0 7 0 18 0 19 0;
 	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 4 ".kox[0:3]"  1 1 1 1;
+	setAttr -s 4 ".koy[0:3]"  0 0 0 0;
+	setAttr -s 4 ".ots[0:3]"  9 9 9 9;
 createNode animCurveTU -n "R_arm_ik_control_stretch";
 	rename -uid "BEBF8503-40D5-F791-AFAD-D89E8744E052";
 	setAttr ".tan" 18;
@@ -11744,6 +11991,9 @@ createNode animCurveTU -n "R_arm_ik_control_parent";
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  6 0 7 0 18 0 19 0;
 	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 4 ".kox[0:3]"  1 1 1 1;
+	setAttr -s 4 ".koy[0:3]"  0 0 0 0;
+	setAttr -s 4 ".ots[0:3]"  9 9 9 9;
 createNode animCurveTL -n "M_spine_ik_1_control_translateX";
 	rename -uid "2CB0AE98-43F4-CBAF-997F-92B07993F109";
 	setAttr ".tan" 18;
@@ -11819,12 +12069,18 @@ createNode animCurveTU -n "L_leg_fk_1_control_parent";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  12 0 13 0 14 0;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
+	setAttr -s 3 ".ots[0:2]"  9 9 9;
 createNode animCurveTU -n "L_leg_fk_1_control_rotate_order";
 	rename -uid "8357823B-432F-7D3B-6F36-AC95B6B354CC";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  12 0 13 0 14 0;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
+	setAttr -s 3 ".ots[0:2]"  9 9 9;
 createNode animCurveTA -n "L_leg_fk_2_control_rotateZ";
 	rename -uid "0159EBD8-4355-15CA-A603-CF82C54F9C61";
 	setAttr ".tan" 18;
@@ -11852,6 +12108,9 @@ createNode animCurveTU -n "L_leg_fk_3_control_rotate_order";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  12 0 13 0 14 0;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
+	setAttr -s 3 ".ots[0:2]"  9 9 9;
 createNode animCurveTA -n "L_leg_fk_4_control_rotateX";
 	rename -uid "8CCA3484-43F2-BF4C-8EE7-73B22EF698CF";
 	setAttr ".tan" 18;
@@ -11914,6 +12173,9 @@ createNode animCurveTU -n "R_leg_option_control_fingerAttribute";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  19 0 20 0 21 0;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 3 ".kox[0:2]"  1 1 1;
+	setAttr -s 3 ".koy[0:2]"  0 0 0;
+	setAttr -s 3 ".ots[0:2]"  9 9 9;
 createNode animCurveTU -n "R_leg_option_control_thumb_1";
 	rename -uid "8F75D0D4-4D42-96F2-9EE9-CA8E472EE60F";
 	setAttr ".tan" 18;
@@ -12442,19 +12704,19 @@ createNode animCurveTL -n "L_brow_1_f_control_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 8 ".ktv[0:7]"  1 -0.0074147554479234157 2 0.0024048824089039659
-		 3 0 5 -0.0015474914423898659 6 0 7 -0.0081732718820000678 8 0 9 0;
+		 3 0 5 -0.0015474914423898659 6 0 7 0.0021515205726670744 8 0 9 0;
 createNode animCurveTL -n "L_brow_1_f_control_translateY";
 	rename -uid "A47BD46F-49B0-6E19-B3D8-1CA16717F085";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  1 -0.0061288372766113847 2 -0.01633617873440801
-		 3 0 5 -0.01198642174125753 6 0 7 0 9 0;
+		 3 0 5 -0.01198642174125753 6 0 7 -0.01271479128071285 9 0;
 createNode animCurveTL -n "L_brow_1_f_control_translateZ";
 	rename -uid "1F484928-4F20-9D48-3AE1-DEBDD6C08481";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 5 ".ktv[0:4]"  1 0.002628414889564841 2 0.0016004829748041318
-		 3 0 7 0.00016212382358276784 9 0.00016212382358276784;
+		 3 0 7 0.0017914920696513468 9 0.00016212382358276784;
 createNode animCurveTA -n "L_brow_1_f_control_rotateX";
 	rename -uid "E79A5FEB-4C8A-7A28-2827-E7A54DADC72A";
 	setAttr ".tan" 18;
@@ -12491,7 +12753,7 @@ createNode animCurveTL -n "L_emotion_f_control_translateX";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 0.0012395023354516692 2 0.010380761884420112
 		 3 0.00092792355419273281 4 0.013783352223289361 5 0.012000027288205537 6 0.015210152545554308
-		 7 -0.0028100827574229102 8 -0.0016883978268806841 9 -0.0016883978268806841 10 -0.0024807987595922786
+		 7 -0.032808398950131233 8 -0.0016883978268806841 9 -0.0016883978268806841 10 -0.0024807987595922786
 		 11 -0.0024807987595922786;
 createNode animCurveTL -n "L_emotion_f_control_translateY";
 	rename -uid "3B6C1DEC-4274-E873-1381-35AEC71ED1AA";
@@ -12499,7 +12761,7 @@ createNode animCurveTL -n "L_emotion_f_control_translateY";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 -0.008527045706028951 2 -0.012504376819341342
 		 3 0.0060305024031281507 4 0.014781079445518215 5 -0.0011616280446838929 6 -0.0093171633824435524
-		 7 -0.019304484739475377 8 -0.0071698040456543398 9 -0.0071698040456543398 10 0.017167082215293835
+		 7 -0.025876936180485699 8 -0.0071698040456543398 9 -0.0071698040456543398 10 0.017167082215293835
 		 11 0.017167082215293835 12 -0.0044810747544836594;
 createNode animCurveTA -n "L_emotion_f_control_rotateX";
 	rename -uid "41ABA057-42FE-028C-311A-66A8FA44DFB9";
@@ -12532,14 +12794,14 @@ createNode animCurveTL -n "R_emotion_f_control_translateX";
 	setAttr ".wgt" no;
 	setAttr -s 10 ".ktv[0:9]"  1 -3.0931669030784412e-05 2 -3.0931669030784412e-05
 		 3 -0.0023179790701477881 4 0.0014537978626258216 5 0.021158932589018933 6 0.03241828026485611
-		 7 -0.014976569709128659 8 0.0010218192717098627 9 0.0010218192717098627 10 -0.0010220500100395164;
+		 7 0.014164867307829574 8 0.0010218192717098627 9 0.0010218192717098627 10 -0.0010220500100395164;
 createNode animCurveTL -n "R_emotion_f_control_translateY";
 	rename -uid "D2C72E00-4072-3C4A-FFE2-2996C33E4FD2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 -0.013802231660720775 2 -0.013802231660720775
 		 3 0.0044347001517931976 4 0.019628116795634032 5 0.032808398950131233 6 -0.0071737731843266967
-		 7 -0.0090529928729330428 8 -0.010300574284178845 9 -0.010300574284178845 10 0.0045238737505138458
+		 7 -0.0094052448345316245 8 -0.010300574284178845 9 -0.010300574284178845 10 0.0045238737505138458
 		 12 -0.009138446437834763;
 createNode animCurveTA -n "R_emotion_f_control_rotateX";
 	rename -uid "59FA8A92-4A7E-162A-E7F2-989AC68F9C8A";
@@ -12571,39 +12833,40 @@ createNode animCurveTL -n "L_eye_aim_control_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0.028825455232513762 2 0 3 0 4 0 5 0 6 0
-		 7 0 8 0 9 0 10 0 11 0 12 0.018860388082133289 13 0 14 0 15 0 16 0 17 0 18 0 19 0
-		 20 0;
+		 7 -0.061005692611395941 8 0 9 0 10 0 11 0 12 -0.0031128407560314479 13 0 14 0 15 0
+		 16 0 17 0 18 0 19 0 20 0;
 createNode animCurveTL -n "L_eye_aim_control_translateY";
 	rename -uid "1EF2C651-4F01-6373-4942-F297F8F74CD5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0.0013073361566994588 2 0 3 0 4 0 5 0
-		 6 0 7 0 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
+		 6 0 7 -0.0097947931001009757 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0
+		 19 0 20 0;
 createNode animCurveTL -n "L_eye_aim_control_translateZ";
 	rename -uid "7194221F-4BF9-E63A-7FF9-11920C77A423";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 20 ".ktv[0:19]"  1 0.007851453205412473 2 0 3 0 4 0 5 0 6 0
-		 7 0 8 0 9 0 10 0 11 0 12 0.00089905851309633506 13 0 14 0 15 0 16 0 17 0 18 0 19 0
-		 20 0;
+		 7 0.0039699093293187769 8 0 9 0 10 0 11 0 12 -0.00014838644726892486 13 0 14 0 15 0
+		 16 0 17 0 18 0 19 0 20 0;
 createNode animCurveTL -n "R_eye_aim_control_translateX";
 	rename -uid "B85AF850-4BAB-8F50-2DF9-1A9D01E8EAB7";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0
-		 11 0 12 0.0044506734723797582 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
+	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 0 5 0 6 0 7 0.043493992943076348
+		 8 0 9 0 10 0 11 0 12 0.012279510529857342 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
 createNode animCurveTL -n "R_eye_aim_control_translateY";
 	rename -uid "30FD2F43-4F97-F63A-6E03-DF85E394FFA3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0
-		 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
+	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 0 5 0 6 0 7 -0.046498059240966678
+		 8 0 9 0 10 0 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
 createNode animCurveTL -n "R_eye_aim_control_translateZ";
 	rename -uid "B93B0FC5-4782-CE3D-9496-DC879D250508";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 0 5 0 6 0 7 0 8 0 9 0 10 0
-		 11 0 12 -0.00021215978467299868 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
+	setAttr -s 20 ".ktv[0:19]"  1 0 2 0 3 0 4 0 5 0 6 0 7 -0.0179492585413694
+		 8 0 9 0 10 0 11 0 12 -0.00058535372816540183 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
 createNode animCurveTA -n "L_eye_base_f_control_rotateX";
 	rename -uid "21E3AA4E-4F7A-6BB7-2559-7F87DC88DF05";
 	setAttr ".tan" 18;
@@ -12702,6 +12965,10 @@ createNode animCurveTU -n "L_eye_base_f_control_LIDS";
 		 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
 	setAttr -s 20 ".kot[0:19]"  5 5 5 5 5 5 5 5 
 		5 5 5 5 5 5 5 5 5 5 5 5;
+	setAttr -s 20 ".kox[0:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".ots[0:19]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 9 9 9 9;
 createNode animCurveTU -n "L_eye_base_f_control_upLids";
 	rename -uid "45079FAD-4115-BC06-AFD7-84A5B4E4495E";
 	setAttr ".tan" 18;
@@ -12825,6 +13092,10 @@ createNode animCurveTU -n "R_eye_base_f_control_LIDS";
 		 11 0 12 0 13 0 14 0 15 0 16 0 17 0 18 0 19 0 20 0;
 	setAttr -s 20 ".kot[0:19]"  5 5 5 5 5 5 5 5 
 		5 5 5 5 5 5 5 5 5 5 5 5;
+	setAttr -s 20 ".kox[0:19]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1;
+	setAttr -s 20 ".koy[0:19]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 20 ".ots[0:19]"  9 9 9 9 9 9 9 9 
+		9 9 9 9 9 9 9 9 9 9 9 9;
 createNode animCurveTU -n "R_eye_base_f_control_upLids";
 	rename -uid "E2A346FC-4309-51C5-7A65-C58640BEDAA8";
 	setAttr ".tan" 18;
@@ -12854,47 +13125,50 @@ createNode animCurveTL -n "L_lips_up_sneer_f_control_translateX";
 	rename -uid "DF5803CA-412E-CF76-4699-EDB09712959A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 2 0.0022071474456443283 3 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 2 0.0022071474456443283 3 0 6 0 7 0.0010998662345684136
+		 8 0;
 createNode animCurveTL -n "L_lips_up_sneer_f_control_translateY";
 	rename -uid "90F2E066-4156-5273-81D7-EDA2B1A44B74";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 2 0.010937221922162834 3 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 2 0.010937221922162834 3 0 6 0 7 -0.0030928622430970391
+		 8 0;
 createNode animCurveTL -n "L_lips_up_sneer_f_control_translateZ";
 	rename -uid "7B5AD4FF-4C52-5241-04DA-A59BEFEA127A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 0 2 0.0057468125873111368 3 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 2 0.0057468125873111368 3 0 6 0 7 0.0092707799116912692
+		 8 0;
 createNode animCurveTA -n "L_lips_up_sneer_f_control_rotateX";
 	rename -uid "E92B6368-4986-8855-4EAF-E7A7FEC7A5CC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  2 0;
+	setAttr -s 4 ".ktv[0:3]"  2 0 6 0 7 0 8 0;
 createNode animCurveTA -n "L_lips_up_sneer_f_control_rotateY";
 	rename -uid "635F2842-4322-E41F-6E38-CD89822BC630";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  2 0;
+	setAttr -s 4 ".ktv[0:3]"  2 0 6 0 7 0 8 0;
 createNode animCurveTA -n "L_lips_up_sneer_f_control_rotateZ";
 	rename -uid "11F752A2-4B34-57CC-C01A-38A7A5C0FF69";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  2 0;
+	setAttr -s 4 ".ktv[0:3]"  2 0 6 0 7 0 8 0;
 createNode animCurveTU -n "L_lips_up_sneer_f_control_scaleX";
 	rename -uid "B67BA424-4E10-E53F-1EF2-5A99D31B1538";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  2 1;
+	setAttr -s 4 ".ktv[0:3]"  2 1 6 1 7 1 8 1;
 createNode animCurveTU -n "L_lips_up_sneer_f_control_scaleY";
 	rename -uid "B08E18DD-4BE3-A1A7-439F-91AEA919C8A4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  2 1;
+	setAttr -s 4 ".ktv[0:3]"  2 1 6 1 7 1 8 1;
 createNode animCurveTU -n "L_lips_up_sneer_f_control_scaleZ";
 	rename -uid "4BD9BBAD-4695-174B-929B-E6B0034BB094";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  2 1;
+	setAttr -s 4 ".ktv[0:3]"  2 1 6 1 7 1 8 1;
 createNode animCurveTL -n "L_brow_3_f_control_translateX";
 	rename -uid "8C3A5625-4063-B423-2E55-6298BC6EF2F0";
 	setAttr ".tan" 18;
@@ -13103,19 +13377,19 @@ createNode animCurveTL -n "R_brow_3_f_control_translateX";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  5 -0.00047518263731616208 6 0.00027086029628774932
-		 7 0.00027086029628774932 8 0.00027086029628774932 9 0.00027086029628774932 10 0.00055367284397764554
+		 7 -0.0093184057952550876 8 0.00027086029628774932 9 0.00027086029628774932 10 0.00055367284397764554
 		 11 0.00027086029628774932;
 createNode animCurveTL -n "R_brow_3_f_control_translateY";
 	rename -uid "25359244-4A37-FAA7-322A-9491A3A24550";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  5 0.0057786330795157213 6 0 7 -0.016350328866267489
+	setAttr -s 7 ".ktv[0:6]"  5 0.0057786330795157213 6 0 7 -0.018916639969073844
 		 8 0 9 0 10 -0.014430554359170558 11 0;
 createNode animCurveTL -n "R_brow_3_f_control_translateZ";
 	rename -uid "3DE1D613-41F1-DDF5-3ABA-229560F736DF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 6 ".ktv[0:5]"  6 4.8143980075557416e-05 7 4.8143980075557416e-05
+	setAttr -s 6 ".ktv[0:5]"  6 4.8143980075557416e-05 7 0.0069963793880026062
 		 8 4.8143980075557416e-05 9 4.8143980075557416e-05 10 -0.0013836055232683932 11 4.8143980075557416e-05;
 createNode animCurveTA -n "R_brow_3_f_control_rotateX";
 	rename -uid "623EDB06-4F69-6E7B-EEA6-C48FCD468034";
@@ -13381,9 +13655,369 @@ createNode animCurveTU -n "R_arm_1_stretchRig_2_control_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  10 1 11 1 12 1;
+createNode animCurveTL -n "R_lips_up_sneer_f_control_translateX";
+	rename -uid "C052759D-44AD-859A-FC49-7898683068A3";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 -0.0008224233575204699 8 0;
+createNode animCurveTL -n "R_lips_up_sneer_f_control_translateY";
+	rename -uid "4AA13700-441F-8479-D96B-C896D329C05F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0.0051418881003305666 8 0;
+createNode animCurveTL -n "R_lips_up_sneer_f_control_translateZ";
+	rename -uid "5435E487-49BB-A171-76E6-4182FC1B62D8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0.0075638918631408866 8 0;
+createNode animCurveTA -n "R_lips_up_sneer_f_control_rotateX";
+	rename -uid "5871B00A-48BF-194C-6530-60AAFF4FD53B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0 8 0;
+createNode animCurveTA -n "R_lips_up_sneer_f_control_rotateY";
+	rename -uid "3426A2D7-4DF4-20CD-01DF-DC8708A4ACE4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0 8 0;
+createNode animCurveTA -n "R_lips_up_sneer_f_control_rotateZ";
+	rename -uid "C25F14AD-4EE6-F797-E9C8-1687858A99A1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0 8 0;
+createNode animCurveTU -n "R_lips_up_sneer_f_control_scaleX";
+	rename -uid "EEA90A78-41E4-D55A-35C0-1CBC311E6075";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
+createNode animCurveTU -n "R_lips_up_sneer_f_control_scaleY";
+	rename -uid "C676E06C-4FB3-9C5A-5B76-F7B8FBE69FAC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
+createNode animCurveTU -n "R_lips_up_sneer_f_control_scaleZ";
+	rename -uid "4C389320-49D5-56C5-7834-27AE6A9D6288";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
+createNode animCurveTL -n "M_lips_up_mid_f_control_translateX";
+	rename -uid "08C280CF-454B-A824-7507-B9863C84927F";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0.00051103578517184666 8 0;
+createNode animCurveTL -n "M_lips_up_mid_f_control_translateY";
+	rename -uid "34491BF7-4FF1-671B-9599-E9BE2809B2DF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 -0.0014370504659139071 8 0;
+createNode animCurveTL -n "M_lips_up_mid_f_control_translateZ";
+	rename -uid "3C386342-4FDF-E301-2BFC-8B817EDF89D9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0.0043075240810404366 8 0;
+createNode animCurveTA -n "M_lips_up_mid_f_control_rotateX";
+	rename -uid "D54AA476-43A0-59CE-A888-34B0FC806C47";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0 8 0;
+createNode animCurveTA -n "M_lips_up_mid_f_control_rotateY";
+	rename -uid "BF4C90DF-4088-050A-4157-69B1765933A0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0 8 0;
+createNode animCurveTA -n "M_lips_up_mid_f_control_rotateZ";
+	rename -uid "36E6C03E-43ED-FD7E-6C8F-FE80ED4C60C7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0 8 0;
+createNode animCurveTU -n "M_lips_up_mid_f_control_scaleX";
+	rename -uid "9BD88FA5-4401-5FC1-4036-409DA2440F90";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
+createNode animCurveTU -n "M_lips_up_mid_f_control_scaleY";
+	rename -uid "17460DA6-4CB8-8F85-54D8-8E9E867F00BE";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
+createNode animCurveTU -n "M_lips_up_mid_f_control_scaleZ";
+	rename -uid "4E0EFDDA-4415-50F2-3CC6-15B47D0F908A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
+createNode animCurveTL -n "L_lips_low_sneer_f_control_translateX";
+	rename -uid "2119701F-45DC-27D8-7170-34A6541013B0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 -0.0013308605747495874 8 0;
+createNode animCurveTL -n "L_lips_low_sneer_f_control_translateY";
+	rename -uid "F3739DB2-4F9D-E428-872D-E69CDE330596";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0.0037424263906826404 8 0;
+createNode animCurveTL -n "L_lips_low_sneer_f_control_translateZ";
+	rename -uid "D8A95ED3-429A-5ECA-35CE-35A21E10BECF";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 -0.011217832763538096 8 0;
+createNode animCurveTA -n "L_lips_low_sneer_f_control_rotateX";
+	rename -uid "6F5A62D1-40D7-4777-F7E5-F4A4C608FAC4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0 8 0;
+createNode animCurveTA -n "L_lips_low_sneer_f_control_rotateY";
+	rename -uid "6085E567-424D-D642-445D-3BBCD1ACE07B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0 8 0;
+createNode animCurveTA -n "L_lips_low_sneer_f_control_rotateZ";
+	rename -uid "4AAC3EA4-41D2-6B14-3B9F-A2804E155C41";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 0 7 0 8 0;
+createNode animCurveTU -n "L_lips_low_sneer_f_control_scaleX";
+	rename -uid "0199126D-4741-9BAF-DC45-ADA62E51632A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
+createNode animCurveTU -n "L_lips_low_sneer_f_control_scaleY";
+	rename -uid "8C267DA9-46E6-49AB-5D06-CDA18532E8A4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
+createNode animCurveTU -n "L_lips_low_sneer_f_control_scaleZ";
+	rename -uid "A2832A6E-4432-4EBB-4EFE-7CB41DBEACD8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  6 1 7 1 8 1;
+createNode animCurveTA -n "L_leg_1_stretchRig_1_control_rotateX";
+	rename -uid "DF704215-4C5E-E839-7C96-15A5886E0AB8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_1_stretchRig_1_control_rotateY";
+	rename -uid "2579B8E0-465A-9F5D-9459-80A48E8D3AF0";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_1_stretchRig_1_control_rotateZ";
+	rename -uid "BC48FEDB-4BFC-3615-EAA3-56B5B3594803";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTL -n "L_leg_1_stretchRig_1_control_translateX";
+	rename -uid "B4C6D8BC-476B-F1D7-F156-90B7229732E5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0.0023619209969290051 13 0;
+createNode animCurveTL -n "L_leg_1_stretchRig_1_control_translateY";
+	rename -uid "1205CC53-4F60-6E2E-27E8-3BB722AFAE09";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.015521085758347706 13 0;
+createNode animCurveTL -n "L_leg_1_stretchRig_1_control_translateZ";
+	rename -uid "2C79BA18-494A-B5FF-D8A3-149FA42C830E";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.034611882531863251 13 0;
+createNode animCurveTU -n "L_leg_1_stretchRig_1_control_scaleX";
+	rename -uid "F98339B9-4856-EE06-06A3-5DBF078F4526";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_1_stretchRig_1_control_scaleY";
+	rename -uid "8FBD0A78-4A55-2846-3E0F-EBA5EEDC6BD5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_1_stretchRig_1_control_scaleZ";
+	rename -uid "0FE140AD-4242-1799-8252-01B946F246C1";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTA -n "L_leg_1_stretchRig_2_control_rotateX";
+	rename -uid "4E09E2FA-4319-3B1E-8CBC-CEA2B0D75402";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_1_stretchRig_2_control_rotateY";
+	rename -uid "67D678A0-4190-1470-C093-8E9812CB7988";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_1_stretchRig_2_control_rotateZ";
+	rename -uid "A7EBB737-49A9-72D4-C4DC-679AF26184B5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTL -n "L_leg_1_stretchRig_2_control_translateX";
+	rename -uid "728156C2-4909-AF26-C8E8-C6807A16E3FD";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0.0029357398862539939 13 0;
+createNode animCurveTL -n "L_leg_1_stretchRig_2_control_translateY";
+	rename -uid "2E4A32D0-42A3-AE98-579B-E3BE5934A230";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.019291869033696195 13 0;
+createNode animCurveTL -n "L_leg_1_stretchRig_2_control_translateZ";
+	rename -uid "CEB01D5F-4626-8FFF-B889-528FE8AEE830";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.043020695537120977 13 0;
+createNode animCurveTU -n "L_leg_1_stretchRig_2_control_scaleX";
+	rename -uid "9E22D0AA-44F2-1743-2B81-8291DEBFE210";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_1_stretchRig_2_control_scaleY";
+	rename -uid "90BD17CC-4845-2DBC-3F9A-878CAD8406A6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_1_stretchRig_2_control_scaleZ";
+	rename -uid "B55C7801-4FD6-8C2F-6F79-1BB1CF4B63A8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTA -n "L_leg_2_stretchRig_1_control_rotateX";
+	rename -uid "3865953C-48F9-0669-2D8E-36A1B01597D5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_2_stretchRig_1_control_rotateY";
+	rename -uid "63AC6327-4078-F864-733D-E48C02076BE4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_2_stretchRig_1_control_rotateZ";
+	rename -uid "E64D2316-4448-C40B-EC39-3BA2499125C8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTL -n "L_leg_2_stretchRig_1_control_translateX";
+	rename -uid "C8C48D3D-4A27-B5DA-998F-BF986E8F0A70";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.0038214221414552755 13 0;
+createNode animCurveTL -n "L_leg_2_stretchRig_1_control_translateY";
+	rename -uid "1610F11E-426C-B442-D521-3EB3A9246D4A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.014085348408545865 13 0;
+createNode animCurveTL -n "L_leg_2_stretchRig_1_control_translateZ";
+	rename -uid "D6B46CE4-408C-B9B2-B146-2C8ABC255B32";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.032175258838593013 13 0;
+createNode animCurveTU -n "L_leg_2_stretchRig_1_control_scaleX";
+	rename -uid "D357C9AA-4B87-FD20-4D43-779750F9E243";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_2_stretchRig_1_control_scaleY";
+	rename -uid "1DC25CDC-4B0F-B362-8C29-0EBEA96022C8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_2_stretchRig_1_control_scaleZ";
+	rename -uid "E81CB134-4B12-EB6E-4C43-C1B42A531FDA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTA -n "L_leg_2_stretchRig_2_control_rotateX";
+	rename -uid "AC63AD4E-4A88-89CA-9884-5FA981B11E39";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_2_stretchRig_2_control_rotateY";
+	rename -uid "327D0EB0-429F-7414-7488-8F901D2A5347";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_2_stretchRig_2_control_rotateZ";
+	rename -uid "88A618F9-4700-53DA-F095-9F93DAA5A694";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTL -n "L_leg_2_stretchRig_2_control_translateX";
+	rename -uid "48ADDDFB-4D38-6AC2-A4F5-C9905A4865E8";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.0015520050579693942 13 0;
+createNode animCurveTL -n "L_leg_2_stretchRig_2_control_translateY";
+	rename -uid "00295D63-4717-60FE-1C3B-C8861E19DFC9";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.0046991478301799845 13 0;
+createNode animCurveTL -n "L_leg_2_stretchRig_2_control_translateZ";
+	rename -uid "E2108233-4246-3D5F-7A8F-109D7CB90AC4";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 -0.01289079211609353 13 0;
+createNode animCurveTU -n "L_leg_2_stretchRig_2_control_scaleX";
+	rename -uid "31102331-4A29-3B72-C5B4-AD91EBC5D510";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_2_stretchRig_2_control_scaleY";
+	rename -uid "4A564B04-4EBD-3E15-64F6-489337E94FFB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_2_stretchRig_2_control_scaleZ";
+	rename -uid "EAAAD748-4FF2-246B-0463-95B66A7CFAC6";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTA -n "L_leg_2_stretchRig_3_control_rotateX";
+	rename -uid "3DB065ED-4F12-1197-7E28-D4A0A0B51396";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_2_stretchRig_3_control_rotateY";
+	rename -uid "5C43850C-4415-B205-A495-35BDFEC1D0C5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTA -n "L_leg_2_stretchRig_3_control_rotateZ";
+	rename -uid "B96F6BFC-48A3-A18E-C140-E0A25EE2BDBA";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTL -n "L_leg_2_stretchRig_3_control_translateX";
+	rename -uid "51A13DFF-4DA8-F687-FB9F-3E89A8E764CC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTL -n "L_leg_2_stretchRig_3_control_translateY";
+	rename -uid "D2FA3461-4BBC-987E-E53E-618AE3FFF660";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTL -n "L_leg_2_stretchRig_3_control_translateZ";
+	rename -uid "3522CA8E-4E30-8EC3-92F7-15A17B1B4A1C";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 0 12 0 13 0;
+createNode animCurveTU -n "L_leg_2_stretchRig_3_control_scaleX";
+	rename -uid "B1C6B376-4C79-C355-2802-1F9E014F82CB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_2_stretchRig_3_control_scaleY";
+	rename -uid "D94A16AF-4474-1949-5DB6-D2892EB6FCA5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
+createNode animCurveTU -n "L_leg_2_stretchRig_3_control_scaleZ";
+	rename -uid "3BB7D4CA-48C3-61D3-25C9-4CB1C14CFAFC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 3 ".ktv[0:2]"  11 1 12 1 13 1;
 select -ne :time1;
-	setAttr ".o" 7;
-	setAttr ".unw" 7;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -13934,388 +14568,460 @@ connectAttr "jaw_f_control_rotateZ.o" "AmandaRN.phl[494]";
 connectAttr "jaw_f_control_scaleX.o" "AmandaRN.phl[495]";
 connectAttr "jaw_f_control_scaleY.o" "AmandaRN.phl[496]";
 connectAttr "jaw_f_control_scaleZ.o" "AmandaRN.phl[497]";
-connectAttr "L_lips_up_sneer_f_control_rotateY.o" "AmandaRN.phl[498]";
-connectAttr "L_lips_up_sneer_f_control_rotateZ.o" "AmandaRN.phl[499]";
-connectAttr "L_lips_up_sneer_f_control_rotateX.o" "AmandaRN.phl[500]";
-connectAttr "L_lips_up_sneer_f_control_translateY.o" "AmandaRN.phl[501]";
-connectAttr "L_lips_up_sneer_f_control_translateX.o" "AmandaRN.phl[502]";
-connectAttr "L_lips_up_sneer_f_control_translateZ.o" "AmandaRN.phl[503]";
-connectAttr "L_lips_up_sneer_f_control_scaleX.o" "AmandaRN.phl[504]";
-connectAttr "L_lips_up_sneer_f_control_scaleY.o" "AmandaRN.phl[505]";
-connectAttr "L_lips_up_sneer_f_control_scaleZ.o" "AmandaRN.phl[506]";
-connectAttr "L_emotion_f_control_translateY.o" "AmandaRN.phl[507]";
-connectAttr "L_emotion_f_control_translateX.o" "AmandaRN.phl[508]";
-connectAttr "L_emotion_f_control_zip.o" "AmandaRN.phl[509]";
-connectAttr "L_emotion_f_control_depth.o" "AmandaRN.phl[510]";
-connectAttr "L_emotion_f_control_rotateX.o" "AmandaRN.phl[511]";
-connectAttr "L_emotion_f_control_rotateY.o" "AmandaRN.phl[512]";
-connectAttr "L_emotion_f_control_rotateZ.o" "AmandaRN.phl[513]";
-connectAttr "R_emotion_f_control_translateY.o" "AmandaRN.phl[514]";
-connectAttr "R_emotion_f_control_translateX.o" "AmandaRN.phl[515]";
-connectAttr "R_emotion_f_control_zip.o" "AmandaRN.phl[516]";
-connectAttr "R_emotion_f_control_depth.o" "AmandaRN.phl[517]";
-connectAttr "R_emotion_f_control_rotateX.o" "AmandaRN.phl[518]";
-connectAttr "R_emotion_f_control_rotateY.o" "AmandaRN.phl[519]";
-connectAttr "R_emotion_f_control_rotateZ.o" "AmandaRN.phl[520]";
-connectAttr "L_shoulder_control_rotateY.o" "AmandaRN.phl[521]";
-connectAttr "L_shoulder_control_rotateX.o" "AmandaRN.phl[522]";
-connectAttr "L_shoulder_control_rotateZ.o" "AmandaRN.phl[523]";
-connectAttr "L_shoulder_control_translateX.o" "AmandaRN.phl[524]";
-connectAttr "L_shoulder_control_translateY.o" "AmandaRN.phl[525]";
-connectAttr "L_shoulder_control_translateZ.o" "AmandaRN.phl[526]";
-connectAttr "R_shoulder_control_rotateY.o" "AmandaRN.phl[527]";
-connectAttr "R_shoulder_control_rotateX.o" "AmandaRN.phl[528]";
-connectAttr "R_shoulder_control_rotateZ.o" "AmandaRN.phl[529]";
-connectAttr "R_shoulder_control_translateX.o" "AmandaRN.phl[530]";
-connectAttr "R_shoulder_control_translateY.o" "AmandaRN.phl[531]";
-connectAttr "R_shoulder_control_translateZ.o" "AmandaRN.phl[532]";
-connectAttr "M_spine_ik_1_control_scaleX.o" "AmandaRN.phl[533]";
-connectAttr "M_spine_ik_1_control_scaleZ.o" "AmandaRN.phl[534]";
-connectAttr "M_spine_ik_1_control_translateX.o" "AmandaRN.phl[535]";
-connectAttr "M_spine_ik_1_control_translateY.o" "AmandaRN.phl[536]";
-connectAttr "M_spine_ik_1_control_translateZ.o" "AmandaRN.phl[537]";
-connectAttr "M_spine_ik_1_control_rotateX.o" "AmandaRN.phl[538]";
-connectAttr "M_spine_ik_1_control_rotateZ.o" "AmandaRN.phl[539]";
-connectAttr "M_spine_ik_1_control_rotateY.o" "AmandaRN.phl[540]";
-connectAttr "M_SOG_control_translateZ.o" "AmandaRN.phl[541]";
-connectAttr "M_SOG_control_translateY.o" "AmandaRN.phl[542]";
-connectAttr "M_SOG_control_translateX.o" "AmandaRN.phl[543]";
-connectAttr "M_SOG_control_rotateZ.o" "AmandaRN.phl[544]";
-connectAttr "M_SOG_control_rotateX.o" "AmandaRN.phl[545]";
-connectAttr "M_SOG_control_rotateY.o" "AmandaRN.phl[546]";
-connectAttr "M_SOG_control_saveVolume.o" "AmandaRN.phl[547]";
-connectAttr "M_spine_fk_1_control_rotateZ.o" "AmandaRN.phl[548]";
-connectAttr "M_spine_fk_1_control_rotateX.o" "AmandaRN.phl[549]";
-connectAttr "M_spine_fk_1_control_rotateY.o" "AmandaRN.phl[550]";
-connectAttr "M_spine_fk_1_control_translateX.o" "AmandaRN.phl[551]";
-connectAttr "M_spine_fk_1_control_translateY.o" "AmandaRN.phl[552]";
-connectAttr "M_spine_fk_1_control_translateZ.o" "AmandaRN.phl[553]";
-connectAttr "M_spine_fk_2_control_rotateX.o" "AmandaRN.phl[554]";
-connectAttr "M_spine_fk_2_control_rotateY.o" "AmandaRN.phl[555]";
-connectAttr "M_spine_fk_2_control_rotateZ.o" "AmandaRN.phl[556]";
-connectAttr "M_spine_fk_2_control_translateX.o" "AmandaRN.phl[557]";
-connectAttr "M_spine_fk_2_control_translateY.o" "AmandaRN.phl[558]";
-connectAttr "M_spine_fk_2_control_translateZ.o" "AmandaRN.phl[559]";
-connectAttr "M_spine_fk_3_control_rotateX.o" "AmandaRN.phl[560]";
-connectAttr "M_spine_fk_3_control_rotateY.o" "AmandaRN.phl[561]";
-connectAttr "M_spine_fk_3_control_rotateZ.o" "AmandaRN.phl[562]";
-connectAttr "M_spine_fk_3_control_translateX.o" "AmandaRN.phl[563]";
-connectAttr "M_spine_fk_3_control_translateY.o" "AmandaRN.phl[564]";
-connectAttr "M_spine_fk_3_control_translateZ.o" "AmandaRN.phl[565]";
-connectAttr "M_hip_control_rotateX.o" "AmandaRN.phl[566]";
-connectAttr "M_hip_control_rotateY.o" "AmandaRN.phl[567]";
-connectAttr "M_hip_control_rotateZ.o" "AmandaRN.phl[568]";
-connectAttr "M_hip_control_translateX.o" "AmandaRN.phl[569]";
-connectAttr "M_hip_control_translateY.o" "AmandaRN.phl[570]";
-connectAttr "M_hip_control_translateZ.o" "AmandaRN.phl[571]";
-connectAttr "R_leg_option_control_fingerAttribute.o" "AmandaRN.phl[572]";
-connectAttr "R_leg_option_control_scale1X.o" "AmandaRN.phl[573]";
-connectAttr "R_leg_option_control_scale1YZ.o" "AmandaRN.phl[574]";
-connectAttr "R_leg_option_control_scale2X.o" "AmandaRN.phl[575]";
-connectAttr "R_leg_option_control_scale2YZ.o" "AmandaRN.phl[576]";
-connectAttr "R_leg_option_control_ikfk.o" "AmandaRN.phl[577]";
-connectAttr "R_leg_option_control_thumb_1.o" "AmandaRN.phl[578]";
-connectAttr "R_leg_option_control_thumb_2.o" "AmandaRN.phl[579]";
-connectAttr "R_leg_option_control_thumb_spread.o" "AmandaRN.phl[580]";
-connectAttr "R_leg_option_control_thumb_twist.o" "AmandaRN.phl[581]";
-connectAttr "R_leg_option_control_index_1.o" "AmandaRN.phl[582]";
-connectAttr "R_leg_option_control_index_2.o" "AmandaRN.phl[583]";
-connectAttr "R_leg_option_control_index_spread.o" "AmandaRN.phl[584]";
-connectAttr "R_leg_option_control_index_twist.o" "AmandaRN.phl[585]";
-connectAttr "R_leg_option_control_mid_1.o" "AmandaRN.phl[586]";
-connectAttr "R_leg_option_control_mid_2.o" "AmandaRN.phl[587]";
-connectAttr "R_leg_option_control_mid_spread.o" "AmandaRN.phl[588]";
-connectAttr "R_leg_option_control_mid_twist.o" "AmandaRN.phl[589]";
-connectAttr "R_leg_option_control_ring_1.o" "AmandaRN.phl[590]";
-connectAttr "R_leg_option_control_ring_2.o" "AmandaRN.phl[591]";
-connectAttr "R_leg_option_control_ring_spread.o" "AmandaRN.phl[592]";
-connectAttr "R_leg_option_control_ring_twist.o" "AmandaRN.phl[593]";
-connectAttr "R_leg_option_control_pinky_1.o" "AmandaRN.phl[594]";
-connectAttr "R_leg_option_control_pinky_2.o" "AmandaRN.phl[595]";
-connectAttr "R_leg_option_control_pinky_spread.o" "AmandaRN.phl[596]";
-connectAttr "R_leg_option_control_pinky_twist.o" "AmandaRN.phl[597]";
-connectAttr "L_leg_option_control_fingerAttribute.o" "AmandaRN.phl[598]";
-connectAttr "L_leg_option_control_scale1X.o" "AmandaRN.phl[599]";
-connectAttr "L_leg_option_control_scale1YZ.o" "AmandaRN.phl[600]";
-connectAttr "L_leg_option_control_scale2X.o" "AmandaRN.phl[601]";
-connectAttr "L_leg_option_control_scale2YZ.o" "AmandaRN.phl[602]";
-connectAttr "L_leg_option_control_ikfk.o" "AmandaRN.phl[603]";
-connectAttr "L_leg_option_control_thumb_1.o" "AmandaRN.phl[604]";
-connectAttr "L_leg_option_control_thumb_2.o" "AmandaRN.phl[605]";
-connectAttr "L_leg_option_control_thumb_spread.o" "AmandaRN.phl[606]";
-connectAttr "L_leg_option_control_thumb_twist.o" "AmandaRN.phl[607]";
-connectAttr "L_leg_option_control_index_1.o" "AmandaRN.phl[608]";
-connectAttr "L_leg_option_control_index_2.o" "AmandaRN.phl[609]";
-connectAttr "L_leg_option_control_index_spread.o" "AmandaRN.phl[610]";
-connectAttr "L_leg_option_control_index_twist.o" "AmandaRN.phl[611]";
-connectAttr "L_leg_option_control_mid_1.o" "AmandaRN.phl[612]";
-connectAttr "L_leg_option_control_mid_2.o" "AmandaRN.phl[613]";
-connectAttr "L_leg_option_control_mid_spread.o" "AmandaRN.phl[614]";
-connectAttr "L_leg_option_control_mid_twist.o" "AmandaRN.phl[615]";
-connectAttr "L_leg_option_control_ring_1.o" "AmandaRN.phl[616]";
-connectAttr "L_leg_option_control_ring_2.o" "AmandaRN.phl[617]";
-connectAttr "L_leg_option_control_ring_spread.o" "AmandaRN.phl[618]";
-connectAttr "L_leg_option_control_ring_twist.o" "AmandaRN.phl[619]";
-connectAttr "L_leg_option_control_pinky_1.o" "AmandaRN.phl[620]";
-connectAttr "L_leg_option_control_pinky_2.o" "AmandaRN.phl[621]";
-connectAttr "L_leg_option_control_pinky_spread.o" "AmandaRN.phl[622]";
-connectAttr "L_leg_option_control_pinky_twist.o" "AmandaRN.phl[623]";
-connectAttr "R_arm_option_control_curl.o" "AmandaRN.phl[624]";
-connectAttr "R_arm_option_control_spread.o" "AmandaRN.phl[625]";
-connectAttr "R_arm_option_control_scale3X.o" "AmandaRN.phl[626]";
-connectAttr "R_arm_option_control_scale3YZ.o" "AmandaRN.phl[627]";
-connectAttr "R_arm_option_control_scale1X.o" "AmandaRN.phl[628]";
-connectAttr "R_arm_option_control_scale1YZ.o" "AmandaRN.phl[629]";
-connectAttr "R_arm_option_control_scale2X.o" "AmandaRN.phl[630]";
-connectAttr "R_arm_option_control_scale2YZ.o" "AmandaRN.phl[631]";
-connectAttr "R_arm_option_control_ikfk.o" "AmandaRN.phl[632]";
-connectAttr "R_arm_option_control_index_1.o" "AmandaRN.phl[633]";
-connectAttr "R_arm_option_control_index_2.o" "AmandaRN.phl[634]";
-connectAttr "R_arm_option_control_index_3.o" "AmandaRN.phl[635]";
-connectAttr "R_arm_option_control_index_4.o" "AmandaRN.phl[636]";
-connectAttr "R_arm_option_control_index_spread.o" "AmandaRN.phl[637]";
-connectAttr "R_arm_option_control_index_twist.o" "AmandaRN.phl[638]";
-connectAttr "R_arm_option_control_mid_1.o" "AmandaRN.phl[639]";
-connectAttr "R_arm_option_control_mid_2.o" "AmandaRN.phl[640]";
-connectAttr "R_arm_option_control_mid_3.o" "AmandaRN.phl[641]";
-connectAttr "R_arm_option_control_mid_4.o" "AmandaRN.phl[642]";
-connectAttr "R_arm_option_control_mid_spread.o" "AmandaRN.phl[643]";
-connectAttr "R_arm_option_control_mid_twist.o" "AmandaRN.phl[644]";
-connectAttr "R_arm_option_control_ring_1.o" "AmandaRN.phl[645]";
-connectAttr "R_arm_option_control_ring_2.o" "AmandaRN.phl[646]";
-connectAttr "R_arm_option_control_ring_3.o" "AmandaRN.phl[647]";
-connectAttr "R_arm_option_control_ring_4.o" "AmandaRN.phl[648]";
-connectAttr "R_arm_option_control_ring_spread.o" "AmandaRN.phl[649]";
-connectAttr "R_arm_option_control_ring_twist.o" "AmandaRN.phl[650]";
-connectAttr "R_arm_option_control_pinky_1.o" "AmandaRN.phl[651]";
-connectAttr "R_arm_option_control_pinky_2.o" "AmandaRN.phl[652]";
-connectAttr "R_arm_option_control_pinky_3.o" "AmandaRN.phl[653]";
-connectAttr "R_arm_option_control_pinky_4.o" "AmandaRN.phl[654]";
-connectAttr "R_arm_option_control_pinky_spread.o" "AmandaRN.phl[655]";
-connectAttr "R_arm_option_control_pinky_twist.o" "AmandaRN.phl[656]";
-connectAttr "R_arm_option_control_thumb_1.o" "AmandaRN.phl[657]";
-connectAttr "R_arm_option_control_thumb_spread.o" "AmandaRN.phl[658]";
-connectAttr "R_arm_option_control_thumb_twist.o" "AmandaRN.phl[659]";
-connectAttr "R_arm_option_control_thumb_2.o" "AmandaRN.phl[660]";
-connectAttr "R_arm_option_control_thumb_3.o" "AmandaRN.phl[661]";
-connectAttr "L_arm_option_control_curl.o" "AmandaRN.phl[662]";
-connectAttr "L_arm_option_control_spread.o" "AmandaRN.phl[663]";
-connectAttr "L_arm_option_control_scale3X.o" "AmandaRN.phl[664]";
-connectAttr "L_arm_option_control_scale3YZ.o" "AmandaRN.phl[665]";
-connectAttr "L_arm_option_control_scale1X.o" "AmandaRN.phl[666]";
-connectAttr "L_arm_option_control_scale1YZ.o" "AmandaRN.phl[667]";
-connectAttr "L_arm_option_control_scale2X.o" "AmandaRN.phl[668]";
-connectAttr "L_arm_option_control_scale2YZ.o" "AmandaRN.phl[669]";
-connectAttr "L_arm_option_control_ikfk.o" "AmandaRN.phl[670]";
-connectAttr "L_arm_option_control_thumb_twist.o" "AmandaRN.phl[671]";
-connectAttr "L_arm_option_control_thumb_spread.o" "AmandaRN.phl[672]";
-connectAttr "L_arm_option_control_thumb_1.o" "AmandaRN.phl[673]";
-connectAttr "L_arm_option_control_index_1.o" "AmandaRN.phl[674]";
-connectAttr "L_arm_option_control_index_2.o" "AmandaRN.phl[675]";
-connectAttr "L_arm_option_control_thumb_2.o" "AmandaRN.phl[676]";
-connectAttr "L_arm_option_control_thumb_3.o" "AmandaRN.phl[677]";
-connectAttr "L_arm_option_control_index_spread.o" "AmandaRN.phl[678]";
-connectAttr "L_arm_option_control_index_twist.o" "AmandaRN.phl[679]";
-connectAttr "L_arm_option_control_index_3.o" "AmandaRN.phl[680]";
-connectAttr "L_arm_option_control_index_4.o" "AmandaRN.phl[681]";
-connectAttr "L_arm_option_control_mid_1.o" "AmandaRN.phl[682]";
-connectAttr "L_arm_option_control_ring_1.o" "AmandaRN.phl[683]";
-connectAttr "L_arm_option_control_pinky_1.o" "AmandaRN.phl[684]";
-connectAttr "L_arm_option_control_mid_2.o" "AmandaRN.phl[685]";
-connectAttr "L_arm_option_control_mid_3.o" "AmandaRN.phl[686]";
-connectAttr "L_arm_option_control_mid_4.o" "AmandaRN.phl[687]";
-connectAttr "L_arm_option_control_mid_spread.o" "AmandaRN.phl[688]";
-connectAttr "L_arm_option_control_mid_twist.o" "AmandaRN.phl[689]";
-connectAttr "L_arm_option_control_ring_2.o" "AmandaRN.phl[690]";
-connectAttr "L_arm_option_control_ring_3.o" "AmandaRN.phl[691]";
-connectAttr "L_arm_option_control_ring_4.o" "AmandaRN.phl[692]";
-connectAttr "L_arm_option_control_ring_spread.o" "AmandaRN.phl[693]";
-connectAttr "L_arm_option_control_ring_twist.o" "AmandaRN.phl[694]";
-connectAttr "L_arm_option_control_pinky_2.o" "AmandaRN.phl[695]";
-connectAttr "L_arm_option_control_pinky_3.o" "AmandaRN.phl[696]";
-connectAttr "L_arm_option_control_pinky_4.o" "AmandaRN.phl[697]";
-connectAttr "L_arm_option_control_pinky_spread.o" "AmandaRN.phl[698]";
-connectAttr "L_arm_option_control_pinky_twist.o" "AmandaRN.phl[699]";
-connectAttr "R_arm_ik_control_____.o" "AmandaRN.phl[700]";
-connectAttr "R_arm_ik_control_parent.o" "AmandaRN.phl[701]";
-connectAttr "R_arm_ik_control_stretch.o" "AmandaRN.phl[702]";
-connectAttr "R_arm_ik_control_squash.o" "AmandaRN.phl[703]";
-connectAttr "R_arm_ik_control_saveVolume.o" "AmandaRN.phl[704]";
-connectAttr "R_arm_ik_control_translateX.o" "AmandaRN.phl[705]";
-connectAttr "R_arm_ik_control_translateY.o" "AmandaRN.phl[706]";
-connectAttr "R_arm_ik_control_translateZ.o" "AmandaRN.phl[707]";
-connectAttr "R_arm_ik_control_rotateX.o" "AmandaRN.phl[708]";
-connectAttr "R_arm_ik_control_rotateY.o" "AmandaRN.phl[709]";
-connectAttr "R_arm_ik_control_rotateZ.o" "AmandaRN.phl[710]";
-connectAttr "R_arm_ik_polevector_control_parent.o" "AmandaRN.phl[711]";
-connectAttr "R_arm_ik_polevector_control_snap.o" "AmandaRN.phl[712]";
-connectAttr "R_arm_ik_polevector_control_squash.o" "AmandaRN.phl[713]";
-connectAttr "R_arm_ik_polevector_control_stretch.o" "AmandaRN.phl[714]";
-connectAttr "R_arm_ik_polevector_control_saveVolume.o" "AmandaRN.phl[715]";
-connectAttr "R_arm_ik_polevector_control_translateX.o" "AmandaRN.phl[716]";
-connectAttr "R_arm_ik_polevector_control_translateY.o" "AmandaRN.phl[717]";
-connectAttr "R_arm_ik_polevector_control_translateZ.o" "AmandaRN.phl[718]";
-connectAttr "R_arm_fk_1_control_parent.o" "AmandaRN.phl[719]";
-connectAttr "R_arm_fk_1_control_rotate_order.o" "AmandaRN.phl[720]";
-connectAttr "R_arm_fk_1_control_rotateY.o" "AmandaRN.phl[721]";
-connectAttr "R_arm_fk_1_control_rotateX.o" "AmandaRN.phl[722]";
-connectAttr "R_arm_fk_1_control_rotateZ.o" "AmandaRN.phl[723]";
-connectAttr "R_arm_fk_2_control_rotateZ.o" "AmandaRN.phl[724]";
-connectAttr "R_arm_fk_3_control_rotate_order.o" "AmandaRN.phl[725]";
-connectAttr "R_arm_fk_3_control_rotateY.o" "AmandaRN.phl[726]";
-connectAttr "R_arm_fk_3_control_rotateX.o" "AmandaRN.phl[727]";
-connectAttr "R_arm_fk_3_control_rotateZ.o" "AmandaRN.phl[728]";
-connectAttr "L_arm_ik_control_____.o" "AmandaRN.phl[729]";
-connectAttr "L_arm_ik_control_parent.o" "AmandaRN.phl[730]";
-connectAttr "L_arm_ik_control_stretch.o" "AmandaRN.phl[731]";
-connectAttr "L_arm_ik_control_squash.o" "AmandaRN.phl[732]";
-connectAttr "L_arm_ik_control_saveVolume.o" "AmandaRN.phl[733]";
-connectAttr "L_arm_ik_control_translateX.o" "AmandaRN.phl[734]";
-connectAttr "L_arm_ik_control_translateY.o" "AmandaRN.phl[735]";
-connectAttr "L_arm_ik_control_translateZ.o" "AmandaRN.phl[736]";
-connectAttr "L_arm_ik_control_rotateY.o" "AmandaRN.phl[737]";
-connectAttr "L_arm_ik_control_rotateX.o" "AmandaRN.phl[738]";
-connectAttr "L_arm_ik_control_rotateZ.o" "AmandaRN.phl[739]";
-connectAttr "L_arm_ik_polevector_control_parent.o" "AmandaRN.phl[740]";
-connectAttr "L_arm_ik_polevector_control_snap.o" "AmandaRN.phl[741]";
-connectAttr "L_arm_ik_polevector_control_squash.o" "AmandaRN.phl[742]";
-connectAttr "L_arm_ik_polevector_control_stretch.o" "AmandaRN.phl[743]";
-connectAttr "L_arm_ik_polevector_control_saveVolume.o" "AmandaRN.phl[744]";
-connectAttr "L_arm_ik_polevector_control_translateX.o" "AmandaRN.phl[745]";
-connectAttr "L_arm_ik_polevector_control_translateY.o" "AmandaRN.phl[746]";
-connectAttr "L_arm_ik_polevector_control_translateZ.o" "AmandaRN.phl[747]";
-connectAttr "L_arm_fk_1_control_parent.o" "AmandaRN.phl[748]";
-connectAttr "L_arm_fk_1_control_rotate_order.o" "AmandaRN.phl[749]";
-connectAttr "L_arm_fk_1_control_rotateY.o" "AmandaRN.phl[750]";
-connectAttr "L_arm_fk_1_control_rotateX.o" "AmandaRN.phl[751]";
-connectAttr "L_arm_fk_1_control_rotateZ.o" "AmandaRN.phl[752]";
-connectAttr "L_arm_fk_2_control_rotateZ.o" "AmandaRN.phl[753]";
-connectAttr "L_arm_fk_3_control_rotate_order.o" "AmandaRN.phl[754]";
-connectAttr "L_arm_fk_3_control_rotateZ.o" "AmandaRN.phl[755]";
-connectAttr "L_arm_fk_3_control_rotateX.o" "AmandaRN.phl[756]";
-connectAttr "L_arm_fk_3_control_rotateY.o" "AmandaRN.phl[757]";
-connectAttr "L_leg_ik_control_____.o" "AmandaRN.phl[758]";
-connectAttr "L_leg_ik_control_parent.o" "AmandaRN.phl[759]";
-connectAttr "L_leg_ik_control_stretch.o" "AmandaRN.phl[760]";
-connectAttr "L_leg_ik_control_squash.o" "AmandaRN.phl[761]";
-connectAttr "L_leg_ik_control_saveVolume.o" "AmandaRN.phl[762]";
-connectAttr "L_leg_ik_control_footRoll.o" "AmandaRN.phl[763]";
-connectAttr "L_leg_ik_control_side.o" "AmandaRN.phl[764]";
-connectAttr "L_leg_ik_control_footRollWeight.o" "AmandaRN.phl[765]";
-connectAttr "L_leg_ik_control_heelPivot.o" "AmandaRN.phl[766]";
-connectAttr "L_leg_ik_control_tipPivot.o" "AmandaRN.phl[767]";
-connectAttr "L_leg_ik_control_toesPivot.o" "AmandaRN.phl[768]";
-connectAttr "L_leg_ik_control_translateY.o" "AmandaRN.phl[769]";
-connectAttr "L_leg_ik_control_translateX.o" "AmandaRN.phl[770]";
-connectAttr "L_leg_ik_control_translateZ.o" "AmandaRN.phl[771]";
-connectAttr "L_leg_ik_control_rotateX.o" "AmandaRN.phl[772]";
-connectAttr "L_leg_ik_control_rotateY.o" "AmandaRN.phl[773]";
-connectAttr "L_leg_ik_control_rotateZ.o" "AmandaRN.phl[774]";
-connectAttr "L_leg_ik_polevector_control_parent.o" "AmandaRN.phl[775]";
-connectAttr "L_leg_ik_polevector_control_snap.o" "AmandaRN.phl[776]";
-connectAttr "L_leg_ik_polevector_control_squash.o" "AmandaRN.phl[777]";
-connectAttr "L_leg_ik_polevector_control_stretch.o" "AmandaRN.phl[778]";
-connectAttr "L_leg_ik_polevector_control_saveVolume.o" "AmandaRN.phl[779]";
-connectAttr "L_leg_ik_polevector_control_translateX.o" "AmandaRN.phl[780]";
-connectAttr "L_leg_ik_polevector_control_translateY.o" "AmandaRN.phl[781]";
-connectAttr "L_leg_ik_polevector_control_translateZ.o" "AmandaRN.phl[782]";
-connectAttr "L_leg_fk_1_control_parent.o" "AmandaRN.phl[783]";
-connectAttr "L_leg_fk_1_control_rotate_order.o" "AmandaRN.phl[784]";
-connectAttr "L_leg_fk_1_control_rotateZ.o" "AmandaRN.phl[785]";
-connectAttr "L_leg_fk_1_control_rotateX.o" "AmandaRN.phl[786]";
-connectAttr "L_leg_fk_1_control_rotateY.o" "AmandaRN.phl[787]";
-connectAttr "L_leg_fk_2_control_rotateZ.o" "AmandaRN.phl[788]";
-connectAttr "L_leg_fk_3_control_rotate_order.o" "AmandaRN.phl[789]";
-connectAttr "L_leg_fk_3_control_rotateZ.o" "AmandaRN.phl[790]";
-connectAttr "L_leg_fk_3_control_rotateX.o" "AmandaRN.phl[791]";
-connectAttr "L_leg_fk_3_control_rotateY.o" "AmandaRN.phl[792]";
-connectAttr "L_leg_fk_4_control_translateX.o" "AmandaRN.phl[793]";
-connectAttr "L_leg_fk_4_control_translateY.o" "AmandaRN.phl[794]";
-connectAttr "L_leg_fk_4_control_translateZ.o" "AmandaRN.phl[795]";
-connectAttr "L_leg_fk_4_control_rotateZ.o" "AmandaRN.phl[796]";
-connectAttr "L_leg_fk_4_control_rotateX.o" "AmandaRN.phl[797]";
-connectAttr "L_leg_fk_4_control_rotateY.o" "AmandaRN.phl[798]";
-connectAttr "R_leg_ik_control_____.o" "AmandaRN.phl[799]";
-connectAttr "R_leg_ik_control_parent.o" "AmandaRN.phl[800]";
-connectAttr "R_leg_ik_control_stretch.o" "AmandaRN.phl[801]";
-connectAttr "R_leg_ik_control_squash.o" "AmandaRN.phl[802]";
-connectAttr "R_leg_ik_control_saveVolume.o" "AmandaRN.phl[803]";
-connectAttr "R_leg_ik_control_footRoll.o" "AmandaRN.phl[804]";
-connectAttr "R_leg_ik_control_side.o" "AmandaRN.phl[805]";
-connectAttr "R_leg_ik_control_footRollWeight.o" "AmandaRN.phl[806]";
-connectAttr "R_leg_ik_control_heelPivot.o" "AmandaRN.phl[807]";
-connectAttr "R_leg_ik_control_tipPivot.o" "AmandaRN.phl[808]";
-connectAttr "R_leg_ik_control_toesPivot.o" "AmandaRN.phl[809]";
-connectAttr "R_leg_ik_control_translateX.o" "AmandaRN.phl[810]";
-connectAttr "R_leg_ik_control_translateY.o" "AmandaRN.phl[811]";
-connectAttr "R_leg_ik_control_translateZ.o" "AmandaRN.phl[812]";
-connectAttr "R_leg_ik_control_rotateX.o" "AmandaRN.phl[813]";
-connectAttr "R_leg_ik_control_rotateY.o" "AmandaRN.phl[814]";
-connectAttr "R_leg_ik_control_rotateZ.o" "AmandaRN.phl[815]";
-connectAttr "R_leg_foot_toes_control_translateX.o" "AmandaRN.phl[816]";
-connectAttr "R_leg_foot_toes_control_translateY.o" "AmandaRN.phl[817]";
-connectAttr "R_leg_foot_toes_control_translateZ.o" "AmandaRN.phl[818]";
-connectAttr "R_leg_foot_toes_control_rotateX.o" "AmandaRN.phl[819]";
-connectAttr "R_leg_foot_toes_control_rotateY.o" "AmandaRN.phl[820]";
-connectAttr "R_leg_foot_toes_control_rotateZ.o" "AmandaRN.phl[821]";
-connectAttr "R_leg_foot_toes_control_scaleX.o" "AmandaRN.phl[822]";
-connectAttr "R_leg_foot_toes_control_scaleY.o" "AmandaRN.phl[823]";
-connectAttr "R_leg_foot_toes_control_scaleZ.o" "AmandaRN.phl[824]";
-connectAttr "R_leg_ik_polevector_control_parent.o" "AmandaRN.phl[825]";
-connectAttr "R_leg_ik_polevector_control_snap.o" "AmandaRN.phl[826]";
-connectAttr "R_leg_ik_polevector_control_squash.o" "AmandaRN.phl[827]";
-connectAttr "R_leg_ik_polevector_control_stretch.o" "AmandaRN.phl[828]";
-connectAttr "R_leg_ik_polevector_control_saveVolume.o" "AmandaRN.phl[829]";
-connectAttr "R_leg_ik_polevector_control_translateX.o" "AmandaRN.phl[830]";
-connectAttr "R_leg_ik_polevector_control_translateY.o" "AmandaRN.phl[831]";
-connectAttr "R_leg_ik_polevector_control_translateZ.o" "AmandaRN.phl[832]";
-connectAttr "R_arm_1_stretchRig_2_control_scaleX.o" "AmandaRN.phl[833]";
-connectAttr "R_arm_1_stretchRig_2_control_scaleY.o" "AmandaRN.phl[834]";
-connectAttr "R_arm_1_stretchRig_2_control_scaleZ.o" "AmandaRN.phl[835]";
-connectAttr "R_arm_1_stretchRig_2_control_translateX.o" "AmandaRN.phl[836]";
-connectAttr "R_arm_1_stretchRig_2_control_translateY.o" "AmandaRN.phl[837]";
-connectAttr "R_arm_1_stretchRig_2_control_translateZ.o" "AmandaRN.phl[838]";
-connectAttr "R_arm_1_stretchRig_2_control_rotateX.o" "AmandaRN.phl[839]";
-connectAttr "R_arm_1_stretchRig_2_control_rotateY.o" "AmandaRN.phl[840]";
-connectAttr "R_arm_1_stretchRig_2_control_rotateZ.o" "AmandaRN.phl[841]";
-connectAttr "R_arm_2_stretchRig_1_control_scaleX.o" "AmandaRN.phl[842]";
-connectAttr "R_arm_2_stretchRig_1_control_scaleY.o" "AmandaRN.phl[843]";
-connectAttr "R_arm_2_stretchRig_1_control_scaleZ.o" "AmandaRN.phl[844]";
-connectAttr "R_arm_2_stretchRig_1_control_translateX.o" "AmandaRN.phl[845]";
-connectAttr "R_arm_2_stretchRig_1_control_translateY.o" "AmandaRN.phl[846]";
-connectAttr "R_arm_2_stretchRig_1_control_translateZ.o" "AmandaRN.phl[847]";
-connectAttr "R_arm_2_stretchRig_1_control_rotateX.o" "AmandaRN.phl[848]";
-connectAttr "R_arm_2_stretchRig_1_control_rotateY.o" "AmandaRN.phl[849]";
-connectAttr "R_arm_2_stretchRig_1_control_rotateZ.o" "AmandaRN.phl[850]";
-connectAttr "R_arm_2_stretchRig_2_control_scaleX.o" "AmandaRN.phl[851]";
-connectAttr "R_arm_2_stretchRig_2_control_scaleY.o" "AmandaRN.phl[852]";
-connectAttr "R_arm_2_stretchRig_2_control_scaleZ.o" "AmandaRN.phl[853]";
-connectAttr "R_arm_2_stretchRig_2_control_translateX.o" "AmandaRN.phl[854]";
-connectAttr "R_arm_2_stretchRig_2_control_translateY.o" "AmandaRN.phl[855]";
-connectAttr "R_arm_2_stretchRig_2_control_translateZ.o" "AmandaRN.phl[856]";
-connectAttr "R_arm_2_stretchRig_2_control_rotateX.o" "AmandaRN.phl[857]";
-connectAttr "R_arm_2_stretchRig_2_control_rotateY.o" "AmandaRN.phl[858]";
-connectAttr "R_arm_2_stretchRig_2_control_rotateZ.o" "AmandaRN.phl[859]";
-connectAttr "R_arm_2_stretchRig_3_control_translateX.o" "AmandaRN.phl[860]";
-connectAttr "R_arm_2_stretchRig_3_control_translateY.o" "AmandaRN.phl[861]";
-connectAttr "R_arm_2_stretchRig_3_control_translateZ.o" "AmandaRN.phl[862]";
-connectAttr "R_arm_2_stretchRig_3_control_rotateX.o" "AmandaRN.phl[863]";
-connectAttr "R_arm_2_stretchRig_3_control_rotateY.o" "AmandaRN.phl[864]";
-connectAttr "R_arm_2_stretchRig_3_control_rotateZ.o" "AmandaRN.phl[865]";
-connectAttr "R_arm_2_stretchRig_3_control_scaleX.o" "AmandaRN.phl[866]";
-connectAttr "R_arm_2_stretchRig_3_control_scaleY.o" "AmandaRN.phl[867]";
-connectAttr "R_arm_2_stretchRig_3_control_scaleZ.o" "AmandaRN.phl[868]";
-connectAttr "AmandaRN.phl[869]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
+connectAttr "M_lips_up_mid_f_control_translateX.o" "AmandaRN.phl[498]";
+connectAttr "M_lips_up_mid_f_control_translateY.o" "AmandaRN.phl[499]";
+connectAttr "M_lips_up_mid_f_control_translateZ.o" "AmandaRN.phl[500]";
+connectAttr "M_lips_up_mid_f_control_rotateX.o" "AmandaRN.phl[501]";
+connectAttr "M_lips_up_mid_f_control_rotateY.o" "AmandaRN.phl[502]";
+connectAttr "M_lips_up_mid_f_control_rotateZ.o" "AmandaRN.phl[503]";
+connectAttr "M_lips_up_mid_f_control_scaleX.o" "AmandaRN.phl[504]";
+connectAttr "M_lips_up_mid_f_control_scaleY.o" "AmandaRN.phl[505]";
+connectAttr "M_lips_up_mid_f_control_scaleZ.o" "AmandaRN.phl[506]";
+connectAttr "L_lips_up_sneer_f_control_rotateY.o" "AmandaRN.phl[507]";
+connectAttr "L_lips_up_sneer_f_control_rotateZ.o" "AmandaRN.phl[508]";
+connectAttr "L_lips_up_sneer_f_control_rotateX.o" "AmandaRN.phl[509]";
+connectAttr "L_lips_up_sneer_f_control_translateY.o" "AmandaRN.phl[510]";
+connectAttr "L_lips_up_sneer_f_control_translateX.o" "AmandaRN.phl[511]";
+connectAttr "L_lips_up_sneer_f_control_translateZ.o" "AmandaRN.phl[512]";
+connectAttr "L_lips_up_sneer_f_control_scaleX.o" "AmandaRN.phl[513]";
+connectAttr "L_lips_up_sneer_f_control_scaleY.o" "AmandaRN.phl[514]";
+connectAttr "L_lips_up_sneer_f_control_scaleZ.o" "AmandaRN.phl[515]";
+connectAttr "R_lips_up_sneer_f_control_rotateY.o" "AmandaRN.phl[516]";
+connectAttr "R_lips_up_sneer_f_control_rotateZ.o" "AmandaRN.phl[517]";
+connectAttr "R_lips_up_sneer_f_control_rotateX.o" "AmandaRN.phl[518]";
+connectAttr "R_lips_up_sneer_f_control_translateY.o" "AmandaRN.phl[519]";
+connectAttr "R_lips_up_sneer_f_control_translateX.o" "AmandaRN.phl[520]";
+connectAttr "R_lips_up_sneer_f_control_translateZ.o" "AmandaRN.phl[521]";
+connectAttr "R_lips_up_sneer_f_control_scaleX.o" "AmandaRN.phl[522]";
+connectAttr "R_lips_up_sneer_f_control_scaleY.o" "AmandaRN.phl[523]";
+connectAttr "R_lips_up_sneer_f_control_scaleZ.o" "AmandaRN.phl[524]";
+connectAttr "L_lips_low_sneer_f_control_rotateX.o" "AmandaRN.phl[525]";
+connectAttr "L_lips_low_sneer_f_control_rotateY.o" "AmandaRN.phl[526]";
+connectAttr "L_lips_low_sneer_f_control_rotateZ.o" "AmandaRN.phl[527]";
+connectAttr "L_lips_low_sneer_f_control_translateY.o" "AmandaRN.phl[528]";
+connectAttr "L_lips_low_sneer_f_control_translateX.o" "AmandaRN.phl[529]";
+connectAttr "L_lips_low_sneer_f_control_translateZ.o" "AmandaRN.phl[530]";
+connectAttr "L_lips_low_sneer_f_control_scaleX.o" "AmandaRN.phl[531]";
+connectAttr "L_lips_low_sneer_f_control_scaleY.o" "AmandaRN.phl[532]";
+connectAttr "L_lips_low_sneer_f_control_scaleZ.o" "AmandaRN.phl[533]";
+connectAttr "L_emotion_f_control_translateY.o" "AmandaRN.phl[534]";
+connectAttr "L_emotion_f_control_translateX.o" "AmandaRN.phl[535]";
+connectAttr "L_emotion_f_control_zip.o" "AmandaRN.phl[536]";
+connectAttr "L_emotion_f_control_depth.o" "AmandaRN.phl[537]";
+connectAttr "L_emotion_f_control_rotateX.o" "AmandaRN.phl[538]";
+connectAttr "L_emotion_f_control_rotateY.o" "AmandaRN.phl[539]";
+connectAttr "L_emotion_f_control_rotateZ.o" "AmandaRN.phl[540]";
+connectAttr "R_emotion_f_control_translateY.o" "AmandaRN.phl[541]";
+connectAttr "R_emotion_f_control_translateX.o" "AmandaRN.phl[542]";
+connectAttr "R_emotion_f_control_zip.o" "AmandaRN.phl[543]";
+connectAttr "R_emotion_f_control_depth.o" "AmandaRN.phl[544]";
+connectAttr "R_emotion_f_control_rotateX.o" "AmandaRN.phl[545]";
+connectAttr "R_emotion_f_control_rotateY.o" "AmandaRN.phl[546]";
+connectAttr "R_emotion_f_control_rotateZ.o" "AmandaRN.phl[547]";
+connectAttr "L_shoulder_control_rotateY.o" "AmandaRN.phl[548]";
+connectAttr "L_shoulder_control_rotateX.o" "AmandaRN.phl[549]";
+connectAttr "L_shoulder_control_rotateZ.o" "AmandaRN.phl[550]";
+connectAttr "L_shoulder_control_translateX.o" "AmandaRN.phl[551]";
+connectAttr "L_shoulder_control_translateY.o" "AmandaRN.phl[552]";
+connectAttr "L_shoulder_control_translateZ.o" "AmandaRN.phl[553]";
+connectAttr "R_shoulder_control_rotateY.o" "AmandaRN.phl[554]";
+connectAttr "R_shoulder_control_rotateX.o" "AmandaRN.phl[555]";
+connectAttr "R_shoulder_control_rotateZ.o" "AmandaRN.phl[556]";
+connectAttr "R_shoulder_control_translateX.o" "AmandaRN.phl[557]";
+connectAttr "R_shoulder_control_translateY.o" "AmandaRN.phl[558]";
+connectAttr "R_shoulder_control_translateZ.o" "AmandaRN.phl[559]";
+connectAttr "M_spine_ik_1_control_scaleX.o" "AmandaRN.phl[560]";
+connectAttr "M_spine_ik_1_control_scaleZ.o" "AmandaRN.phl[561]";
+connectAttr "M_spine_ik_1_control_translateX.o" "AmandaRN.phl[562]";
+connectAttr "M_spine_ik_1_control_translateY.o" "AmandaRN.phl[563]";
+connectAttr "M_spine_ik_1_control_translateZ.o" "AmandaRN.phl[564]";
+connectAttr "M_spine_ik_1_control_rotateX.o" "AmandaRN.phl[565]";
+connectAttr "M_spine_ik_1_control_rotateZ.o" "AmandaRN.phl[566]";
+connectAttr "M_spine_ik_1_control_rotateY.o" "AmandaRN.phl[567]";
+connectAttr "M_SOG_control_translateZ.o" "AmandaRN.phl[568]";
+connectAttr "M_SOG_control_translateY.o" "AmandaRN.phl[569]";
+connectAttr "M_SOG_control_translateX.o" "AmandaRN.phl[570]";
+connectAttr "M_SOG_control_rotateZ.o" "AmandaRN.phl[571]";
+connectAttr "M_SOG_control_rotateX.o" "AmandaRN.phl[572]";
+connectAttr "M_SOG_control_rotateY.o" "AmandaRN.phl[573]";
+connectAttr "M_SOG_control_saveVolume.o" "AmandaRN.phl[574]";
+connectAttr "M_spine_fk_1_control_rotateZ.o" "AmandaRN.phl[575]";
+connectAttr "M_spine_fk_1_control_rotateX.o" "AmandaRN.phl[576]";
+connectAttr "M_spine_fk_1_control_rotateY.o" "AmandaRN.phl[577]";
+connectAttr "M_spine_fk_1_control_translateX.o" "AmandaRN.phl[578]";
+connectAttr "M_spine_fk_1_control_translateY.o" "AmandaRN.phl[579]";
+connectAttr "M_spine_fk_1_control_translateZ.o" "AmandaRN.phl[580]";
+connectAttr "M_spine_fk_2_control_rotateX.o" "AmandaRN.phl[581]";
+connectAttr "M_spine_fk_2_control_rotateY.o" "AmandaRN.phl[582]";
+connectAttr "M_spine_fk_2_control_rotateZ.o" "AmandaRN.phl[583]";
+connectAttr "M_spine_fk_2_control_translateX.o" "AmandaRN.phl[584]";
+connectAttr "M_spine_fk_2_control_translateY.o" "AmandaRN.phl[585]";
+connectAttr "M_spine_fk_2_control_translateZ.o" "AmandaRN.phl[586]";
+connectAttr "M_spine_fk_3_control_rotateX.o" "AmandaRN.phl[587]";
+connectAttr "M_spine_fk_3_control_rotateY.o" "AmandaRN.phl[588]";
+connectAttr "M_spine_fk_3_control_rotateZ.o" "AmandaRN.phl[589]";
+connectAttr "M_spine_fk_3_control_translateX.o" "AmandaRN.phl[590]";
+connectAttr "M_spine_fk_3_control_translateY.o" "AmandaRN.phl[591]";
+connectAttr "M_spine_fk_3_control_translateZ.o" "AmandaRN.phl[592]";
+connectAttr "M_hip_control_rotateX.o" "AmandaRN.phl[593]";
+connectAttr "M_hip_control_rotateY.o" "AmandaRN.phl[594]";
+connectAttr "M_hip_control_rotateZ.o" "AmandaRN.phl[595]";
+connectAttr "M_hip_control_translateX.o" "AmandaRN.phl[596]";
+connectAttr "M_hip_control_translateY.o" "AmandaRN.phl[597]";
+connectAttr "M_hip_control_translateZ.o" "AmandaRN.phl[598]";
+connectAttr "R_leg_option_control_fingerAttribute.o" "AmandaRN.phl[599]";
+connectAttr "R_leg_option_control_scale1X.o" "AmandaRN.phl[600]";
+connectAttr "R_leg_option_control_scale1YZ.o" "AmandaRN.phl[601]";
+connectAttr "R_leg_option_control_scale2X.o" "AmandaRN.phl[602]";
+connectAttr "R_leg_option_control_scale2YZ.o" "AmandaRN.phl[603]";
+connectAttr "R_leg_option_control_ikfk.o" "AmandaRN.phl[604]";
+connectAttr "R_leg_option_control_thumb_1.o" "AmandaRN.phl[605]";
+connectAttr "R_leg_option_control_thumb_2.o" "AmandaRN.phl[606]";
+connectAttr "R_leg_option_control_thumb_spread.o" "AmandaRN.phl[607]";
+connectAttr "R_leg_option_control_thumb_twist.o" "AmandaRN.phl[608]";
+connectAttr "R_leg_option_control_index_1.o" "AmandaRN.phl[609]";
+connectAttr "R_leg_option_control_index_2.o" "AmandaRN.phl[610]";
+connectAttr "R_leg_option_control_index_spread.o" "AmandaRN.phl[611]";
+connectAttr "R_leg_option_control_index_twist.o" "AmandaRN.phl[612]";
+connectAttr "R_leg_option_control_mid_1.o" "AmandaRN.phl[613]";
+connectAttr "R_leg_option_control_mid_2.o" "AmandaRN.phl[614]";
+connectAttr "R_leg_option_control_mid_spread.o" "AmandaRN.phl[615]";
+connectAttr "R_leg_option_control_mid_twist.o" "AmandaRN.phl[616]";
+connectAttr "R_leg_option_control_ring_1.o" "AmandaRN.phl[617]";
+connectAttr "R_leg_option_control_ring_2.o" "AmandaRN.phl[618]";
+connectAttr "R_leg_option_control_ring_spread.o" "AmandaRN.phl[619]";
+connectAttr "R_leg_option_control_ring_twist.o" "AmandaRN.phl[620]";
+connectAttr "R_leg_option_control_pinky_1.o" "AmandaRN.phl[621]";
+connectAttr "R_leg_option_control_pinky_2.o" "AmandaRN.phl[622]";
+connectAttr "R_leg_option_control_pinky_spread.o" "AmandaRN.phl[623]";
+connectAttr "R_leg_option_control_pinky_twist.o" "AmandaRN.phl[624]";
+connectAttr "L_leg_option_control_fingerAttribute.o" "AmandaRN.phl[625]";
+connectAttr "L_leg_option_control_scale1X.o" "AmandaRN.phl[626]";
+connectAttr "L_leg_option_control_scale1YZ.o" "AmandaRN.phl[627]";
+connectAttr "L_leg_option_control_scale2X.o" "AmandaRN.phl[628]";
+connectAttr "L_leg_option_control_scale2YZ.o" "AmandaRN.phl[629]";
+connectAttr "L_leg_option_control_ikfk.o" "AmandaRN.phl[630]";
+connectAttr "L_leg_option_control_thumb_1.o" "AmandaRN.phl[631]";
+connectAttr "L_leg_option_control_thumb_2.o" "AmandaRN.phl[632]";
+connectAttr "L_leg_option_control_thumb_spread.o" "AmandaRN.phl[633]";
+connectAttr "L_leg_option_control_thumb_twist.o" "AmandaRN.phl[634]";
+connectAttr "L_leg_option_control_index_1.o" "AmandaRN.phl[635]";
+connectAttr "L_leg_option_control_index_2.o" "AmandaRN.phl[636]";
+connectAttr "L_leg_option_control_index_spread.o" "AmandaRN.phl[637]";
+connectAttr "L_leg_option_control_index_twist.o" "AmandaRN.phl[638]";
+connectAttr "L_leg_option_control_mid_1.o" "AmandaRN.phl[639]";
+connectAttr "L_leg_option_control_mid_2.o" "AmandaRN.phl[640]";
+connectAttr "L_leg_option_control_mid_spread.o" "AmandaRN.phl[641]";
+connectAttr "L_leg_option_control_mid_twist.o" "AmandaRN.phl[642]";
+connectAttr "L_leg_option_control_ring_1.o" "AmandaRN.phl[643]";
+connectAttr "L_leg_option_control_ring_2.o" "AmandaRN.phl[644]";
+connectAttr "L_leg_option_control_ring_spread.o" "AmandaRN.phl[645]";
+connectAttr "L_leg_option_control_ring_twist.o" "AmandaRN.phl[646]";
+connectAttr "L_leg_option_control_pinky_1.o" "AmandaRN.phl[647]";
+connectAttr "L_leg_option_control_pinky_2.o" "AmandaRN.phl[648]";
+connectAttr "L_leg_option_control_pinky_spread.o" "AmandaRN.phl[649]";
+connectAttr "L_leg_option_control_pinky_twist.o" "AmandaRN.phl[650]";
+connectAttr "R_arm_option_control_curl.o" "AmandaRN.phl[651]";
+connectAttr "R_arm_option_control_spread.o" "AmandaRN.phl[652]";
+connectAttr "R_arm_option_control_scale3X.o" "AmandaRN.phl[653]";
+connectAttr "R_arm_option_control_scale3YZ.o" "AmandaRN.phl[654]";
+connectAttr "R_arm_option_control_scale1X.o" "AmandaRN.phl[655]";
+connectAttr "R_arm_option_control_scale1YZ.o" "AmandaRN.phl[656]";
+connectAttr "R_arm_option_control_scale2X.o" "AmandaRN.phl[657]";
+connectAttr "R_arm_option_control_scale2YZ.o" "AmandaRN.phl[658]";
+connectAttr "R_arm_option_control_ikfk.o" "AmandaRN.phl[659]";
+connectAttr "R_arm_option_control_index_1.o" "AmandaRN.phl[660]";
+connectAttr "R_arm_option_control_index_2.o" "AmandaRN.phl[661]";
+connectAttr "R_arm_option_control_index_3.o" "AmandaRN.phl[662]";
+connectAttr "R_arm_option_control_index_4.o" "AmandaRN.phl[663]";
+connectAttr "R_arm_option_control_index_spread.o" "AmandaRN.phl[664]";
+connectAttr "R_arm_option_control_index_twist.o" "AmandaRN.phl[665]";
+connectAttr "R_arm_option_control_mid_1.o" "AmandaRN.phl[666]";
+connectAttr "R_arm_option_control_mid_2.o" "AmandaRN.phl[667]";
+connectAttr "R_arm_option_control_mid_3.o" "AmandaRN.phl[668]";
+connectAttr "R_arm_option_control_mid_4.o" "AmandaRN.phl[669]";
+connectAttr "R_arm_option_control_mid_spread.o" "AmandaRN.phl[670]";
+connectAttr "R_arm_option_control_mid_twist.o" "AmandaRN.phl[671]";
+connectAttr "R_arm_option_control_ring_1.o" "AmandaRN.phl[672]";
+connectAttr "R_arm_option_control_ring_2.o" "AmandaRN.phl[673]";
+connectAttr "R_arm_option_control_ring_3.o" "AmandaRN.phl[674]";
+connectAttr "R_arm_option_control_ring_4.o" "AmandaRN.phl[675]";
+connectAttr "R_arm_option_control_ring_spread.o" "AmandaRN.phl[676]";
+connectAttr "R_arm_option_control_ring_twist.o" "AmandaRN.phl[677]";
+connectAttr "R_arm_option_control_pinky_1.o" "AmandaRN.phl[678]";
+connectAttr "R_arm_option_control_pinky_2.o" "AmandaRN.phl[679]";
+connectAttr "R_arm_option_control_pinky_3.o" "AmandaRN.phl[680]";
+connectAttr "R_arm_option_control_pinky_4.o" "AmandaRN.phl[681]";
+connectAttr "R_arm_option_control_pinky_spread.o" "AmandaRN.phl[682]";
+connectAttr "R_arm_option_control_pinky_twist.o" "AmandaRN.phl[683]";
+connectAttr "R_arm_option_control_thumb_1.o" "AmandaRN.phl[684]";
+connectAttr "R_arm_option_control_thumb_spread.o" "AmandaRN.phl[685]";
+connectAttr "R_arm_option_control_thumb_twist.o" "AmandaRN.phl[686]";
+connectAttr "R_arm_option_control_thumb_2.o" "AmandaRN.phl[687]";
+connectAttr "R_arm_option_control_thumb_3.o" "AmandaRN.phl[688]";
+connectAttr "L_arm_option_control_curl.o" "AmandaRN.phl[689]";
+connectAttr "L_arm_option_control_spread.o" "AmandaRN.phl[690]";
+connectAttr "L_arm_option_control_scale3X.o" "AmandaRN.phl[691]";
+connectAttr "L_arm_option_control_scale3YZ.o" "AmandaRN.phl[692]";
+connectAttr "L_arm_option_control_scale1X.o" "AmandaRN.phl[693]";
+connectAttr "L_arm_option_control_scale1YZ.o" "AmandaRN.phl[694]";
+connectAttr "L_arm_option_control_scale2X.o" "AmandaRN.phl[695]";
+connectAttr "L_arm_option_control_scale2YZ.o" "AmandaRN.phl[696]";
+connectAttr "L_arm_option_control_ikfk.o" "AmandaRN.phl[697]";
+connectAttr "L_arm_option_control_thumb_twist.o" "AmandaRN.phl[698]";
+connectAttr "L_arm_option_control_thumb_spread.o" "AmandaRN.phl[699]";
+connectAttr "L_arm_option_control_thumb_1.o" "AmandaRN.phl[700]";
+connectAttr "L_arm_option_control_index_1.o" "AmandaRN.phl[701]";
+connectAttr "L_arm_option_control_index_2.o" "AmandaRN.phl[702]";
+connectAttr "L_arm_option_control_thumb_2.o" "AmandaRN.phl[703]";
+connectAttr "L_arm_option_control_thumb_3.o" "AmandaRN.phl[704]";
+connectAttr "L_arm_option_control_index_spread.o" "AmandaRN.phl[705]";
+connectAttr "L_arm_option_control_index_twist.o" "AmandaRN.phl[706]";
+connectAttr "L_arm_option_control_index_3.o" "AmandaRN.phl[707]";
+connectAttr "L_arm_option_control_index_4.o" "AmandaRN.phl[708]";
+connectAttr "L_arm_option_control_mid_1.o" "AmandaRN.phl[709]";
+connectAttr "L_arm_option_control_ring_1.o" "AmandaRN.phl[710]";
+connectAttr "L_arm_option_control_pinky_1.o" "AmandaRN.phl[711]";
+connectAttr "L_arm_option_control_mid_2.o" "AmandaRN.phl[712]";
+connectAttr "L_arm_option_control_mid_3.o" "AmandaRN.phl[713]";
+connectAttr "L_arm_option_control_mid_4.o" "AmandaRN.phl[714]";
+connectAttr "L_arm_option_control_mid_spread.o" "AmandaRN.phl[715]";
+connectAttr "L_arm_option_control_mid_twist.o" "AmandaRN.phl[716]";
+connectAttr "L_arm_option_control_ring_2.o" "AmandaRN.phl[717]";
+connectAttr "L_arm_option_control_ring_3.o" "AmandaRN.phl[718]";
+connectAttr "L_arm_option_control_ring_4.o" "AmandaRN.phl[719]";
+connectAttr "L_arm_option_control_ring_spread.o" "AmandaRN.phl[720]";
+connectAttr "L_arm_option_control_ring_twist.o" "AmandaRN.phl[721]";
+connectAttr "L_arm_option_control_pinky_2.o" "AmandaRN.phl[722]";
+connectAttr "L_arm_option_control_pinky_3.o" "AmandaRN.phl[723]";
+connectAttr "L_arm_option_control_pinky_4.o" "AmandaRN.phl[724]";
+connectAttr "L_arm_option_control_pinky_spread.o" "AmandaRN.phl[725]";
+connectAttr "L_arm_option_control_pinky_twist.o" "AmandaRN.phl[726]";
+connectAttr "R_arm_ik_control_____.o" "AmandaRN.phl[727]";
+connectAttr "R_arm_ik_control_parent.o" "AmandaRN.phl[728]";
+connectAttr "R_arm_ik_control_stretch.o" "AmandaRN.phl[729]";
+connectAttr "R_arm_ik_control_squash.o" "AmandaRN.phl[730]";
+connectAttr "R_arm_ik_control_saveVolume.o" "AmandaRN.phl[731]";
+connectAttr "R_arm_ik_control_translateX.o" "AmandaRN.phl[732]";
+connectAttr "R_arm_ik_control_translateY.o" "AmandaRN.phl[733]";
+connectAttr "R_arm_ik_control_translateZ.o" "AmandaRN.phl[734]";
+connectAttr "R_arm_ik_control_rotateX.o" "AmandaRN.phl[735]";
+connectAttr "R_arm_ik_control_rotateY.o" "AmandaRN.phl[736]";
+connectAttr "R_arm_ik_control_rotateZ.o" "AmandaRN.phl[737]";
+connectAttr "R_arm_ik_polevector_control_parent.o" "AmandaRN.phl[738]";
+connectAttr "R_arm_ik_polevector_control_snap.o" "AmandaRN.phl[739]";
+connectAttr "R_arm_ik_polevector_control_squash.o" "AmandaRN.phl[740]";
+connectAttr "R_arm_ik_polevector_control_stretch.o" "AmandaRN.phl[741]";
+connectAttr "R_arm_ik_polevector_control_saveVolume.o" "AmandaRN.phl[742]";
+connectAttr "R_arm_ik_polevector_control_translateX.o" "AmandaRN.phl[743]";
+connectAttr "R_arm_ik_polevector_control_translateY.o" "AmandaRN.phl[744]";
+connectAttr "R_arm_ik_polevector_control_translateZ.o" "AmandaRN.phl[745]";
+connectAttr "R_arm_fk_1_control_parent.o" "AmandaRN.phl[746]";
+connectAttr "R_arm_fk_1_control_rotate_order.o" "AmandaRN.phl[747]";
+connectAttr "R_arm_fk_1_control_rotateY.o" "AmandaRN.phl[748]";
+connectAttr "R_arm_fk_1_control_rotateX.o" "AmandaRN.phl[749]";
+connectAttr "R_arm_fk_1_control_rotateZ.o" "AmandaRN.phl[750]";
+connectAttr "R_arm_fk_2_control_rotateZ.o" "AmandaRN.phl[751]";
+connectAttr "R_arm_fk_3_control_rotate_order.o" "AmandaRN.phl[752]";
+connectAttr "R_arm_fk_3_control_rotateY.o" "AmandaRN.phl[753]";
+connectAttr "R_arm_fk_3_control_rotateX.o" "AmandaRN.phl[754]";
+connectAttr "R_arm_fk_3_control_rotateZ.o" "AmandaRN.phl[755]";
+connectAttr "L_arm_ik_control_____.o" "AmandaRN.phl[756]";
+connectAttr "L_arm_ik_control_parent.o" "AmandaRN.phl[757]";
+connectAttr "L_arm_ik_control_stretch.o" "AmandaRN.phl[758]";
+connectAttr "L_arm_ik_control_squash.o" "AmandaRN.phl[759]";
+connectAttr "L_arm_ik_control_saveVolume.o" "AmandaRN.phl[760]";
+connectAttr "L_arm_ik_control_translateX.o" "AmandaRN.phl[761]";
+connectAttr "L_arm_ik_control_translateY.o" "AmandaRN.phl[762]";
+connectAttr "L_arm_ik_control_translateZ.o" "AmandaRN.phl[763]";
+connectAttr "L_arm_ik_control_rotateY.o" "AmandaRN.phl[764]";
+connectAttr "L_arm_ik_control_rotateX.o" "AmandaRN.phl[765]";
+connectAttr "L_arm_ik_control_rotateZ.o" "AmandaRN.phl[766]";
+connectAttr "L_arm_ik_polevector_control_parent.o" "AmandaRN.phl[767]";
+connectAttr "L_arm_ik_polevector_control_snap.o" "AmandaRN.phl[768]";
+connectAttr "L_arm_ik_polevector_control_squash.o" "AmandaRN.phl[769]";
+connectAttr "L_arm_ik_polevector_control_stretch.o" "AmandaRN.phl[770]";
+connectAttr "L_arm_ik_polevector_control_saveVolume.o" "AmandaRN.phl[771]";
+connectAttr "L_arm_ik_polevector_control_translateX.o" "AmandaRN.phl[772]";
+connectAttr "L_arm_ik_polevector_control_translateY.o" "AmandaRN.phl[773]";
+connectAttr "L_arm_ik_polevector_control_translateZ.o" "AmandaRN.phl[774]";
+connectAttr "L_arm_fk_1_control_parent.o" "AmandaRN.phl[775]";
+connectAttr "L_arm_fk_1_control_rotate_order.o" "AmandaRN.phl[776]";
+connectAttr "L_arm_fk_1_control_rotateY.o" "AmandaRN.phl[777]";
+connectAttr "L_arm_fk_1_control_rotateX.o" "AmandaRN.phl[778]";
+connectAttr "L_arm_fk_1_control_rotateZ.o" "AmandaRN.phl[779]";
+connectAttr "L_arm_fk_2_control_rotateZ.o" "AmandaRN.phl[780]";
+connectAttr "L_arm_fk_3_control_rotate_order.o" "AmandaRN.phl[781]";
+connectAttr "L_arm_fk_3_control_rotateZ.o" "AmandaRN.phl[782]";
+connectAttr "L_arm_fk_3_control_rotateX.o" "AmandaRN.phl[783]";
+connectAttr "L_arm_fk_3_control_rotateY.o" "AmandaRN.phl[784]";
+connectAttr "L_leg_ik_control_____.o" "AmandaRN.phl[785]";
+connectAttr "L_leg_ik_control_parent.o" "AmandaRN.phl[786]";
+connectAttr "L_leg_ik_control_stretch.o" "AmandaRN.phl[787]";
+connectAttr "L_leg_ik_control_squash.o" "AmandaRN.phl[788]";
+connectAttr "L_leg_ik_control_saveVolume.o" "AmandaRN.phl[789]";
+connectAttr "L_leg_ik_control_footRoll.o" "AmandaRN.phl[790]";
+connectAttr "L_leg_ik_control_side.o" "AmandaRN.phl[791]";
+connectAttr "L_leg_ik_control_footRollWeight.o" "AmandaRN.phl[792]";
+connectAttr "L_leg_ik_control_heelPivot.o" "AmandaRN.phl[793]";
+connectAttr "L_leg_ik_control_tipPivot.o" "AmandaRN.phl[794]";
+connectAttr "L_leg_ik_control_toesPivot.o" "AmandaRN.phl[795]";
+connectAttr "L_leg_ik_control_translateY.o" "AmandaRN.phl[796]";
+connectAttr "L_leg_ik_control_translateX.o" "AmandaRN.phl[797]";
+connectAttr "L_leg_ik_control_translateZ.o" "AmandaRN.phl[798]";
+connectAttr "L_leg_ik_control_rotateX.o" "AmandaRN.phl[799]";
+connectAttr "L_leg_ik_control_rotateY.o" "AmandaRN.phl[800]";
+connectAttr "L_leg_ik_control_rotateZ.o" "AmandaRN.phl[801]";
+connectAttr "L_leg_ik_polevector_control_parent.o" "AmandaRN.phl[802]";
+connectAttr "L_leg_ik_polevector_control_snap.o" "AmandaRN.phl[803]";
+connectAttr "L_leg_ik_polevector_control_squash.o" "AmandaRN.phl[804]";
+connectAttr "L_leg_ik_polevector_control_stretch.o" "AmandaRN.phl[805]";
+connectAttr "L_leg_ik_polevector_control_saveVolume.o" "AmandaRN.phl[806]";
+connectAttr "L_leg_ik_polevector_control_translateX.o" "AmandaRN.phl[807]";
+connectAttr "L_leg_ik_polevector_control_translateY.o" "AmandaRN.phl[808]";
+connectAttr "L_leg_ik_polevector_control_translateZ.o" "AmandaRN.phl[809]";
+connectAttr "L_leg_fk_1_control_parent.o" "AmandaRN.phl[810]";
+connectAttr "L_leg_fk_1_control_rotate_order.o" "AmandaRN.phl[811]";
+connectAttr "L_leg_fk_1_control_rotateZ.o" "AmandaRN.phl[812]";
+connectAttr "L_leg_fk_1_control_rotateX.o" "AmandaRN.phl[813]";
+connectAttr "L_leg_fk_1_control_rotateY.o" "AmandaRN.phl[814]";
+connectAttr "L_leg_fk_2_control_rotateZ.o" "AmandaRN.phl[815]";
+connectAttr "L_leg_fk_3_control_rotate_order.o" "AmandaRN.phl[816]";
+connectAttr "L_leg_fk_3_control_rotateZ.o" "AmandaRN.phl[817]";
+connectAttr "L_leg_fk_3_control_rotateX.o" "AmandaRN.phl[818]";
+connectAttr "L_leg_fk_3_control_rotateY.o" "AmandaRN.phl[819]";
+connectAttr "L_leg_fk_4_control_translateX.o" "AmandaRN.phl[820]";
+connectAttr "L_leg_fk_4_control_translateY.o" "AmandaRN.phl[821]";
+connectAttr "L_leg_fk_4_control_translateZ.o" "AmandaRN.phl[822]";
+connectAttr "L_leg_fk_4_control_rotateZ.o" "AmandaRN.phl[823]";
+connectAttr "L_leg_fk_4_control_rotateX.o" "AmandaRN.phl[824]";
+connectAttr "L_leg_fk_4_control_rotateY.o" "AmandaRN.phl[825]";
+connectAttr "R_leg_ik_control_____.o" "AmandaRN.phl[826]";
+connectAttr "R_leg_ik_control_parent.o" "AmandaRN.phl[827]";
+connectAttr "R_leg_ik_control_stretch.o" "AmandaRN.phl[828]";
+connectAttr "R_leg_ik_control_squash.o" "AmandaRN.phl[829]";
+connectAttr "R_leg_ik_control_saveVolume.o" "AmandaRN.phl[830]";
+connectAttr "R_leg_ik_control_footRoll.o" "AmandaRN.phl[831]";
+connectAttr "R_leg_ik_control_side.o" "AmandaRN.phl[832]";
+connectAttr "R_leg_ik_control_footRollWeight.o" "AmandaRN.phl[833]";
+connectAttr "R_leg_ik_control_heelPivot.o" "AmandaRN.phl[834]";
+connectAttr "R_leg_ik_control_tipPivot.o" "AmandaRN.phl[835]";
+connectAttr "R_leg_ik_control_toesPivot.o" "AmandaRN.phl[836]";
+connectAttr "R_leg_ik_control_translateX.o" "AmandaRN.phl[837]";
+connectAttr "R_leg_ik_control_translateY.o" "AmandaRN.phl[838]";
+connectAttr "R_leg_ik_control_translateZ.o" "AmandaRN.phl[839]";
+connectAttr "R_leg_ik_control_rotateX.o" "AmandaRN.phl[840]";
+connectAttr "R_leg_ik_control_rotateY.o" "AmandaRN.phl[841]";
+connectAttr "R_leg_ik_control_rotateZ.o" "AmandaRN.phl[842]";
+connectAttr "R_leg_foot_toes_control_translateX.o" "AmandaRN.phl[843]";
+connectAttr "R_leg_foot_toes_control_translateY.o" "AmandaRN.phl[844]";
+connectAttr "R_leg_foot_toes_control_translateZ.o" "AmandaRN.phl[845]";
+connectAttr "R_leg_foot_toes_control_rotateX.o" "AmandaRN.phl[846]";
+connectAttr "R_leg_foot_toes_control_rotateY.o" "AmandaRN.phl[847]";
+connectAttr "R_leg_foot_toes_control_rotateZ.o" "AmandaRN.phl[848]";
+connectAttr "R_leg_foot_toes_control_scaleX.o" "AmandaRN.phl[849]";
+connectAttr "R_leg_foot_toes_control_scaleY.o" "AmandaRN.phl[850]";
+connectAttr "R_leg_foot_toes_control_scaleZ.o" "AmandaRN.phl[851]";
+connectAttr "R_leg_ik_polevector_control_parent.o" "AmandaRN.phl[852]";
+connectAttr "R_leg_ik_polevector_control_snap.o" "AmandaRN.phl[853]";
+connectAttr "R_leg_ik_polevector_control_squash.o" "AmandaRN.phl[854]";
+connectAttr "R_leg_ik_polevector_control_stretch.o" "AmandaRN.phl[855]";
+connectAttr "R_leg_ik_polevector_control_saveVolume.o" "AmandaRN.phl[856]";
+connectAttr "R_leg_ik_polevector_control_translateX.o" "AmandaRN.phl[857]";
+connectAttr "R_leg_ik_polevector_control_translateY.o" "AmandaRN.phl[858]";
+connectAttr "R_leg_ik_polevector_control_translateZ.o" "AmandaRN.phl[859]";
+connectAttr "R_arm_1_stretchRig_2_control_scaleX.o" "AmandaRN.phl[860]";
+connectAttr "R_arm_1_stretchRig_2_control_scaleY.o" "AmandaRN.phl[861]";
+connectAttr "R_arm_1_stretchRig_2_control_scaleZ.o" "AmandaRN.phl[862]";
+connectAttr "R_arm_1_stretchRig_2_control_translateX.o" "AmandaRN.phl[863]";
+connectAttr "R_arm_1_stretchRig_2_control_translateY.o" "AmandaRN.phl[864]";
+connectAttr "R_arm_1_stretchRig_2_control_translateZ.o" "AmandaRN.phl[865]";
+connectAttr "R_arm_1_stretchRig_2_control_rotateX.o" "AmandaRN.phl[866]";
+connectAttr "R_arm_1_stretchRig_2_control_rotateY.o" "AmandaRN.phl[867]";
+connectAttr "R_arm_1_stretchRig_2_control_rotateZ.o" "AmandaRN.phl[868]";
+connectAttr "R_arm_2_stretchRig_1_control_scaleX.o" "AmandaRN.phl[869]";
+connectAttr "R_arm_2_stretchRig_1_control_scaleY.o" "AmandaRN.phl[870]";
+connectAttr "R_arm_2_stretchRig_1_control_scaleZ.o" "AmandaRN.phl[871]";
+connectAttr "R_arm_2_stretchRig_1_control_translateX.o" "AmandaRN.phl[872]";
+connectAttr "R_arm_2_stretchRig_1_control_translateY.o" "AmandaRN.phl[873]";
+connectAttr "R_arm_2_stretchRig_1_control_translateZ.o" "AmandaRN.phl[874]";
+connectAttr "R_arm_2_stretchRig_1_control_rotateX.o" "AmandaRN.phl[875]";
+connectAttr "R_arm_2_stretchRig_1_control_rotateY.o" "AmandaRN.phl[876]";
+connectAttr "R_arm_2_stretchRig_1_control_rotateZ.o" "AmandaRN.phl[877]";
+connectAttr "R_arm_2_stretchRig_2_control_scaleX.o" "AmandaRN.phl[878]";
+connectAttr "R_arm_2_stretchRig_2_control_scaleY.o" "AmandaRN.phl[879]";
+connectAttr "R_arm_2_stretchRig_2_control_scaleZ.o" "AmandaRN.phl[880]";
+connectAttr "R_arm_2_stretchRig_2_control_translateX.o" "AmandaRN.phl[881]";
+connectAttr "R_arm_2_stretchRig_2_control_translateY.o" "AmandaRN.phl[882]";
+connectAttr "R_arm_2_stretchRig_2_control_translateZ.o" "AmandaRN.phl[883]";
+connectAttr "R_arm_2_stretchRig_2_control_rotateX.o" "AmandaRN.phl[884]";
+connectAttr "R_arm_2_stretchRig_2_control_rotateY.o" "AmandaRN.phl[885]";
+connectAttr "R_arm_2_stretchRig_2_control_rotateZ.o" "AmandaRN.phl[886]";
+connectAttr "R_arm_2_stretchRig_3_control_translateX.o" "AmandaRN.phl[887]";
+connectAttr "R_arm_2_stretchRig_3_control_translateY.o" "AmandaRN.phl[888]";
+connectAttr "R_arm_2_stretchRig_3_control_translateZ.o" "AmandaRN.phl[889]";
+connectAttr "R_arm_2_stretchRig_3_control_rotateX.o" "AmandaRN.phl[890]";
+connectAttr "R_arm_2_stretchRig_3_control_rotateY.o" "AmandaRN.phl[891]";
+connectAttr "R_arm_2_stretchRig_3_control_rotateZ.o" "AmandaRN.phl[892]";
+connectAttr "R_arm_2_stretchRig_3_control_scaleX.o" "AmandaRN.phl[893]";
+connectAttr "R_arm_2_stretchRig_3_control_scaleY.o" "AmandaRN.phl[894]";
+connectAttr "R_arm_2_stretchRig_3_control_scaleZ.o" "AmandaRN.phl[895]";
+connectAttr "L_leg_1_stretchRig_1_control_scaleX.o" "AmandaRN.phl[896]";
+connectAttr "L_leg_1_stretchRig_1_control_scaleY.o" "AmandaRN.phl[897]";
+connectAttr "L_leg_1_stretchRig_1_control_scaleZ.o" "AmandaRN.phl[898]";
+connectAttr "L_leg_1_stretchRig_1_control_rotateX.o" "AmandaRN.phl[899]";
+connectAttr "L_leg_1_stretchRig_1_control_rotateY.o" "AmandaRN.phl[900]";
+connectAttr "L_leg_1_stretchRig_1_control_rotateZ.o" "AmandaRN.phl[901]";
+connectAttr "L_leg_1_stretchRig_1_control_translateX.o" "AmandaRN.phl[902]";
+connectAttr "L_leg_1_stretchRig_1_control_translateY.o" "AmandaRN.phl[903]";
+connectAttr "L_leg_1_stretchRig_1_control_translateZ.o" "AmandaRN.phl[904]";
+connectAttr "L_leg_1_stretchRig_2_control_scaleX.o" "AmandaRN.phl[905]";
+connectAttr "L_leg_1_stretchRig_2_control_scaleY.o" "AmandaRN.phl[906]";
+connectAttr "L_leg_1_stretchRig_2_control_scaleZ.o" "AmandaRN.phl[907]";
+connectAttr "L_leg_1_stretchRig_2_control_rotateX.o" "AmandaRN.phl[908]";
+connectAttr "L_leg_1_stretchRig_2_control_rotateY.o" "AmandaRN.phl[909]";
+connectAttr "L_leg_1_stretchRig_2_control_rotateZ.o" "AmandaRN.phl[910]";
+connectAttr "L_leg_1_stretchRig_2_control_translateX.o" "AmandaRN.phl[911]";
+connectAttr "L_leg_1_stretchRig_2_control_translateY.o" "AmandaRN.phl[912]";
+connectAttr "L_leg_1_stretchRig_2_control_translateZ.o" "AmandaRN.phl[913]";
+connectAttr "L_leg_2_stretchRig_1_control_scaleX.o" "AmandaRN.phl[914]";
+connectAttr "L_leg_2_stretchRig_1_control_scaleY.o" "AmandaRN.phl[915]";
+connectAttr "L_leg_2_stretchRig_1_control_scaleZ.o" "AmandaRN.phl[916]";
+connectAttr "L_leg_2_stretchRig_1_control_rotateX.o" "AmandaRN.phl[917]";
+connectAttr "L_leg_2_stretchRig_1_control_rotateY.o" "AmandaRN.phl[918]";
+connectAttr "L_leg_2_stretchRig_1_control_rotateZ.o" "AmandaRN.phl[919]";
+connectAttr "L_leg_2_stretchRig_1_control_translateX.o" "AmandaRN.phl[920]";
+connectAttr "L_leg_2_stretchRig_1_control_translateY.o" "AmandaRN.phl[921]";
+connectAttr "L_leg_2_stretchRig_1_control_translateZ.o" "AmandaRN.phl[922]";
+connectAttr "L_leg_2_stretchRig_2_control_scaleX.o" "AmandaRN.phl[923]";
+connectAttr "L_leg_2_stretchRig_2_control_scaleY.o" "AmandaRN.phl[924]";
+connectAttr "L_leg_2_stretchRig_2_control_scaleZ.o" "AmandaRN.phl[925]";
+connectAttr "L_leg_2_stretchRig_2_control_rotateX.o" "AmandaRN.phl[926]";
+connectAttr "L_leg_2_stretchRig_2_control_rotateY.o" "AmandaRN.phl[927]";
+connectAttr "L_leg_2_stretchRig_2_control_rotateZ.o" "AmandaRN.phl[928]";
+connectAttr "L_leg_2_stretchRig_2_control_translateX.o" "AmandaRN.phl[929]";
+connectAttr "L_leg_2_stretchRig_2_control_translateY.o" "AmandaRN.phl[930]";
+connectAttr "L_leg_2_stretchRig_2_control_translateZ.o" "AmandaRN.phl[931]";
+connectAttr "L_leg_2_stretchRig_3_control_rotateX.o" "AmandaRN.phl[932]";
+connectAttr "L_leg_2_stretchRig_3_control_rotateY.o" "AmandaRN.phl[933]";
+connectAttr "L_leg_2_stretchRig_3_control_rotateZ.o" "AmandaRN.phl[934]";
+connectAttr "L_leg_2_stretchRig_3_control_translateX.o" "AmandaRN.phl[935]";
+connectAttr "L_leg_2_stretchRig_3_control_translateY.o" "AmandaRN.phl[936]";
+connectAttr "L_leg_2_stretchRig_3_control_translateZ.o" "AmandaRN.phl[937]";
+connectAttr "L_leg_2_stretchRig_3_control_scaleX.o" "AmandaRN.phl[938]";
+connectAttr "L_leg_2_stretchRig_3_control_scaleY.o" "AmandaRN.phl[939]";
+connectAttr "L_leg_2_stretchRig_3_control_scaleZ.o" "AmandaRN.phl[940]";
+connectAttr "AmandaRN.phl[941]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[9].dn"
 		;
-connectAttr "AmandaRN.phl[870]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
+connectAttr "AmandaRN.phl[942]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[2].dn"
 		;
-connectAttr "AmandaRN.phl[871]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
+connectAttr "AmandaRN.phl[943]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[8].dn"
 		;
-connectAttr "AmandaRN.phl[872]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
+connectAttr "AmandaRN.phl[944]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "AmandaRN.phl[873]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
+connectAttr "AmandaRN.phl[945]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[6].dn"
 		;
-connectAttr "AmandaRN.phl[874]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
+connectAttr "AmandaRN.phl[946]" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
 		;
 connectAttr "Floor.di" "pPlane1.do";
 connectAttr "polyPlane1.out" "pPlaneShape1.i";
