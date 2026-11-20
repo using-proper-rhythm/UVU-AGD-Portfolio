@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Stairsabove.ma
-//Last modified: Wed, Nov 18, 2026 09:41:30 PM
+//Last modified: Thu, Nov 19, 2026 09:42:10 AM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -14,12 +14,12 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26300)";
-fileInfo "UUID" "8837C4F4-438A-4A22-B4EE-18B817B8FB71";
+fileInfo "UUID" "8B5FFABA-45D4-E3E0-3F6D-C5A2BFF531F5";
 createNode transform -s -n "persp";
 	rename -uid "A0324DA4-4865-CABD-71AC-7CAF630CAC91";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 8.5429605560991462 8.4943188545900181 7.2264304358373481 ;
-	setAttr ".r" -type "double3" -372.33835268815341 -652.9999999997475 0 ;
+	setAttr ".t" -type "double3" 17.046272082399629 12.095377256334354 11.915064509710678 ;
+	setAttr ".r" -type "double3" -359.73835268815458 -652.1999999996857 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CE4509A1-4507-C4B0-1248-DF80D348BAEF";
 	setAttr -k off ".v" no;
@@ -27,12 +27,12 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.0010936132983377078;
 	setAttr ".fcp" 109.36132983377078;
 	setAttr ".fd" 0.054680664916885391;
-	setAttr ".coi" 30.236765898929207;
+	setAttr ".coi" 23.418166191519134;
 	setAttr ".ow" 0.10936132983377078;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -139.06492614746094 1056.027587890625 408.48045349121094 ;
+	setAttr ".tp" -type "double3" -272.21985769271851 782.46392822265625 488.99442291259766 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "9AAE4689-445A-0363-4617-F690F3E94F58";
@@ -21030,7 +21030,7 @@ createNode aiSkyDomeLight -n "aiSkyDomeLightShape1" -p "aiSkyDomeLight1";
 parent -s -nc -r -add "|Tree|TreeShape" "Tree1" ;
 parent -s -nc -r -add "|Tree|TreeShape" "Tree2" ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9F2C97C5-4F89-08AD-1CE5-90A8D821593D";
+	rename -uid "9F477746-40D5-4E6F-0B45-A99E17C3E99D";
 	setAttr -s 13 ".lnk";
 	setAttr -s 13 ".slnk";
 createNode UsdDefaultSettings -n "UsdDefaultRenderSettings";
@@ -21040,16 +21040,16 @@ createNode UsdDefaultSettings -n "UsdDefaultRenderSettings";
 	setAttr ".asp" -type "string" "UsdDefaultRenderSettings,/Render/SceneRenderSettings";
 lockNode -l 1 ;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "2E861F58-4603-2F7E-7A19-6D997F07071A";
+	rename -uid "0E5D3908-4110-2405-A966-F6AC9953F412";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6CFCA852-4032-FEAE-4B5A-F79DDD33F907";
+	rename -uid "91E97AD7-45A0-6438-7D92-ECA29EE41A24";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "96E7BED9-4621-85F9-C8E4-C88D7D97DEDD";
+	rename -uid "16147CC4-424B-B70B-1AFD-7D83B114EC1F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "331A3201-4191-5364-9FB3-3F8BA6982597";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "9F8E8D6B-4D07-FDF5-417D-85818E8C72D2";
+	rename -uid "A8E95246-4EFE-1492-6847-7D85C4699D96";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2287509A-42FB-2824-5338-30810F92FAAD";
 	setAttr ".g" yes;
